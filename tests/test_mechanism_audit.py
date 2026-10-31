@@ -2,7 +2,9 @@
 
 import copy
 import json
+import hashlib
 from pathlib import Path
+import subprocess
 import tempfile
 import unittest
 
@@ -11,11 +13,70 @@ import torch
 
 from maintenance.audit_mechanism_v3 import (
     Checks, digest, encoder_bytes, encoder_digest, indexed, main,
-    verify_manifest, verify_seed_summary, verify_supports,
+    verify_executed_source, verify_manifest, verify_seed_summary, verify_supports,
 )
 
 
 class IndependentMechanismAuditTests(unittest.TestCase):
+    def _source_repository(self, directory):
+        subprocess.run(["git", "init", "--quiet"], cwd=directory, check=True, capture_output=True)
+        source = directory / "jcim" / "encoder.py"
+        source.parent.mkdir()
+        source.write_bytes(b"frozen source bytes\n")
+        subprocess.run(["git", "add", "jcim/encoder.py"], cwd=directory, check=True, capture_output=True)
+        subprocess.run(["git", "-c", "user.name=Audit Test", "-c", "user.email=audit@example.invalid",
+                        "commit", "--quiet", "-m", "Archive source bytes"], cwd=directory, check=True, capture_output=True)
+        commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=directory, text=True).strip()
+        return source, {"git_head_at_start": commit, "source_sha256": {"jcim/encoder.py": digest(source)}}
+
+    def test_exact_recorded_commit_recovers_snapshot_after_worktree_edit(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            source, environment = self._source_repository(directory)
+            checks = Checks()
+            current = verify_executed_source(directory, environment, checks)
+            self.assertTrue(checks.success)
+            self.assertEqual(current["files"]["jcim/encoder.py"]["verified_from"], "current_worktree")
+            source.write_bytes(b"later performance fix\n")
+            checks = Checks()
+            historical = verify_executed_source(directory, environment, checks)
+            self.assertTrue(checks.success)
+            self.assertEqual(historical["recorded_full_commit"], environment["git_head_at_start"])
+            self.assertEqual(historical["files"]["jcim/encoder.py"]["verified_from"], "recorded_immutable_git_commit")
+            self.assertEqual(historical["files"]["jcim/encoder.py"]["historical_git_blob_sha256"], environment["source_sha256"]["jcim/encoder.py"])
+
+    def test_wrong_recorded_historical_hash_and_abbreviated_commit_are_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            source, environment = self._source_repository(directory)
+            source.write_bytes(b"later performance fix\n")
+            wrong_hash = copy.deepcopy(environment)
+            wrong_hash["source_sha256"]["jcim/encoder.py"] = hashlib.sha256(b"unrecorded historical bytes\n").hexdigest()
+            checks = Checks()
+            verify_executed_source(directory, wrong_hash, checks)
+            self.assertFalse(checks.success)
+            self.assertEqual(checks.results["executed_source_files_match_recorded_snapshot"]["failed"], 1)
+            for invalid in (environment["git_head_at_start"][:12], "HEAD", "0" * 40):
+                with self.subTest(revision=invalid):
+                    checks = Checks()
+                    verify_executed_source(directory, {**environment, "git_head_at_start": invalid}, checks)
+                    self.assertFalse(checks.success)
+                    self.assertEqual(checks.results["executed_source_revision_is_full_immutable_commit"]["failed"], 1)
+
+    def test_another_full_commit_cannot_supply_different_snapshot_bytes(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            source, environment = self._source_repository(directory)
+            source.write_bytes(b"different committed bytes\n")
+            subprocess.run(["git", "add", "jcim/encoder.py"], cwd=directory, check=True, capture_output=True)
+            subprocess.run(["git", "-c", "user.name=Audit Test", "-c", "user.email=audit@example.invalid",
+                            "commit", "--quiet", "-m", "Different snapshot"], cwd=directory, check=True, capture_output=True)
+            wrong_commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=directory, text=True).strip()
+            checks = Checks()
+            verify_executed_source(directory, {**environment, "git_head_at_start": wrong_commit}, checks)
+            self.assertFalse(checks.success)
+            self.assertEqual(checks.results["executed_source_files_match_recorded_snapshot"]["failed"], 1)
+
     def test_manifest_checks_hashes_and_unlisted_files(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = Path(temporary)

@@ -96,14 +96,17 @@ def local_records(records, graphs=None):
     not create a new capped chemical species. Channels 13, 14, 16, and 17 are
     zero; channel 15 marks one root. ``graphs`` may contain padded archive arrays.
     """
+    # NpzFile decompresses a complete member on each lookup; materialize once.
+    graph_x = None if graphs is None else np.asarray(graphs["x"])
+    graph_adj = None if graphs is None else np.asarray(graphs["adj"])
     result = []
     for row, record in enumerate(records):
         selected = np.asarray(record["target_fragment_indices"], dtype=np.int64)
         root = int(record["target_attachment_idx"])
         if len(selected) != 9 or len(set(selected.tolist())) != 9 or root not in selected:
             raise ValueError("The local positive control requires the full nine-atom target with its root.")
-        original_x = np.asarray(record["x"] if graphs is None else graphs["x"][row])
-        original_adj = np.asarray(record["adj"] if graphs is None else graphs["adj"][row])
+        original_x = np.asarray(record["x"] if graph_x is None else graph_x[row])
+        original_adj = np.asarray(record["adj"] if graph_adj is None else graph_adj[row])
         x = original_x[selected].astype(np.float32, copy=True)
         adjacency = original_adj[np.ix_(selected, selected)].astype(np.float32, copy=True)
         if x.shape != (9, 18):

@@ -14,7 +14,9 @@ import itertools
 import json
 import math
 import platform
+import re
 import statistics
+import subprocess
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -116,6 +118,50 @@ def encoder_digest(state: dict) -> str:
     return checksum.hexdigest()
 
 
+def verify_executed_source(root: Path, environment: dict, checks: Checks) -> dict:
+    """Verify executed bytes against the worktree or their exact immutable commit.
+
+    A later maintenance edit may change the worktree. Only the complete commit
+    identifier recorded when the experiment started can supply historical bytes;
+    branches, abbreviated IDs, and other revisions are never substituted.
+    """
+    revision = environment.get("git_head_at_start", "")
+    full_revision = isinstance(revision, str) and re.fullmatch(r"[0-9a-f]{40}", revision) is not None
+    resolved = None
+    if full_revision:
+        result = subprocess.run(["git", "rev-parse", "--verify", f"{revision}^{{commit}}"],
+                                cwd=root, capture_output=True, check=False)
+        if result.returncode == 0:
+            resolved = result.stdout.decode("ascii").strip()
+    immutable_commit = full_revision and resolved == revision
+    checks.check("executed_source_revision_is_full_immutable_commit", immutable_commit, revision)
+    files = {}
+    for relative, expected in environment["source_sha256"].items():
+        path = _relative_path(root, relative)
+        current_hash = digest(path) if path.is_file() else None
+        valid_digest = isinstance(expected, str) and re.fullmatch(r"[0-9a-f]{64}", expected) is not None
+        historical_hash = None
+        provenance = None
+        if valid_digest and current_hash == expected:
+            provenance = "current_worktree"
+        elif immutable_commit and valid_digest:
+            normalized = path.relative_to(root.resolve()).as_posix()
+            blob = subprocess.run(["git", "cat-file", "blob", f"{revision}:{normalized}"],
+                                  cwd=root, capture_output=True, check=False)
+            if blob.returncode == 0:
+                historical_hash = hashlib.sha256(blob.stdout).hexdigest()
+                if historical_hash == expected:
+                    provenance = "recorded_immutable_git_commit"
+        checks.check("executed_source_files_match_recorded_snapshot", provenance is not None,
+                     {"path": relative, "expected": expected, "worktree": current_hash, "historical": historical_hash})
+        files[relative] = {"verified_from": provenance, "recorded_sha256": expected,
+                           "current_worktree_sha256": current_hash}
+        if historical_hash is not None:
+            files[relative]["historical_git_blob_sha256"] = historical_hash
+    return {"recorded_full_commit": revision, "commit_verified": immutable_commit, "files": files,
+            "policy": "Exact current bytes or exact blob bytes at the full immutable commit recorded at experiment start; no other historical revision is accepted."}
+
+
 def verify_supports(source: Path, records: list[dict], splits: dict, support: dict, checks: Checks) -> dict:
     ids = [row["id"] for row in records]
     checks.check("source_molecular_IDs_unique", len(ids) == len(set(ids)))
@@ -187,9 +233,7 @@ def audit_record(record: Path, source: Path) -> dict:
                  and config["adaptation_learning_rate"] == 0.0005 and config["weight_decay"] == 0.0001)
     checks.check("original_hard_manifest_unchanged_since_run_start", environment["source_manifest_sha256"] == manifests["source"]["manifest_sha256"])
     checks.check("recording_finished", bool(environment.get("finished_utc")))
-    for relative, expected in environment["source_sha256"].items():
-        path = _relative_path(ROOT, relative)
-        checks.check("executed_source_files_still_match_run_hashes", path.is_file() and digest(path) == expected, relative)
+    executed_source_provenance = verify_executed_source(ROOT, environment, checks)
     for name, expected in environment["pretrained_checkpoint_sha256"].items():
         checks.check("input_checkpoint_hashes_match_provenance", digest(source / "checkpoints" / f"{name}.pt") == expected, name)
     records = [json.loads(line) for line in (source / "molecules.jsonl").read_text(encoding="utf-8").splitlines()]
@@ -293,10 +337,12 @@ def audit_record(record: Path, source: Path) -> dict:
                              for metric in REPORT_METRICS)
             checks.check(f"{filename}_correct_repeat_means", valid, key)
     return {"status": "PASS" if checks.success else "FAIL", "audited_utc": datetime.now(timezone.utc).isoformat(),
+            "auditor_sha256": digest(Path(__file__)),
             "record": str(record), "source": str(source), "platform": platform.platform(),
             "method": "Independent CPU-only manifest, identity, metadata, tensor-byte, scalar-identity, component, and nested-statistics checks; no training and no jcim imports.",
             "limits": "Metadata and final-state checks do not independently reconstruct every optimizer update or prove feature absence. Component identities validate the intervention records; they are not an additive causal decomposition of forgetting.",
-            "manifests": manifests, "counts": {"cases": len(cases), "frozen_cases": len(frozen_cases), "trajectory_rows": len(trajectory),
+            "manifests": manifests, "executed_source_provenance": executed_source_provenance,
+            "counts": {"cases": len(cases), "frozen_cases": len(frozen_cases), "trajectory_rows": len(trajectory),
             "drift_rows": len(drift), "component_rows": len(components)}, "checks": checks.results}
 
 

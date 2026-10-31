@@ -138,3 +138,5 @@ See the [correlation report](experiments/correlation_v3/REPORT.md), [exposed/pro
 .\.venv\Scripts\python.exe maintenance\audit_mechanism_v3.py --record experiments\readout_replay_v3 --output maintenance\READOUT_REPLAY_V3_REAUDIT.json
 .\.venv\Scripts\python.exe maintenance\audit_correlation_v3.py --record experiments\correlation_v3 --output maintenance\CORRELATION_V3_REAUDIT.json
 ```
+
+All v3 scientific records executed source commit `499194ec5d43c93e004d9ccc9a168df42b2fbd18`. A later [performance revision](maintenance/MECHANISM_V3_POSTRUN_REVISION.md) avoids repeatedly decompressing archived arrays when extracting local inputs; the reconstructed arrays remain byte-identical and no completed result was rewritten. The mechanism auditor validates the recorded historical Git blobs when current source files differ, retaining explicit source provenance for subsequent audits.

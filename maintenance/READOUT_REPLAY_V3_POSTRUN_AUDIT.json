@@ -1,0 +1,422 @@
+{
+  "status": "PASS",
+  "audited_utc": "2026-10-31T06:50:20.885357+00:00",
+  "auditor_sha256": "2f5bff2d0a17244ba9b659e95194542bbb305d0bcca17334fe27be841ff0cb02",
+  "record": "F:\\JCIM\\experiments\\readout_replay_v3",
+  "source": "F:\\JCIM\\experiments\\hard_v2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "method": "Independent CPU-only manifest, identity, metadata, tensor-byte, scalar-identity, component, and nested-statistics checks; no training and no jcim imports.",
+  "limits": "Metadata and final-state checks do not independently reconstruct every optimizer update or prove feature absence. Component identities validate the intervention records; they are not an additive causal decomposition of forgetting.",
+  "manifests": {
+    "record": {
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "source": {
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    }
+  },
+  "executed_source_provenance": {
+    "recorded_full_commit": "499194ec5d43c93e004d9ccc9a168df42b2fbd18",
+    "commit_verified": true,
+    "files": {
+      "jcim\\__init__.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+        "current_worktree_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+      },
+      "jcim\\analysis.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+        "current_worktree_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+      },
+      "jcim\\correlation.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835",
+        "current_worktree_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835"
+      },
+      "jcim\\data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+        "current_worktree_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+      },
+      "jcim\\hard_data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+        "current_worktree_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85"
+      },
+      "jcim\\hard_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+        "current_worktree_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1"
+      },
+      "jcim\\hard_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+        "current_worktree_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a"
+      },
+      "jcim\\hard_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+        "current_worktree_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff"
+      },
+      "jcim\\hard_verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+        "current_worktree_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90"
+      },
+      "jcim\\mechanism.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5",
+        "current_worktree_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5"
+      },
+      "jcim\\mechanism_diagnostics.py": {
+        "verified_from": "recorded_immutable_git_commit",
+        "recorded_sha256": "ee4dda1045130517c60c649d14a0eac2c8bf861bdf6bd1968bbb4700808cd93a",
+        "current_worktree_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d",
+        "historical_git_blob_sha256": "ee4dda1045130517c60c649d14a0eac2c8bf861bdf6bd1968bbb4700808cd93a"
+      },
+      "jcim\\mechanism_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93",
+        "current_worktree_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93"
+      },
+      "jcim\\model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+        "current_worktree_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+      },
+      "jcim\\report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+        "current_worktree_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+      },
+      "jcim\\run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+        "current_worktree_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+      },
+      "jcim\\verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+        "current_worktree_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+      }
+    },
+    "policy": "Exact current bytes or exact blob bytes at the full immutable commit recorded at experiment start; no other historical revision is accepted."
+  },
+  "counts": {
+    "cases": 90,
+    "frozen_cases": 36,
+    "trajectory_rows": 1890,
+    "drift_rows": 630,
+    "component_rows": 864
+  },
+  "checks": {
+    "record_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "record_every_manifest_file_matches": {
+      "passed": 106,
+      "failed": 0,
+      "examples": []
+    },
+    "record_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "source_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "declared_full_80_step_matched_budget": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "original_hard_manifest_unchanged_since_run_start": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "recording_finished": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_revision_is_full_immutable_commit": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_files_match_recorded_snapshot": {
+      "passed": 16,
+      "failed": 0,
+      "examples": []
+    },
+    "input_checkpoint_hashes_match_provenance": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "source_molecular_IDs_unique": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "support_sets_unique_rows": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "six_fixed_support_sets": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "support_unique_32_new_32_old": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_and_old_support_IDs_disjoint": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "all_support_IDs_known": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_IDs_exactly_archived_32_shot_support": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "same_new_IDs_across_experiences": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_support_in_reserved_adaptation_pool": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "old_support_in_own_pretraining_set": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "old_support_exact_fixed_sampling_protocol": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "support_excluded_from_all_evaluation_IDs": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "support_excluded_from_all_evaluation_canonical_SMILES": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_unique_rows": {
+      "passed": 1890,
+      "failed": 0,
+      "examples": []
+    },
+    "all_1890_trajectory_rows_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_finite_metrics_and_correct_test_counts": {
+      "passed": 1890,
+      "failed": 0,
+      "examples": []
+    },
+    "drift_unique_rows": {
+      "passed": 630,
+      "failed": 0,
+      "examples": []
+    },
+    "all_630_drift_rows_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "components_unique_rows": {
+      "passed": 864,
+      "failed": 0,
+      "examples": []
+    },
+    "all_864_component_rows_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_behavior_unique_rows": {
+      "passed": 27,
+      "failed": 0,
+      "examples": []
+    },
+    "source_adaptation_unique_rows": {
+      "passed": 270,
+      "failed": 0,
+      "examples": []
+    },
+    "all_90_checkpoint_support_and_config_records_match": {
+      "passed": 90,
+      "failed": 0,
+      "examples": []
+    },
+    "all_36_frozen_final_encoders_bitwise_equal_original": {
+      "passed": 36,
+      "failed": 0,
+      "examples": []
+    },
+    "all_drift_hash_flags_consistent_with_source_and_final_checkpoint": {
+      "passed": 630,
+      "failed": 0,
+      "examples": []
+    },
+    "final_encoder_and_head_deltas_recomputed_from_CPU_checkpoints": {
+      "passed": 90,
+      "failed": 0,
+      "examples": []
+    },
+    "all_step_zero_scalars_match_original_archive": {
+      "passed": 270,
+      "failed": 0,
+      "examples": []
+    },
+    "component_E0_H0_matches_baseline": {
+      "passed": 216,
+      "failed": 0,
+      "examples": []
+    },
+    "component_E1_H1_matches_final_trajectory": {
+      "passed": 216,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_E1_H0_matches_original_baseline": {
+      "passed": 108,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_E0_H1_matches_fully_adapted_state": {
+      "passed": 108,
+      "failed": 0,
+      "examples": []
+    },
+    "full_new_exactly_reproduces_18_prior_32_shot_cases": {
+      "passed": 54,
+      "failed": 0,
+      "examples": []
+    },
+    "exactly_36_frozen_encoder_cases_checked": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_summary_unique_rows": {
+      "passed": 210,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_summary_complete_groups": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_summary_repeat_nested_inside_three_seeds": {
+      "passed": 1050,
+      "failed": 0,
+      "examples": []
+    },
+    "final_summary_unique_rows": {
+      "passed": 30,
+      "failed": 0,
+      "examples": []
+    },
+    "final_summary_complete_groups": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "final_summary_repeat_nested_inside_three_seeds": {
+      "passed": 150,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_summary_unique_rows": {
+      "passed": 30,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_summary_complete_groups": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_summary_repeat_nested_inside_three_seeds": {
+      "passed": 150,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_support_and_chance_explicit": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_seed_metrics.csv_unique_rows": {
+      "passed": 630,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_seed_metrics.csv_complete_seed_rows": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "trajectory_seed_metrics.csv_correct_repeat_means": {
+      "passed": 630,
+      "failed": 0,
+      "examples": []
+    },
+    "final_seed_metrics.csv_unique_rows": {
+      "passed": 90,
+      "failed": 0,
+      "examples": []
+    },
+    "final_seed_metrics.csv_complete_seed_rows": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "final_seed_metrics.csv_correct_repeat_means": {
+      "passed": 90,
+      "failed": 0,
+      "examples": []
+    }
+  }
+}
