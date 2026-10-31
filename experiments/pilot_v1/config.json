@@ -1,0 +1,24 @@
+{
+  "experiment": "pilot_v1",
+  "split_seed": 20261030,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "hidden_dim": 64,
+  "layers": 6,
+  "epochs": 60,
+  "batch_size": 128,
+  "learning_rate": 0.002,
+  "weight_decay": 0.0001,
+  "probe_alpha": 1.0,
+  "adaptation_shots": [
+    8,
+    24,
+    64
+  ],
+  "adaptation_repeats": 5,
+  "device": "auto",
+  "cpu_threads": 4
+}

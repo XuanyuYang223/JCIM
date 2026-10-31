@@ -1,1 +1,6 @@
 * text=auto eol=lf
+
+# Frozen experiment records retain the exact bytes covered by their manifests.
+experiments/** -text -whitespace
+maintenance/audit_data_archive.py -text -whitespace
+maintenance/DATA_ARCHIVE_AUDIT.json -text -whitespace

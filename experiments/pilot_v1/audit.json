@@ -1,0 +1,79 @@
+{
+  "n_molecules": 3840,
+  "unique_canonical_identities": 3840,
+  "split_counts": {
+    "candidate_train": 2472,
+    "train_a": 2371,
+    "train_b": 2371,
+    "val": 335,
+    "iid_test": 906,
+    "ood_f_meta": 49,
+    "ood_cl_meta": 44,
+    "analysis": 999,
+    "adaptation_pool": 92,
+    "adaptation_test": 49,
+    "probe_source": 346,
+    "probe_target": 334,
+    "discarded_val_ood": 34
+  },
+  "position_counts": {
+    "para": 1280,
+    "meta": 1280,
+    "ortho": 1280
+  },
+  "target_family_counts": {
+    "bromo": 480,
+    "cyano": 480,
+    "chloro": 480,
+    "fluoro": 480,
+    "amino": 480,
+    "hydroxy": 480,
+    "thiol": 480,
+    "nitro": 480
+  },
+  "feature_names": [
+    "element_C",
+    "element_N",
+    "element_O",
+    "element_F",
+    "element_S",
+    "element_Cl",
+    "element_Br",
+    "element_other",
+    "aromatic",
+    "formal_charge_div_2",
+    "degree_div_4",
+    "hydrogen_count_div_4",
+    "in_ring",
+    "query_anchor_ring_atom",
+    "query_target_ring_atom",
+    "query_target_fragment",
+    "query_anchor_functional_root",
+    "query_target_functional_root"
+  ],
+  "feature_dimension": 18,
+  "distance_range": [
+    3,
+    11
+  ],
+  "query_endpoints_explicitly_marked": true,
+  "split_identity_leakage": false,
+  "shared_training_molecules": 2279,
+  "exclusive_per_experience": 92,
+  "dropped_train_a_ids": [
+    "e714217dc2b66fa63199",
+    "e8f6e52b5f2624edcf43",
+    "e94e00095860f0258511",
+    "f04617b07e3bb3bec064",
+    "f14c3c8ddd02f78e09f8",
+    "f3075d3a86208e3be394",
+    "f46e8f9d4a6b3555e310",
+    "f4ed9f505915fefd2a50",
+    "fe7bd56f835972b05d8d"
+  ],
+  "dropped_train_b_ids": [],
+  "effective_train_counts": {
+    "train_a": 2371,
+    "train_b": 2371
+  }
+}

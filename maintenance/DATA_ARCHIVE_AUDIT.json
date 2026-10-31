@@ -1,0 +1,404 @@
+{
+  "audit_name": "Independent mapped-molecule archive audit",
+  "status": "PASS",
+  "started_utc": "2026-10-31T05:14:53.151024+00:00",
+  "completed_utc": "2026-10-31T05:14:54.537731+00:00",
+  "archive_directory": "experiments\\pilot_v1",
+  "training_source_commit_at_start": "d26990fdf6ba318942f98480a1172df1762009fe",
+  "scope": "All archived molecules and graph entries; no generator or model code imported; no training performed.",
+  "method": "Parse atom-map reference SMILES, renumber atoms by map_number minus one, independently reconstruct binary bonds, 13 ordinary chemical features and 5 query features, and recompute graph shortest paths and chemical class labels.",
+  "audit_implementation_sha256": "6a536bbaefb0bb4775dc271bafa3cf5a53be67663867c426da8bfb4c20a6efda",
+  "independent_dependencies": {
+    "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "rdkit": "2026.9.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "counts": {
+    "molecules_audited": 3840,
+    "atoms_audited": 53280,
+    "adjacency_entries_audited": 753216,
+    "ordinary_feature_entries_audited": 692640,
+    "query_feature_entries_audited": 266400,
+    "unique_canonical_identities": 3840,
+    "maximum_atoms": 20,
+    "check_categories": 53,
+    "individual_checks": 76853,
+    "failed_checks": 0
+  },
+  "checks": {
+    "expected_full_factorial_molecule_count": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "unique_record_ids": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "unique_canonical_smiles": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "atom_feature_array_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adjacency_array_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "atom_mask_array_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "label_array_shapes": {
+      "checked": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "all_archived_arrays_finite": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "mapped_smiles_parse": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "atom_map_bijection_one_through_atom_count": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "mapped_reference_canonical_identity": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "canonical_smiles_id_sha256_prefix": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "every_binary_adjacency_entry_from_mapped_bonds": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "zero_adjacency_padding_rows_and_columns": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "atom_count_and_padding_mask": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "zero_atom_feature_padding": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "all_13_ordinary_atom_features_from_mapped_chemistry": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "all_5_query_features_match_recorded_atom_indices": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "four_endpoint_markers_unique": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "recorded_ring_atoms_match_aromatic_ring": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "target_attachment_is_recorded_ring_bond": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "fragment_membership_is_component_after_cutting_target_ring_bond": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "distance_label_from_independent_graph_shortest_path": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "position_label_from_independent_ring_shortest_path": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "spacer_lengths_match_both_queried_functional_root_depths": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "path_label_equals_ring_plus_both_spacer_depths": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "target_family_label_from_functional_root_chemistry": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "reconstructed_canonical_identities_all_unique": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "balanced_full_factorial_family_position_cells": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "maximum_atom_count_matches_padding_width": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "split_lists_contain_unique_in_bounds_indices": {
+      "checked": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    "global_partition_full_coverage": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "global_partition_pairwise_disjoint": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "global_partition_matches_independent_identity_hash": {
+      "checked": 3840,
+      "passed": 3840,
+      "failed": 0
+    },
+    "experience_a_excludes_all_fluoro_meta": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "experience_b_excludes_all_chloro_meta": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "both_pretraining_sets_exclude_all_validation_and_test": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "validation_excludes_both_combination_holdouts": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "ood_fluoro_meta_test_exactly_matches_global_test_cell": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "ood_chloro_meta_test_exactly_matches_global_test_cell": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "iid_test_excludes_both_ood_cells_and_covers_rest": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_pool_is_candidate_fluoro_meta": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_pool_unseen_by_a_pretraining": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_pool_seen_by_b_reference_pretraining": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_test_equals_ood_fluoro_meta": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_support_and_test_disjoint": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "probe_source_is_ortho_test_and_target_is_meta_test": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "probe_fit_and_test_molecular_identities_disjoint": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "matched_training_a_matches_shared_plus_deterministic_exclusive_subset": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "matched_training_b_matches_shared_plus_deterministic_exclusive_subset": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "effective_training_sample_budgets_equal": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "training_source_hash_matches_run_environment": {
+      "checked": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "all_audited_archive_inputs_unchanged_during_audit": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failures_first_30": [],
+  "archived_input_sha256": {
+    "molecules.jsonl": "3e0b4b484d7e94a9cae8323ff5d49295d9542afac0fc3da5feb77e76a1604dd6",
+    "graphs.npz": "7e7dd28d586864d0adaae857e5a938f59a97545392089e20c80c021e6b483a7f",
+    "splits.json": "2bb16cf057d38479912169d8b6e7de97188125e778910603469a11d04555a587",
+    "config.json": "0ec4c96516553bb826d22704e89814838ed3f3c9eea458bfd8e8381a7841ae24",
+    "audit.json": "0dd5ac068cd143e7629262e6b3892f7094dd57b283815de2d5d53ed18245451f"
+  },
+  "training_source_sha256_verification": {
+    "jcim\\__init__.py": {
+      "expected_at_run_start": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+      "observed_during_audit": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+    },
+    "jcim\\analysis.py": {
+      "expected_at_run_start": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+      "observed_during_audit": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+    },
+    "jcim\\data.py": {
+      "expected_at_run_start": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+      "observed_during_audit": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+    },
+    "jcim\\model.py": {
+      "expected_at_run_start": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+      "observed_during_audit": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+    },
+    "jcim\\report.py": {
+      "expected_at_run_start": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+      "observed_during_audit": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+    },
+    "jcim\\run.py": {
+      "expected_at_run_start": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+      "observed_during_audit": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+    },
+    "jcim\\verify.py": {
+      "expected_at_run_start": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+      "observed_during_audit": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+    }
+  },
+  "array_shapes_and_dtypes": {
+    "x": {
+      "shape": [
+        3840,
+        20,
+        18
+      ],
+      "dtype": "float32"
+    },
+    "adj": {
+      "shape": [
+        3840,
+        20,
+        20
+      ],
+      "dtype": "float32"
+    },
+    "mask": {
+      "shape": [
+        3840,
+        20
+      ],
+      "dtype": "float32"
+    },
+    "y_family": {
+      "shape": [
+        3840
+      ],
+      "dtype": "int64"
+    },
+    "y_position": {
+      "shape": [
+        3840
+      ],
+      "dtype": "int64"
+    },
+    "y_distance": {
+      "shape": [
+        3840
+      ],
+      "dtype": "int64"
+    }
+  },
+  "split_counts": {
+    "candidate_train": 2472,
+    "train_a": 2371,
+    "train_b": 2371,
+    "val": 335,
+    "iid_test": 906,
+    "ood_f_meta": 49,
+    "ood_cl_meta": 44,
+    "analysis": 999,
+    "adaptation_pool": 92,
+    "adaptation_test": 49,
+    "probe_source": 346,
+    "probe_target": 334,
+    "discarded_val_ood": 34
+  },
+  "training_matching": {
+    "shared_molecular_identities": 2279,
+    "exclusive_molecular_identities_per_experience": 92,
+    "dropped_from_experience_a": 9,
+    "dropped_from_experience_b": 0
+  },
+  "interpretation_notes": [
+    "The fluoro-meta adaptation support pool is unseen during experience A pretraining and seen during experience B pretraining; B is a seen-combination reference.",
+    "Atom-map references are audit-only metadata. Every archived atom feature was verified against ordinary chemistry or the five explicit query markers."
+  ],
+  "frozen_record_modified": false,
+  "audit_implementation_path": "maintenance/audit_data_archive.py"
+}

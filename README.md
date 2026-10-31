@@ -51,3 +51,11 @@ Cross-position family probes fit on ortho molecules and evaluate on distinct met
 Few-shot adaptation fits a fresh, fixed-regularization distance readout on a frozen encoder using 8, 24, or 64 labeled fluoro-meta molecules, with five nested support-set repeats. The support molecules and fixed test molecules never overlap. A has never seen those support molecules or the fluoro-meta combination during pretraining; B has seen the support pool and is a seen-combination reference. This measures readout sample efficiency, not full-model fine-tuning.
 
 The pilot can establish feasibility and expose confounds. It cannot establish that representation similarity causes transfer, or generalization to unrestricted chemical space.
+
+## First completed result
+
+The three-seed pilot is complete. All six trained models achieved 100% on all three original tasks in the shared test partition, including the held-out family-position cells. Raw input features and untrained encoders also reached 100% cross-position family readout, making that probe uninformative about what training added. Local cross-family position readout remained weak.
+
+With 64 fluoro-meta labels, a new distance readout on Experience A's frozen representations reached 75.6% +/- 5.6% accuracy across encoder seeds, compared with 24.1% +/- 5.1% for untrained encoders and 26.9% for raw features. This is a representation-readability result: the trained models' existing heads already achieved 100% with zero additional labels on the same test task. It does not establish a practical reduction in required adaptation labels or a causal role for local representation reuse.
+
+See the [frozen numerical report](experiments/pilot_v1/REPORT.md), [result figure](experiments/pilot_v1/figures/pilot_summary.png), and [independent interpretation](maintenance/BASELINE_AUDIT.md). The [independent data audit](maintenance/DATA_ARCHIVE_AUDIT.json) reconstructed all 3,840 molecules from archived mapped SMILES and found no graph, label, or identity-partition inconsistencies. The present tasks have reached a behavioral ceiling; harder compositional holdouts and less trivial local probes are needed to test the core hypothesis.

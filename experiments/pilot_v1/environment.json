@@ -1,0 +1,27 @@
+{
+  "started_utc": "2026-10-31T05:12:28.251041+00:00",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "device": "cuda",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "rdkit": "2026.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "cuda_runtime": "12.8",
+  "git_head_at_start": "d26990fdf6ba318942f98480a1172df1762009fe",
+  "source_sha256": {
+    "jcim\\__init__.py": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+    "jcim\\analysis.py": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+    "jcim\\data.py": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+    "jcim\\model.py": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+    "jcim\\report.py": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+    "jcim\\run.py": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+    "jcim\\verify.py": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+  },
+  "determinism": "Seeded CPU/CUDA operations; bitwise cross-device reproducibility not guaranteed.",
+  "parameter_count": 164183,
+  "finished_utc": "2026-10-31T05:15:01.636023+00:00"
+}
