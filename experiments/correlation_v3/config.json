@@ -1,0 +1,56 @@
+{
+  "experiment": "correlation_v3",
+  "split_seed": 20261030,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "hidden_dim": 64,
+  "layers": 8,
+  "epochs": 120,
+  "batch_size": 128,
+  "learning_rate": 0.0015,
+  "weight_decay": 0.0001,
+  "probe_alpha": 1.0,
+  "adaptation_shots": [
+    8,
+    32,
+    128
+  ],
+  "adaptation_repeats": 3,
+  "adaptation_steps": 80,
+  "adaptation_learning_rate": 0.0005,
+  "adaptation_batch_size": 64,
+  "adaptation_replay": false,
+  "device": "auto",
+  "cpu_threads": 4,
+  "geometry_examples": 512,
+  "source": "experiments/hard_v2",
+  "support_repeats": [
+    0,
+    1,
+    2
+  ],
+  "primary_repeat": 0,
+  "new_count": 32,
+  "old_count": 32,
+  "mechanism_steps": 80,
+  "evaluation_steps": [
+    0,
+    1,
+    5,
+    10,
+    20,
+    40,
+    80
+  ],
+  "diagnostic_examples": 128,
+  "correlation_rates": [
+    0.0,
+    0.01,
+    0.05,
+    0.2
+  ],
+  "correlation_train_count": 1386
+}

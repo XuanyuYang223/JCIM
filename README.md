@@ -114,3 +114,27 @@ All 36 final frozen-arm encoders are byte-identical to their original checkpoint
 The position-only predictor obtains 0% common-OOD accuracy and about 36-38% own-IID accuracy. Almost all original-model OOD errors fall within the label set supported at that position during pretraining, although agreement with one position-only majority prediction is much lower. This supports dependence on motif-position binding without explaining the model as a pure position-only classifier. All three oracle-local-input control seeds achieve 100% on every position and test split. The control supplies the complete target fragment and repeats its eight graph types across contexts; it establishes a local solution exists, rather than proving the original encoder uses it. Eight-class uniform chance is 12.5%; the earlier 37.1% random-encoder probe is an empirical control, with per-seed shuffled-label results retained separately.
 
 See the [readout/replay report](experiments/readout_replay_v3/REPORT.md), [adaptation trajectories](experiments/readout_replay_v3/figures/mechanism_summary.png), [diagnostic report](experiments/mechanism_diagnostics_v3/REPORT.md), [independent interpretation](maintenance/MECHANISM_V3_INTERPRETATION.md), and [independent readout/replay audit](maintenance/READOUT_REPLAY_V3_AUDIT.json). All prior experiment bytes and manifests are preserved.
+
+### Completed correlation intervention
+
+All 18 new pretraining runs (two experiences, three nonzero rates, three initialization seeds) completed their fixed 120 epochs. The six zero-rate states and representation archives are exact copies from hard-v2. Training size stays at 1,386 identities; 1%, 5%, and 20% replace 14, 69, and 277 old identities with same-motif counterexamples. Motif priors remain fixed. Counterexamples expose only motifs 0, 2, 4, and 6 at their reserved positions; motifs 1, 3, 5, and 7 remain excluded at their reserved positions at every rate.
+
+Directly exposed test combinations reach 92.3 +/- 5.3% for A and 96.8 +/- 5.2% for B at 1%, and 100% for every seed at 5% and 20%. Original own-IID accuracy stays at 100% throughout. Accuracy on the **protected combinations that never receive counterexamples** is much weaker:
+
+| Training identities replaced | A protected accuracy (%) | B protected accuracy (%) |
+| --- | --- | --- |
+| 0% | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| 1% | 9.9 +/- 12.8 | 4.7 +/- 8.2 |
+| 5% | 22.9 +/- 16.8 | 17.1 +/- 15.0 |
+| 20% | 35.4 +/- 30.0 | 8.9 +/- 4.4 |
+
+Values are means +/- sample SD across three seeds. At 20%, A's individual protected scores are 44.4%, 60.0%, and 2.0%; B's mean decreases from 5% to 20%. Counterexamples reliably teach the directly represented combinations but do not yield stable, monotonic reuse across other motif types. These are behavioral interventions under one predeclared even/odd motif partition; they neither locate the representation mechanism nor establish a universal correlation threshold. Each test subset contains four true classes, but models still predict all eight labels, so uniform chance remains 12.5%.
+
+The earlier readout recovery uses labels from the new combinations themselves. It demonstrates supervised access to useful frozen features, while this protected test asks for transfer to combinations that receive no such labels. Their different outcomes are consistent with context-sensitive information whose automatic reuse remains unreliable.
+
+See the [correlation report](experiments/correlation_v3/REPORT.md), [exposed/protected curves](experiments/correlation_v3/figures/correlation_summary.png), and [independent correlation audit](maintenance/CORRELATION_V3_AUDIT.json). The audit independently reconstructs training selections, test denominators, predictions-derived scores, seed panels, and mean/sample-SD summaries. Both v3 audit scripts can be rerun with a fresh output filename; they preserve the completed audit records.
+
+```powershell
+.\.venv\Scripts\python.exe maintenance\audit_mechanism_v3.py --record experiments\readout_replay_v3 --output maintenance\READOUT_REPLAY_V3_REAUDIT.json
+.\.venv\Scripts\python.exe maintenance\audit_correlation_v3.py --record experiments\correlation_v3 --output maintenance\CORRELATION_V3_REAUDIT.json
+```
