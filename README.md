@@ -59,3 +59,16 @@ The three-seed pilot is complete. All six trained models achieved 100% on all th
 With 64 fluoro-meta labels, a new distance readout on Experience A's frozen representations reached 75.6% +/- 5.6% accuracy across encoder seeds, compared with 24.1% +/- 5.1% for untrained encoders and 26.9% for raw features. This is a representation-readability result: the trained models' existing heads already achieved 100% with zero additional labels on the same test task. It does not establish a practical reduction in required adaptation labels or a causal role for local representation reuse.
 
 See the [frozen numerical report](experiments/pilot_v1/REPORT.md), [result figure](experiments/pilot_v1/figures/pilot_summary.png), and [independent interpretation](maintenance/BASELINE_AUDIT.md). The [independent data audit](maintenance/DATA_ARCHIVE_AUDIT.json) reconstructed all 3,840 molecules from archived mapped SMILES and found no graph, label, or identity-partition inconsistencies. The present tasks have reached a behavioral ceiling; harder compositional holdouts and less trivial local probes are needed to test the core hypothesis.
+
+## Harder experiment
+
+The [hard-v2 protocol](configs/HARD_V2_PROTOCOL.md) replaces elemental-family labels with eight equally composed connectivity motifs, adds aromatic nitrogen and a third distractor, and removes the oracle fragment mask. The 6,912-identity dataset reserves common motif-position combinations unseen by either training experience. Both experiences have 1,386 training identities with matched motif counts. Local readouts use a single marked attachment atom whose raw attributes are identical across motifs.
+
+Actual few-shot adaptation retains the original task heads and fine-tunes all model parameters on support identities excluded from both pretraining experiences. Both IID guard sets are measured alongside the common OOD set. Raw-root and random-encoder probes, matched initialization, three seeds, and factorial geometry comparisons remain part of the protocol.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m jcim.hard_run --config configs\hard_v2.json --output experiments\hard_v2
+.\.venv\Scripts\python.exe -m jcim.hard_verify experiments\hard_v2
+```
+
+The shorter `experiments/smoke_hard_v2` run checks the pipeline with two epochs and two adaptation updates; it is not the primary result. All experiment records retain exact bytes in Git so newline conversion cannot invalidate their archived checksums.
