@@ -1,0 +1,32 @@
+{
+  "records": {
+    "hard_v2": {
+      "path": "F:\\JCIM\\experiments\\hard_v2",
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "readout_replay_v3": {
+      "path": "F:\\JCIM\\experiments\\readout_replay_v3",
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "pilot_v1": {
+      "path": "F:\\JCIM\\experiments\\pilot_v1",
+      "manifest_sha256": "1cc95a6ec43c91c379ed5322b7631356fa637ea802db756c26b6802a8a1ff01b",
+      "files": 39
+    },
+    "mechanism_diagnostics_v3": {
+      "path": "F:\\JCIM\\experiments\\mechanism_diagnostics_v3",
+      "manifest_sha256": "2bea772ce613fcf2fe79f66326847de5cbb8e01ec62aa727a7fec4740fcad76a",
+      "files": 22
+    },
+    "correlation_v3": {
+      "path": "F:\\JCIM\\experiments\\correlation_v3",
+      "manifest_sha256": "4d0323dac89048dcc8d5f1c788e78e513412ccd8cb1b5acffd3c5d0c765e1e01",
+      "files": 77
+    }
+  },
+  "hard_source": "F:\\JCIM\\experiments\\hard_v2",
+  "mechanism_source": "F:\\JCIM\\experiments\\readout_replay_v3",
+  "support_sets_sha256": "70a3661021ba631ebd1358140783dac083e02753e18a19047625591d1377ceda"
+}

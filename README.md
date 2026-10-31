@@ -149,5 +149,81 @@ Direct probes fit balanced labels at one position and test the other positions w
 
 ```powershell
 .\.venv\Scripts\python.exe -u -m jcim.scale_run --config configs\scale_v4.json --output experiments\scale_v4
-.\.venv\Scripts\python.exe maintenance\audit_scale_v4.py --record experiments\scale_v4 --output maintenance\SCALE_V4_AUDIT.json
+$env:OPENBLAS_NUM_THREADS = "1"
+$env:MKL_NUM_THREADS = "1"
+.\.venv\Scripts\python.exe maintenance\audit_scale_v4.py --record experiments\scale_v4 --output maintenance\SCALE_V4_REAUDIT.json
 ```
+
+### Completed scale and matched-random result
+
+The primary run completed all nine original frozen encoders, three support draws,
+seven pooling readouts, and all nine depths. It archives 9,072 unique ridge fits,
+13,608 adaptation rows, and 40,824 directed-transfer rows. No model parameter was
+updated. The following tables use **balanced accuracy**, which differs from the
+ordinary accuracy emphasized in the v3 overview above.
+
+At the predeclared final depth 8, direct source-position transfer has the following
+results. Each seed first averages its three support draws and all six directions;
+entries are means +/- sample SD across the three encoder seeds. Source fits use
+256 balanced source-position labels and zero target-position readout labels.
+
+| Pooling scope | Pretrained A (%) | Pretrained B (%) | Frozen random (%) |
+| --- | --- | --- | --- |
+| Root, 64D | 20.3 +/- 2.5 | 25.7 +/- 7.2 | 35.9 +/- 2.4 |
+| Target, 64D | 69.5 +/- 16.4 | 70.3 +/- 13.1 | 99.98 +/- 0.04 |
+| Target + 1, 64D | 40.7 +/- 12.8 | 44.8 +/- 12.9 | 83.2 +/- 7.7 |
+| Target + 2, 64D | 25.6 +/- 3.8 | 25.9 +/- 3.4 | 63.9 +/- 12.6 |
+| Target + 3, 64D | 27.4 +/- 11.2 | 23.3 +/- 4.5 | 51.2 +/- 18.6 |
+| Whole mean, 64D | 27.3 +/- 6.3 | 33.1 +/- 3.0 | 80.7 +/- 16.2 |
+| Legacy graph/query, 448D | 19.5 +/- 4.1 | 19.8 +/- 2.5 | 57.3 +/- 7.9 |
+
+The all-depth profile adds a crucial qualification: **at depth 1, target pooling
+achieves exactly 100% in every trained/random seed, support draw, and transfer
+direction**, whereas depth 0 is at the 12.5% balanced reference. Its receptive
+union is only ten atoms: the nine target atoms and the adjacent ring atom.
+There is therefore an accessible shallow, distributed motif signal conditional
+on supplied target membership, already present in the random architecture.
+The final-layer failure cannot establish absence of usable information at all
+depths. Pretraining does not improve this already saturated shallow readout.
+Later-layer transfer generally weakens and is not monotonic with depth.
+
+Pretraining does improve some labeled refits. With the exact primary v3 support
+of 32 new and 32 old identities, the original frozen 448D graph/query features
+give the following matched comparison at depth 8:
+
+| Experience | Pretrained new / old (%) | Random new / old (%) | Paired new advantage (pp) |
+| --- | --- | --- | --- |
+| A | 93.2 +/- 2.6 / 94.7 +/- 4.3 | 77.9 +/- 5.0 / 78.6 +/- 2.8 | 15.2 +/- 3.3 |
+| B | 90.3 +/- 2.8 / 89.9 +/- 2.2 | 80.5 +/- 2.8 / 84.8 +/- 5.0 | 9.8 +/- 3.7 |
+
+After averaging all three support draws within seed, the new-test paired
+advantages remain 12.7 +/- 0.6 pp for A and 5.8 +/- 1.9 pp for B. Thus training
+helps this specific supervised recovery while failing to improve the
+source-only cross-position readout. The two protocols have different label
+budgets and fit distributions; their gap is not an isolated causal effect of
+target labels. Wider neighborhoods also change a fixed-width mean pool, so
+poorer scores do not prove that adding atoms destroys information.
+
+The spatial interpretation remains conditional. Target membership is supplied
+only to the diagnostic pooling operation. At depth 8, even root/target states
+can receive almost the entire molecule (full reach in 98.7% of saved identities);
+small pooling support alone is not proof of local input dependence. At depth 1,
+the known membership and small receptive union support the narrower statement
+of accessible local connectivity information among these eight known motifs.
+No unseen motif topology or automatic fragment discovery is tested.
+
+See the [frozen report](experiments/scale_v4/REPORT.md),
+[primary scale figure](experiments/scale_v4/figures/scale_primary.png),
+[all-depth paired contrasts](experiments/scale_v4/figures/scale_paired_layers.png),
+and [independent report review](maintenance/SCALE_V4_REPORT_REVIEW.md).
+The [matched-runtime independent audit](maintenance/SCALE_V4_SINGLE_THREAD_AUDIT.json)
+passes exact refits and all prediction-derived metrics. Its
+[runtime record](maintenance/SCALE_V4_AUDIT_ENVIRONMENT.json) preserves an initial
+default-BLAS failure on six effectively tied lower-depth decisions and the
+subsequent exact pass using the runner's single-thread BLAS setting.
+The audit introduces no prediction tolerance. Earlier records remain unchanged.
+An independent [continuity check](maintenance/SCALE_V4_NUMERICAL_CONTINUITY_WITH_SUPPORT.md)
+also confirms byte-identical support records, all 57,106,944 shared archived
+root/legacy feature coordinates, and exact agreement of all 216 matched v3/v4
+readout rows under each identical accuracy definition. The shift from ordinary
+to balanced accuracy in displayed tables is not a revision of earlier results.

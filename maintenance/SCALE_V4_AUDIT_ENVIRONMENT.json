@@ -1,0 +1,106 @@
+{
+  "recorded_utc": "2026-10-31T07:44:48.350735+00:00",
+  "status": "PASS_WITH_MATCHED_RUNTIME",
+  "auditor": {
+    "path": "maintenance/audit_scale_v4.py",
+    "sha256": "a261f3c2389bd073671c97baaacb4357eb57b438cd6a1f36fe640a88acb0cd84",
+    "source_commit": "59d9d1647e3fa1960e31a39b667122863e74ff46"
+  },
+  "record_manifest_sha256": "b84a3c9332384457ad6eec3ca6feb6a6531dc54c3b6d89274cd5d6fba5423fac",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy_version": "2.5.4",
+  "torch_version": "2.11.0+cu128",
+  "configured_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "unpinned_diagnostic_environment": {
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null
+  },
+  "command": "$env:OPENBLAS_NUM_THREADS = '1'\n$env:MKL_NUM_THREADS = '1'\n.venv\\Scripts\\python.exe maintenance\\audit_scale_v4.py --record experiments\\scale_v4 --output maintenance\\SCALE_V4_SINGLE_THREAD_AUDIT.json",
+  "audits": {
+    "initial_unpinned": {
+      "path": "maintenance/SCALE_V4_AUDIT.json",
+      "sha256": "ffb8611cc7e804ee2a5089d7d359e92f22d951d360c1c9cddd35573ae9c126ae",
+      "status": "FAIL"
+    },
+    "matched_single_thread": {
+      "path": "maintenance/SCALE_V4_SINGLE_THREAD_AUDIT.json",
+      "sha256": "7a5ce868b718155daa10492b1fa80dd681dac2cad6d80c2f691b31a9efacf331",
+      "status": "PASS"
+    }
+  },
+  "diagnosis": "The experiment runner sets OPENBLAS_NUM_THREADS=1 and MKL_NUM_THREADS=1 before importing NumPy. The first audit used the identical auditor with those variables unset. Five lower-layer-one root readouts, each with only two unique source vectors and tied class scores, changed six argmax labels under the different BLAS reduction order. Both the independent ridge implementation and the original fit function reproduced the discrepancy under unpinned runtime and matched all five exactly with the declared single-thread runtime. All primary-layer-eight refits already matched in the unpinned audit.",
+  "mismatch_details": [
+    {
+      "prediction_key": "readout_000111",
+      "model": "a_seed0",
+      "layer": 1,
+      "scale": "root",
+      "repeat": 0,
+      "source_position": 0,
+      "disagreeing_labels_under_unpinned_BLAS": 2,
+      "maximum_top_score_difference": 1.1102230246251565e-16,
+      "unique_source_feature_vectors": 2,
+      "disagreeing_labels_with_matched_single_thread_BLAS": 0
+    },
+    {
+      "prediction_key": "readout_000112",
+      "model": "a_seed0",
+      "layer": 1,
+      "scale": "root",
+      "repeat": 0,
+      "source_position": 1,
+      "disagreeing_labels_under_unpinned_BLAS": 1,
+      "maximum_top_score_difference": 0.0,
+      "unique_source_feature_vectors": 2,
+      "disagreeing_labels_with_matched_single_thread_BLAS": 0
+    },
+    {
+      "prediction_key": "readout_001056",
+      "model": "b_seed0",
+      "layer": 1,
+      "scale": "root",
+      "repeat": 0,
+      "source_position": 0,
+      "disagreeing_labels_under_unpinned_BLAS": 1,
+      "maximum_top_score_difference": 0.0,
+      "unique_source_feature_vectors": 2,
+      "disagreeing_labels_with_matched_single_thread_BLAS": 0
+    },
+    {
+      "prediction_key": "readout_002022",
+      "model": "random_seed0",
+      "layer": 1,
+      "scale": "root",
+      "repeat": 0,
+      "source_position": 0,
+      "disagreeing_labels_under_unpinned_BLAS": 1,
+      "maximum_top_score_difference": 0.0,
+      "unique_source_feature_vectors": 2,
+      "disagreeing_labels_with_matched_single_thread_BLAS": 0
+    },
+    {
+      "prediction_key": "readout_002023",
+      "model": "random_seed0",
+      "layer": 1,
+      "scale": "root",
+      "repeat": 0,
+      "source_position": 1,
+      "disagreeing_labels_under_unpinned_BLAS": 1,
+      "maximum_top_score_difference": 2.7755575615628914e-17,
+      "unique_source_feature_vectors": 2,
+      "disagreeing_labels_with_matched_single_thread_BLAS": 0
+    }
+  ],
+  "total_affected_lower_layer_labels": 6,
+  "independent_refits": 1904,
+  "primary_layer_eight_refits": 1008,
+  "lower_depth_sentinel_refits": 896,
+  "strict_prediction_equality_preserved": true,
+  "numerical_tolerance_added": false,
+  "scientific_records_or_source_modified": false,
+  "limits": "Runtime pinning establishes exact reproduction of the declared numerical pipeline. Argmax among algebraically tied lower-layer scores is not evidence that the underlying two-vector representation distinguishes those tied motif classes."
+}

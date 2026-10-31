@@ -1,0 +1,831 @@
+{
+  "status": "PASS",
+  "explicit_smoke_subset": false,
+  "audited_utc": "2026-10-31T07:43:36.887464+00:00",
+  "auditor_sha256": "a261f3c2389bd073671c97baaacb4357eb57b438cd6a1f36fe640a88acb0cd84",
+  "record": "F:\\JCIM\\experiments\\scale_v4",
+  "source": "F:\\JCIM\\experiments\\hard_v2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "manifests": {
+    "record": {
+      "manifest_sha256": "b84a3c9332384457ad6eec3ca6feb6a6531dc54c3b6d89274cd5d6fba5423fac",
+      "files": 30
+    },
+    "hard_v2": {
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "readout_replay_v3": {
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "pilot_v1": {
+      "manifest_sha256": "1cc95a6ec43c91c379ed5322b7631356fa637ea802db756c26b6802a8a1ff01b",
+      "files": 39
+    },
+    "mechanism_diagnostics_v3": {
+      "manifest_sha256": "2bea772ce613fcf2fe79f66326847de5cbb8e01ec62aa727a7fec4740fcad76a",
+      "files": 22
+    },
+    "correlation_v3": {
+      "manifest_sha256": "4d0323dac89048dcc8d5f1c788e78e513412ccd8cb1b5acffd3c5d0c765e1e01",
+      "files": 77
+    }
+  },
+  "executed_source_provenance": {
+    "recorded_full_commit": "59d9d1647e3fa1960e31a39b667122863e74ff46",
+    "commit_verified": true,
+    "files": {
+      "jcim/__init__.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+        "current_worktree_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+      },
+      "jcim/analysis.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+        "current_worktree_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+      },
+      "jcim/correlation.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835",
+        "current_worktree_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835"
+      },
+      "jcim/data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+        "current_worktree_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+      },
+      "jcim/hard_data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+        "current_worktree_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85"
+      },
+      "jcim/hard_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+        "current_worktree_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1"
+      },
+      "jcim/hard_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+        "current_worktree_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a"
+      },
+      "jcim/hard_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+        "current_worktree_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff"
+      },
+      "jcim/hard_verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+        "current_worktree_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90"
+      },
+      "jcim/mechanism.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5",
+        "current_worktree_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5"
+      },
+      "jcim/mechanism_diagnostics.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d",
+        "current_worktree_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d"
+      },
+      "jcim/mechanism_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93",
+        "current_worktree_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93"
+      },
+      "jcim/model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+        "current_worktree_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+      },
+      "jcim/report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+        "current_worktree_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+      },
+      "jcim/run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+        "current_worktree_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+      },
+      "jcim/scale_features.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03",
+        "current_worktree_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03"
+      },
+      "jcim/scale_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8",
+        "current_worktree_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8"
+      },
+      "jcim/scale_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0",
+        "current_worktree_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0"
+      },
+      "jcim/verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+        "current_worktree_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+      }
+    },
+    "policy": "Exact current bytes or exact blob bytes at the full immutable commit recorded at experiment start; no other historical revision is accepted."
+  },
+  "source_checkpoints": {
+    "a_seed0": {
+      "checkpoint_sha256": "3103f4c442d6df9c92238704919643a256974692b454ab67ce84b44fe646a943",
+      "encoder_sha256": "40b8863b3e54eb70539bb67510b92dfab270b0f1714655f9507be932bb0d90b7",
+      "full_state_sha256": "252c630869708ca826f089e71c0462767851c320e27e3baa1da60a49a86eaeb3"
+    },
+    "a_seed1": {
+      "checkpoint_sha256": "fffe108e39769bd3511b31e78a6e01bf6ef1223aa2f4b3e9876f6c80bb095b3c",
+      "encoder_sha256": "ffa6671c884c2aca403b934e53d6b0d9655be870c8fc9fe3134e959fde02b778",
+      "full_state_sha256": "bbd85ce6b8b875a3dae5b7c22bd50a5ca552746af4eb31b86c29d4cabba6318d"
+    },
+    "a_seed2": {
+      "checkpoint_sha256": "edc7bde865963bff3a1463fed95245ee590ee77141dc2b0c6a146a2cf57dd116",
+      "encoder_sha256": "948f348dc69fd0593c88c2a1187da8a7961b38258aedd52f6ba9a69fc9b3a9c0",
+      "full_state_sha256": "a28c354958971e35fe0e73a13f2cfd54baaeff631903d567ec5ea0dd8950653b"
+    },
+    "b_seed0": {
+      "checkpoint_sha256": "8b5c38cba2a523b9488f245282bae035b370af4cfa68238812bec1f2405614de",
+      "encoder_sha256": "36487f627f2c7eb81f44caa32648f5ec3ba202ecb776291060ad433e9f707c13",
+      "full_state_sha256": "31ec60db1cf930a506fc7319ac38c8778c69314c8f45dfe6c40c0b54b3b5b165"
+    },
+    "b_seed1": {
+      "checkpoint_sha256": "a0972c836777514427d26632cfd60faa7ef030520a41042d8f1d55a61d88a073",
+      "encoder_sha256": "f4a6d127326d916804fe341b5b8649b9bdd087013f423ebf8640139d2a272a2c",
+      "full_state_sha256": "08c6e96b95b2d9f91e5c93cea4270130b7580863c89316ee75a6597a18878f1b"
+    },
+    "b_seed2": {
+      "checkpoint_sha256": "c9475adbc5ac29c000382f144fabb13e38edc835447c452a4c569f179a75dcde",
+      "encoder_sha256": "f1cfa71d092ed2a90e3d710ff90003685f39bbf39d16240840ebad9f619d5c7f",
+      "full_state_sha256": "eab6933b8f87c080e834056774eb702ee6970e51a460801eba4b1fd9ff55ca1f"
+    },
+    "random_seed0": {
+      "checkpoint_sha256": "72173d3ba955062a1dab64aa322e660746223c722f0e9667c162d0796f6ec0e7",
+      "encoder_sha256": "ad86800b7d9d314545c8942b763d1602db76b5c3a3e346497d0ce1f58831d19e",
+      "full_state_sha256": "192d3c6f4b023ec2df464529333d6c7df6bacb200434efc0444c68452d800307"
+    },
+    "random_seed1": {
+      "checkpoint_sha256": "843fe0437ca884616ddea829fd9ed68faf0104b620ed16dc4d4d98726c63e3a2",
+      "encoder_sha256": "aba667a69478c00f969620fa6d0b8fcf2f56abec875da024c2d07d2fb4329116",
+      "full_state_sha256": "7b16e42722fd5f977cb3e262166bc53309f7cc54b07bfd28da05beb8923c3c51"
+    },
+    "random_seed2": {
+      "checkpoint_sha256": "cabc4ae2bda5d0af4535be38277b739ae57ad0898bac9f5fa66318486a738a41",
+      "encoder_sha256": "27b3e448b6143a9ec4aa90dfe7d0c2cdccd1dc5fa7afdc70cad135a451a80e3b",
+      "full_state_sha256": "a37a138db87ebb3db990adf4702162dd5d62e1d11df3cbabe47d10ddee4eae36"
+    }
+  },
+  "method": "Independent CPU-only source and record hashes, exact support identities, BFS masks/receptive counts, sampled checkpoint-tensor forward features, all stored prediction metrics, selected full ridge refits, and all nested/paired seed summaries; no jcim imports and no training.",
+  "limits": "Tensor-forward validation uses four deterministic molecule sentinels per encoder. Full ridge recomputation covers all layer-eight fits plus seed-zero/repeat-zero fits at every lower layer; other stored predictions have all metrics recomputed but not all coefficients reconstructed. Pooling scopes remain full-input receptive fields, and oracle atom membership does not test localization.",
+  "counts": {
+    "feature_molecules": 1649,
+    "encoders": 9,
+    "adaptation_rows": 13608,
+    "direct_rows": 40824,
+    "prediction_vectors": 9072,
+    "ridge_refits": {
+      "adaptation_lower_layer_sentinel": 392,
+      "adaptation_primary_layer": 441,
+      "direct_lower_layer_sentinel": 504,
+      "direct_primary_layer": 567
+    }
+  },
+  "checks": {
+    "predeclared_matched_configuration_or_explicit_smoke_subset": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "record_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "record_every_manifest_file_matches": {
+      "passed": 30,
+      "failed": 0,
+      "examples": []
+    },
+    "record_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_hard_v2_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_hard_v2_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "source_hard_v2_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "every_prior_record_manifest_and_file_count_unchanged": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "source_readout_replay_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_readout_replay_v3_every_manifest_file_matches": {
+      "passed": 106,
+      "failed": 0,
+      "examples": []
+    },
+    "source_readout_replay_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pilot_v1_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pilot_v1_every_manifest_file_matches": {
+      "passed": 39,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pilot_v1_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_mechanism_diagnostics_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_mechanism_diagnostics_v3_every_manifest_file_matches": {
+      "passed": 22,
+      "failed": 0,
+      "examples": []
+    },
+    "source_mechanism_diagnostics_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_correlation_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_correlation_v3_every_manifest_file_matches": {
+      "passed": 77,
+      "failed": 0,
+      "examples": []
+    },
+    "source_correlation_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_revision_is_full_immutable_commit": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_files_match_recorded_snapshot": {
+      "passed": 19,
+      "failed": 0,
+      "examples": []
+    },
+    "adaptation_support_file_is_exact_v3_copy": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_molecular_IDs_unique": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "support_sets_unique_rows": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "six_fixed_support_sets": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "support_unique_32_new_32_old": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_and_old_support_IDs_disjoint": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "all_support_IDs_known": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_IDs_exactly_archived_32_shot_support": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "same_new_IDs_across_experiences": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "new_support_in_reserved_adaptation_pool": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "old_support_in_own_pretraining_set": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "old_support_exact_fixed_sampling_protocol": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "support_excluded_from_all_evaluation_IDs": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "support_excluded_from_all_evaluation_canonical_SMILES": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_unique_rows": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_complete_three_draws_three_source_positions": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_has_256_unique_source_position_IDs": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_32_per_each_of_eight_classes": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_IDs_match_indices": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_exact_predeclared_sampling_rule": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "prediction_analysis_order_is_exact_original_test_order": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "one_identity_safe_feature_union_covers_exactly_test_and_supports": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "six_equal_width_masks_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "pool_masks_boolean_and_correct_shape": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "locality_unique_rows": {
+      "passed": 103887,
+      "failed": 0,
+      "examples": []
+    },
+    "locality_rows_cover_every_molecule_region_depth": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_pool_masks_match_independent_BFS": {
+      "passed": 9894,
+      "failed": 0,
+      "examples": []
+    },
+    "all_locality_counts_recomputed_independently": {
+      "passed": 103887,
+      "failed": 0,
+      "examples": []
+    },
+    "feature_archives_have_exact_keys": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "feature_rows_follow_one_shared_identity_order": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "all_features_finite_float32_declared_dimensions": {
+      "passed": 63,
+      "failed": 0,
+      "examples": []
+    },
+    "sampled_CPU_tensor_forward_reproduces_all_scales_and_layers": {
+      "passed": 567,
+      "failed": 0,
+      "examples": []
+    },
+    "whole_graph_mean_agrees_with_legacy_first_block": {
+      "passed": 81,
+      "failed": 0,
+      "examples": []
+    },
+    "layer_zero_root_has_one_constant_vector": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "layer_zero_target_bag_has_one_constant_vector": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "all_encoder_states_and_input_checkpoint_hashes_recorded": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_encoder_before_after_match_original_checkpoint": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "feature_shape_metadata_matches_actual_arrays": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "constant_controls_unique_rows": {
+      "passed": 18,
+      "failed": 0,
+      "examples": []
+    },
+    "constant_controls_cover_every_encoder_root_and_target": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_layer_zero_constant_control_statistics_recomputed": {
+      "passed": 18,
+      "failed": 0,
+      "examples": []
+    },
+    "adaptation_unique_rows": {
+      "passed": 15120,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_transfer_unique_rows": {
+      "passed": 45360,
+      "failed": 0,
+      "examples": []
+    },
+    "adaptation_complete_fixed_factorial_grid": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_complete_fixed_factorial_grid": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "row_metadata_matches_model_feature_dimensions_and_budget": {
+      "passed": 54432,
+      "failed": 0,
+      "examples": []
+    },
+    "every_prediction_metric_recomputed": {
+      "passed": 54432,
+      "failed": 0,
+      "examples": []
+    },
+    "prediction_archive_covers_exactly_declared_readouts": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "each_fit_evaluated_on_all_fixed_test_splits": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "shared_prediction_keys_do_not_merge_distinct_logical_fits": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "identical_logical_fits_are_cached_once": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "fit_records_unique_rows": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "fit_metadata_covers_all_unique_prediction_arrays": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_fit_ID_prediction_hashes_and_classes_recomputed": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "random_source_only_predictions_identical_across_experience_labels": {
+      "passed": 10206,
+      "failed": 0,
+      "examples": []
+    },
+    "independently_recomputed_ridge_predictions_exactly_match": {
+      "passed": 1904,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_measurements_have_unique_matched_keys": {
+      "passed": 54432,
+      "failed": 0,
+      "examples": []
+    },
+    "trained_random_measurements_have_identical_fit_test_panel": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_fits_have_same_label_budget_and_test_count": {
+      "passed": 27216,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_scope_and_uniform_chance_recorded": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "report_counts_and_pipeline_only_status_match_executed_design": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "adaptation_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "adaptation_correct_seed_unit_mean_sample_SD": {
+      "passed": 3024,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_adaptation_unique_rows": {
+      "passed": 1512,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_adaptation_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_adaptation_correct_seed_unit_mean_sample_SD": {
+      "passed": 3024,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_transfer_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_transfer_correct_seed_unit_mean_sample_SD": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_transfer_unique_rows": {
+      "passed": 4536,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_transfer_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_transfer_correct_seed_unit_mean_sample_SD": {
+      "passed": 9072,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_direction_average_unique_rows": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_direction_average_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_direction_average_correct_seed_unit_mean_sample_SD": {
+      "passed": 1512,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_direction_average_unique_rows": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_direction_average_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_direct_direction_average_correct_seed_unit_mean_sample_SD": {
+      "passed": 1512,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_adaptation_unique_rows": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_adaptation_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_adaptation_correct_seed_unit_mean_sample_SD": {
+      "passed": 1512,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_adaptation_unique_rows": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_adaptation_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_adaptation_correct_seed_unit_mean_sample_SD": {
+      "passed": 1512,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_transfer_unique_rows": {
+      "passed": 2268,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_transfer_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_transfer_correct_seed_unit_mean_sample_SD": {
+      "passed": 4536,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_transfer_unique_rows": {
+      "passed": 2268,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_transfer_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_transfer_correct_seed_unit_mean_sample_SD": {
+      "passed": 4536,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_direction_average_unique_rows": {
+      "passed": 378,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_direction_average_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_direct_direction_average_correct_seed_unit_mean_sample_SD": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_direction_average_unique_rows": {
+      "passed": 378,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_direction_average_all_summary_groups_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_paired_direct_direction_average_correct_seed_unit_mean_sample_SD": {
+      "passed": 756,
+      "failed": 0,
+      "examples": []
+    },
+    "seed_metrics.csv_unique_rows": {
+      "passed": 40824,
+      "failed": 0,
+      "examples": []
+    },
+    "seed_metrics.csv_complete_independent_seed_panel": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "seed_metrics.csv_means_and_nested_counts_recomputed": {
+      "passed": 40824,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_deltas.csv_unique_rows": {
+      "passed": 20412,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_deltas.csv_complete_independent_seed_panel": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_deltas.csv_means_and_nested_counts_recomputed": {
+      "passed": 20412,
+      "failed": 0,
+      "examples": []
+    },
+    "locality_summary_unique_rows": {
+      "passed": 63,
+      "failed": 0,
+      "examples": []
+    },
+    "locality_summary_covers_every_scope_and_depth": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "locality_summary_counts_fractions_recomputed": {
+      "passed": 63,
+      "failed": 0,
+      "examples": []
+    }
+  }
+}
