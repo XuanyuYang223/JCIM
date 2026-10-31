@@ -80,3 +80,17 @@ Across three seeds, both experiences reached 100% accuracy on all original tasks
 With 32 new labeled molecules, full-model adaptation raised common OOD motif accuracy to 91.1% for A and 95.3% for B, versus 79.1% from random initialization. Their own-IID motif accuracies fell from 100% to 70.3% and 52.7%. With 128 new labels, both reached 100% OOD motif accuracy while retaining only 62.3% and 37.9% own-IID motif accuracy. OOD adaptation improves performance but does not preserve the old motif-position mappings.
 
 See the [frozen hard-v2 report](experiments/hard_v2/REPORT.md), [nine-panel result figure](experiments/hard_v2/figures/hard_summary.png), [motif structures](experiments/hard_v2/figures/motif_grid.png), [independent interpretation](maintenance/HARD_V2_INTERPRETATION.md), and [independent archive audit](maintenance/HARD_V2_DATA_AUDIT.json). This deliberately correlated training design reveals a compositional-generalization failure; it does not establish that all small molecular models or more balanced training regimes fail in the same way.
+
+## Readout, replay, and correlation mechanisms
+
+The [v3 protocol](configs/MECHANISM_V3_PROTOCOL.md) tests whether a changed readout is sufficient, where adaptation changes behavior, and whether counterexamples transfer to combinations that never receive direct labels. It preserves all prior archives and uses the existing hard-v2 molecular identities and model checkpoints.
+
+The first diagnostics fit an explicit position-only predictor and train a local-subgraph positive control. The five-arm intervention fixes the same 32 new labels and, where applicable, 32 old labels: inherited heads with frozen encoders, full-model adaptation, both versions with replay, and random initialization with replay. The primary sample is fixed across all seeds and arms; two additional archived samples are supplemental checks. New-versus-old performance is measured throughout adaptation, with crossed encoder/head states and fresh frozen-feature ridge diagnostics at the end.
+
+The subsequent correlation experiment replaces 0%, 1%, 5%, or 20% of a fixed-size training set with counterexamples from four motif types. Four other motif-position combinations remain completely excluded. Direct learning of exposed combinations and generalization to protected combinations are reported separately.
+
+```powershell
+.\.venv\Scripts\python.exe -m jcim.mechanism_diagnostics --source experiments\hard_v2 --output experiments\mechanism_diagnostics_v3
+.\.venv\Scripts\python.exe -u -m jcim.mechanism --config configs\mechanism_v3.json --source experiments\hard_v2 --output experiments\readout_replay_v3
+.\.venv\Scripts\python.exe -u -m jcim.correlation --config configs\mechanism_v3.json --source experiments\hard_v2 --output experiments\correlation_v3
+```
