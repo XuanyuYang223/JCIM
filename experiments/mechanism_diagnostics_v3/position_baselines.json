@@ -1,0 +1,718 @@
+{
+  "a": {
+    "class_counts_by_position": [
+      [
+        176,
+        0,
+        0,
+        170,
+        0,
+        0,
+        167,
+        0
+      ],
+      [
+        0,
+        0,
+        177,
+        0,
+        0,
+        178,
+        0,
+        0
+      ],
+      [
+        0,
+        169,
+        0,
+        0,
+        169,
+        0,
+        0,
+        180
+      ]
+    ],
+    "map_labels_by_position": [
+      0,
+      5,
+      7
+    ],
+    "supported_labels_by_position": [
+      [
+        0,
+        3,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        4,
+        7
+      ]
+    ],
+    "tie_break": "Smallest motif label among maximum empirical counts.",
+    "balanced_accuracy_upper_bound": 0.375,
+    "rows": [
+      {
+        "split": "iid_a",
+        "n": 462,
+        "accuracy": 0.3593073593073593,
+        "balanced_accuracy": 0.375,
+        "true_label_training_supported_fraction": 1.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      },
+      {
+        "split": "iid_b",
+        "n": 472,
+        "accuracy": 0.0,
+        "balanced_accuracy": 0.0,
+        "true_label_training_supported_fraction": 0.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      },
+      {
+        "split": "ood_common",
+        "n": 443,
+        "accuracy": 0.0,
+        "balanced_accuracy": 0.0,
+        "true_label_training_supported_fraction": 0.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      }
+    ],
+    "agreements": [
+      {
+        "model": "a_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3593073593073593,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "a_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3593073593073593,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "a_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3593073593073593,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 462,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "b_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.06277056277056277,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.06277056277056277,
+        "n_errors": 433,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "b_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 462,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "random_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.13203463203463203,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3939393939393939,
+        "n_errors": 401,
+        "error_training_supported_fraction": 0.30174563591022446
+      },
+      {
+        "model": "random_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.11471861471861472,
+        "position_map_agreement": 0.22077922077922077,
+        "prediction_training_supported_fraction": 0.22077922077922077,
+        "n_errors": 409,
+        "error_training_supported_fraction": 0.1198044009779951
+      },
+      {
+        "model": "random_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.12987012987012986,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3852813852813853,
+        "n_errors": 402,
+        "error_training_supported_fraction": 0.2935323383084577
+      },
+      {
+        "model": "a_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.2627118644067797,
+        "prediction_training_supported_fraction": 0.9978813559322034,
+        "n_errors": 472,
+        "error_training_supported_fraction": 0.9978813559322034
+      },
+      {
+        "model": "a_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.2521186440677966,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 472,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "a_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.014830508474576272,
+        "position_map_agreement": 0.2944915254237288,
+        "prediction_training_supported_fraction": 0.9851694915254238,
+        "n_errors": 465,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "b_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "random_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1228813559322034,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.2478813559322034,
+        "n_errors": 414,
+        "error_training_supported_fraction": 0.2826086956521739
+      },
+      {
+        "model": "random_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1271186440677966,
+        "position_map_agreement": 0.3834745762711864,
+        "prediction_training_supported_fraction": 0.3834745762711864,
+        "n_errors": 412,
+        "error_training_supported_fraction": 0.4393203883495146
+      },
+      {
+        "model": "random_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1228813559322034,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3686440677966102,
+        "n_errors": 414,
+        "error_training_supported_fraction": 0.42028985507246375
+      },
+      {
+        "model": "a_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.5169300225733634,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "a_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.3905191873589165,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "a_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.3860045146726862,
+        "prediction_training_supported_fraction": 0.9977426636568849,
+        "n_errors": 443,
+        "error_training_supported_fraction": 0.9977426636568849
+      },
+      {
+        "model": "b_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "b_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.12415349887133183,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 388,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "b_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.002257336343115124,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 442,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "random_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.14221218961625282,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.37697516930022573,
+        "n_errors": 380,
+        "error_training_supported_fraction": 0.4394736842105263
+      },
+      {
+        "model": "random_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.11060948081264109,
+        "position_map_agreement": 0.38826185101580135,
+        "prediction_training_supported_fraction": 0.38826185101580135,
+        "n_errors": 394,
+        "error_training_supported_fraction": 0.4365482233502538
+      },
+      {
+        "model": "random_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.10609480812641084,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.23476297968397292,
+        "n_errors": 396,
+        "error_training_supported_fraction": 0.26262626262626265
+      }
+    ]
+  },
+  "b": {
+    "class_counts_by_position": [
+      [
+        0,
+        169,
+        0,
+        0,
+        169,
+        0,
+        0,
+        180
+      ],
+      [
+        176,
+        0,
+        0,
+        170,
+        0,
+        0,
+        167,
+        0
+      ],
+      [
+        0,
+        0,
+        177,
+        0,
+        0,
+        178,
+        0,
+        0
+      ]
+    ],
+    "map_labels_by_position": [
+      7,
+      0,
+      5
+    ],
+    "supported_labels_by_position": [
+      [
+        1,
+        4,
+        7
+      ],
+      [
+        0,
+        3,
+        6
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "tie_break": "Smallest motif label among maximum empirical counts.",
+    "balanced_accuracy_upper_bound": 0.375,
+    "rows": [
+      {
+        "split": "iid_a",
+        "n": 462,
+        "accuracy": 0.0,
+        "balanced_accuracy": 0.0,
+        "true_label_training_supported_fraction": 0.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      },
+      {
+        "split": "iid_b",
+        "n": 472,
+        "accuracy": 0.3792372881355932,
+        "balanced_accuracy": 0.375,
+        "true_label_training_supported_fraction": 1.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      },
+      {
+        "split": "ood_common",
+        "n": 443,
+        "accuracy": 0.0,
+        "balanced_accuracy": 0.0,
+        "true_label_training_supported_fraction": 0.0,
+        "n_classes": 8,
+        "uniform_chance": 0.125
+      }
+    ],
+    "agreements": [
+      {
+        "model": "a_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "a_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "a_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.38095238095238093,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 462,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "b_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.06277056277056277,
+        "position_map_agreement": 0.3181818181818182,
+        "prediction_training_supported_fraction": 0.8766233766233766,
+        "n_errors": 433,
+        "error_training_supported_fraction": 0.9353348729792148
+      },
+      {
+        "model": "b_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.44155844155844154,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 462,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "random_seed0",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.13203463203463203,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3852813852813853,
+        "n_errors": 401,
+        "error_training_supported_fraction": 0.44389027431421446
+      },
+      {
+        "model": "random_seed1",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.11471861471861472,
+        "position_map_agreement": 0.3939393939393939,
+        "prediction_training_supported_fraction": 0.3939393939393939,
+        "n_errors": 409,
+        "error_training_supported_fraction": 0.4449877750611247
+      },
+      {
+        "model": "random_seed2",
+        "split": "iid_a",
+        "n": 462,
+        "model_accuracy": 0.12987012987012986,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.22077922077922077,
+        "n_errors": 402,
+        "error_training_supported_fraction": 0.2537313432835821
+      },
+      {
+        "model": "a_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 472,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "a_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 472,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "a_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.014830508474576272,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.014830508474576272,
+        "n_errors": 465,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "b_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3792372881355932,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3792372881355932,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "b_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 1.0,
+        "position_map_agreement": 0.3792372881355932,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 0,
+        "error_training_supported_fraction": null
+      },
+      {
+        "model": "random_seed0",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1228813559322034,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3686440677966102,
+        "n_errors": 414,
+        "error_training_supported_fraction": 0.28019323671497587
+      },
+      {
+        "model": "random_seed1",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1271186440677966,
+        "position_map_agreement": 0.2478813559322034,
+        "prediction_training_supported_fraction": 0.2478813559322034,
+        "n_errors": 412,
+        "error_training_supported_fraction": 0.1383495145631068
+      },
+      {
+        "model": "random_seed2",
+        "split": "iid_b",
+        "n": 472,
+        "model_accuracy": 0.1228813559322034,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.3834745762711864,
+        "n_errors": 414,
+        "error_training_supported_fraction": 0.2971014492753623
+      },
+      {
+        "model": "a_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "a_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 0.0
+      },
+      {
+        "model": "a_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.002257336343115124,
+        "n_errors": 443,
+        "error_training_supported_fraction": 0.002257336343115124
+      },
+      {
+        "model": "b_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.0,
+        "position_map_agreement": 0.23024830699774265,
+        "prediction_training_supported_fraction": 1.0,
+        "n_errors": 443,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "b_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.12415349887133183,
+        "position_map_agreement": 0.23024830699774265,
+        "prediction_training_supported_fraction": 0.8758465011286681,
+        "n_errors": 388,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "b_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.002257336343115124,
+        "position_map_agreement": 0.3544018058690745,
+        "prediction_training_supported_fraction": 0.9977426636568849,
+        "n_errors": 442,
+        "error_training_supported_fraction": 1.0
+      },
+      {
+        "model": "random_seed0",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.14221218961625282,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.23476297968397292,
+        "n_errors": 380,
+        "error_training_supported_fraction": 0.2736842105263158
+      },
+      {
+        "model": "random_seed1",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.11060948081264109,
+        "position_map_agreement": 0.37697516930022573,
+        "prediction_training_supported_fraction": 0.37697516930022573,
+        "n_errors": 394,
+        "error_training_supported_fraction": 0.42385786802030456
+      },
+      {
+        "model": "random_seed2",
+        "split": "ood_common",
+        "n": 443,
+        "model_accuracy": 0.10609480812641084,
+        "position_map_agreement": 0.0,
+        "prediction_training_supported_fraction": 0.38826185101580135,
+        "n_errors": 396,
+        "error_training_supported_fraction": 0.43434343434343436
+      }
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "position_baselines": [
+    {
+      "curriculum": "a",
+      "split": "iid_a",
+      "n": 462,
+      "accuracy": 0.3593073593073593,
+      "balanced_accuracy": 0.375,
+      "true_label_training_supported_fraction": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "curriculum": "a",
+      "split": "iid_b",
+      "n": 472,
+      "accuracy": 0.0,
+      "balanced_accuracy": 0.0,
+      "true_label_training_supported_fraction": 0.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "curriculum": "a",
+      "split": "ood_common",
+      "n": 443,
+      "accuracy": 0.0,
+      "balanced_accuracy": 0.0,
+      "true_label_training_supported_fraction": 0.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "curriculum": "b",
+      "split": "iid_a",
+      "n": 462,
+      "accuracy": 0.0,
+      "balanced_accuracy": 0.0,
+      "true_label_training_supported_fraction": 0.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "curriculum": "b",
+      "split": "iid_b",
+      "n": 472,
+      "accuracy": 0.3792372881355932,
+      "balanced_accuracy": 0.375,
+      "true_label_training_supported_fraction": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "curriculum": "b",
+      "split": "ood_common",
+      "n": 443,
+      "accuracy": 0.0,
+      "balanced_accuracy": 0.0,
+      "true_label_training_supported_fraction": 0.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    }
+  ],
+  "local_final": [
+    {
+      "model": "local_a_seed0",
+      "seed": 0,
+      "train_curriculum": "a",
+      "split": "iid_a",
+      "position": -1,
+      "n": 462,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed0",
+      "seed": 0,
+      "train_curriculum": "a",
+      "split": "iid_b",
+      "position": -1,
+      "n": 472,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed0",
+      "seed": 0,
+      "train_curriculum": "a",
+      "split": "ood_common",
+      "position": -1,
+      "n": 443,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed1",
+      "seed": 1,
+      "train_curriculum": "a",
+      "split": "iid_a",
+      "position": -1,
+      "n": 462,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed1",
+      "seed": 1,
+      "train_curriculum": "a",
+      "split": "iid_b",
+      "position": -1,
+      "n": 472,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed1",
+      "seed": 1,
+      "train_curriculum": "a",
+      "split": "ood_common",
+      "position": -1,
+      "n": 443,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed2",
+      "seed": 2,
+      "train_curriculum": "a",
+      "split": "iid_a",
+      "position": -1,
+      "n": 462,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed2",
+      "seed": 2,
+      "train_curriculum": "a",
+      "split": "iid_b",
+      "position": -1,
+      "n": 472,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    },
+    {
+      "model": "local_a_seed2",
+      "seed": 2,
+      "train_curriculum": "a",
+      "split": "ood_common",
+      "position": -1,
+      "n": 443,
+      "motif_accuracy": 1.0,
+      "motif_balanced_accuracy": 1.0,
+      "n_classes": 8,
+      "uniform_chance": 0.125
+    }
+  ],
+  "source_record_unchanged": true,
+  "probe_rows_preserved": 82,
+  "local_input_audit": {
+    "local_input_train_a_b_distributions_identical": true,
+    "unique_local_input_types": {
+      "train_a": 8,
+      "train_b": 8,
+      "iid_a": 8,
+      "iid_b": 8,
+      "ood_common": 8
+    },
+    "local_type_overlap_train_a_test": {
+      "iid_a": 8,
+      "iid_b": 8,
+      "ood_common": 8
+    },
+    "n_target_atoms": 9,
+    "maximum_root_radius": 6,
+    "molecular_train_test_identity_overlap": false,
+    "ordinary_features_copied_from_full_molecule": true,
+    "oracle_target_membership_used": true,
+    "claim": "Local task solvability across removed contexts; not novel local-type generalization."
+  }
+}

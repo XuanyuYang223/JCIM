@@ -94,3 +94,23 @@ The subsequent correlation experiment replaces 0%, 1%, 5%, or 20% of a fixed-siz
 .\.venv\Scripts\python.exe -u -m jcim.mechanism --config configs\mechanism_v3.json --source experiments\hard_v2 --output experiments\readout_replay_v3
 .\.venv\Scripts\python.exe -u -m jcim.correlation --config configs\mechanism_v3.json --source experiments\hard_v2 --output experiments\correlation_v3
 ```
+
+### Completed readout and replay result
+
+The primary comparison fixes one set of 32 new support identities across every arm and seed, adding 32 fixed old identities for replay. The following motif accuracies are percentages, mean +/- sample SD across three initialization seeds, after 80 updates. Each cell reports **new common OOD / old own IID**. Two further support draws are reported separately in the full report; they are not counted as additional independent initialization seeds.
+
+| Intervention | Experience A | Experience B |
+| --- | --- | --- |
+| Frozen encoder, 32 new | 80.2 +/- 4.7 / 75.3 +/- 9.9 | 80.1 +/- 11.1 / 84.3 +/- 8.5 |
+| Full update, 32 new | 92.8 +/- 3.7 / 66.7 +/- 2.3 | 95.9 +/- 2.9 / 57.0 +/- 7.5 |
+| Frozen encoder, 32 new + 32 old | 73.7 +/- 5.5 / 93.4 +/- 2.6 | 76.3 +/- 13.9 / 94.3 +/- 3.9 |
+| Full update, 32 new + 32 old | 95.2 +/- 2.0 / 95.6 +/- 0.8 | 87.6 +/- 6.1 / 95.7 +/- 2.8 |
+| Random initialization, 32 new + 32 old | 74.2 +/- 4.1 / 73.2 +/- 6.1 | 68.0 +/- 5.4 / 60.5 +/- 2.2 |
+
+Useful information is already available in the pretrained encoder: a fresh standardized linear ridge readout on its frozen graph/query features, using the same replay labels, reaches new/old accuracies of 93.4 +/- 2.5 / 94.7 +/- 4.2 for A and 90.4 +/- 2.8 / 89.8 +/- 2.1 for B. Its advantage over inherited-head adaptation shows that the latter is not a feature ceiling. Single-root features give much weaker joint recovery, so these results do not establish an invariant local motif representation.
+
+All 36 final frozen-arm encoders are byte-identical to their original checkpoints. Their loss of old accuracy with new-only training demonstrates that changing the readout alone can cause functional forgetting. Crossed encoder/head evaluations show coadaptation in full updating; they do not assign additive shares of forgetting or prove information erasure. Replay matches optimizer updates, while using twice as many distinct labels and example presentations per update.
+
+The position-only predictor obtains 0% common-OOD accuracy and about 36-38% own-IID accuracy. Almost all original-model OOD errors fall within the label set supported at that position during pretraining, although agreement with one position-only majority prediction is much lower. This supports dependence on motif-position binding without explaining the model as a pure position-only classifier. All three oracle-local-input control seeds achieve 100% on every position and test split. The control supplies the complete target fragment and repeats its eight graph types across contexts; it establishes a local solution exists, rather than proving the original encoder uses it. Eight-class uniform chance is 12.5%; the earlier 37.1% random-encoder probe is an empirical control, with per-seed shuffled-label results retained separately.
+
+See the [readout/replay report](experiments/readout_replay_v3/REPORT.md), [adaptation trajectories](experiments/readout_replay_v3/figures/mechanism_summary.png), [diagnostic report](experiments/mechanism_diagnostics_v3/REPORT.md), [independent interpretation](maintenance/MECHANISM_V3_INTERPRETATION.md), and [independent readout/replay audit](maintenance/READOUT_REPLAY_V3_AUDIT.json). All prior experiment bytes and manifests are preserved.

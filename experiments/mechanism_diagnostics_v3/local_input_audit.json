@@ -1,0 +1,21 @@
+{
+  "local_input_train_a_b_distributions_identical": true,
+  "unique_local_input_types": {
+    "train_a": 8,
+    "train_b": 8,
+    "iid_a": 8,
+    "iid_b": 8,
+    "ood_common": 8
+  },
+  "local_type_overlap_train_a_test": {
+    "iid_a": 8,
+    "iid_b": 8,
+    "ood_common": 8
+  },
+  "n_target_atoms": 9,
+  "maximum_root_radius": 6,
+  "molecular_train_test_identity_overlap": false,
+  "ordinary_features_copied_from_full_molecule": true,
+  "oracle_target_membership_used": true,
+  "claim": "Local task solvability across removed contexts; not novel local-type generalization."
+}

@@ -1,0 +1,17 @@
+{
+  "before": {
+    "files_verified": 131,
+    "molecules_verified": 6912,
+    "split_identity_leakage": false,
+    "adaptation_support_unseen_by_both_experiences": true
+  },
+  "after": {
+    "files_verified": 131,
+    "molecules_verified": 6912,
+    "split_identity_leakage": false,
+    "adaptation_support_unseen_by_both_experiences": true
+  },
+  "manifest_sha256_before": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+  "manifest_sha256_after": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+  "source_record_unchanged": true
+}

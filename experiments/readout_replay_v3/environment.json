@@ -1,0 +1,49 @@
+{
+  "started_utc": "2026-10-31T06:32:42.697920+00:00",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "rdkit": "2026.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "git_head_at_start": "499194ec5d43c93e004d9ccc9a168df42b2fbd18",
+  "source_directory": "F:\\JCIM\\experiments\\hard_v2",
+  "source_manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+  "source_sha256": {
+    "jcim\\__init__.py": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+    "jcim\\analysis.py": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+    "jcim\\correlation.py": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835",
+    "jcim\\data.py": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+    "jcim\\hard_data.py": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+    "jcim\\hard_model.py": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+    "jcim\\hard_report.py": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+    "jcim\\hard_run.py": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+    "jcim\\hard_verify.py": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+    "jcim\\mechanism.py": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5",
+    "jcim\\mechanism_diagnostics.py": "ee4dda1045130517c60c649d14a0eac2c8bf861bdf6bd1968bbb4700808cd93a",
+    "jcim\\mechanism_report.py": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93",
+    "jcim\\model.py": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+    "jcim\\report.py": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+    "jcim\\run.py": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+    "jcim\\verify.py": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+  },
+  "pretrained_checkpoint_sha256": {
+    "a_seed0": "3103f4c442d6df9c92238704919643a256974692b454ab67ce84b44fe646a943",
+    "a_seed1": "fffe108e39769bd3511b31e78a6e01bf6ef1223aa2f4b3e9876f6c80bb095b3c",
+    "a_seed2": "edc7bde865963bff3a1463fed95245ee590ee77141dc2b0c6a146a2cf57dd116",
+    "b_seed0": "8b5c38cba2a523b9488f245282bae035b370af4cfa68238812bec1f2405614de",
+    "b_seed1": "a0972c836777514427d26632cfd60faa7ef030520a41042d8f1d55a61d88a073",
+    "b_seed2": "c9475adbc5ac29c000382f144fabb13e38edc835447c452a4c569f179a75dcde",
+    "random_seed0": "72173d3ba955062a1dab64aa322e660746223c722f0e9667c162d0796f6ec0e7",
+    "random_seed1": "843fe0437ca884616ddea829fd9ed68faf0104b620ed16dc4d4d98726c63e3a2",
+    "random_seed2": "cabc4ae2bda5d0af4535be38277b739ae57ad0898bac9f5fa66318486a738a41"
+  },
+  "training_protocol": "Full batches, identical update count; replay uses 32+32 labels; no checkpoint selection.",
+  "frozen_scope": "Input embedding and every message layer; all three inherited MLP heads remain trainable.",
+  "primary_repeat": 0,
+  "finished_utc": "2026-10-31T06:38:03.938772+00:00"
+}

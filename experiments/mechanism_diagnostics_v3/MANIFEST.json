@@ -1,0 +1,26 @@
+{
+  "sha256": {
+    "checkpoints\\local_a_seed0.pt": "9a501495afa7c354ae59464edbc003ff8f8349ec3701302831ca3275b2b7193e",
+    "checkpoints\\local_a_seed1.pt": "3cc4f0be446efc9eb066b744d13ac2a2a3333279217c9b8de8bebb1f75812960",
+    "checkpoints\\local_a_seed2.pt": "840a794ffb1e430c8f89e341180e1c8e3e6a6aa74e634958b2dacea4a1fe7aad",
+    "config.json": "340f391e934de3f0f2e221c47e8e8da5ce3cb5d977bb0f6f9fc122a59efa3eba",
+    "environment.json": "84e1546696af55bd7e98e6009d3c5f485dbe66d4ba74ab13b267607dcf5e9446",
+    "figures\\diagnostic_summary.png": "93b7ff2690b65e8c52f3a4ae44b4cd1ec96cb07ccf69d43a1f9b2a044a35cf58",
+    "frozen_probe_controls.csv": "0a97eeade0e084ea3052dfb9a045d4cf59c8e7edb8c64e708c01a5241d79dbb1",
+    "history_local_a_seed0.json": "9ccc437b7e4acaf783bef497c3d84b9f7ccd8f4f23ef6975b4cbc137c32c8f4f",
+    "history_local_a_seed1.json": "b56f867c4eb51352aa4cc226cfae78adfb85f4aa2859e3ae48fd86a7b10146aa",
+    "history_local_a_seed2.json": "339a952d79d70ee9769c2bcfaf581592bc3ccfda333028e67157482acd292524",
+    "local_behavior.csv": "a69bf864d0f0b3d69d982434fec52a655b5ac1166f49f460b30016ba4c61166c",
+    "local_graphs.npz": "0d2c2cb3f17c2f5f9f7d85e7385f2bb50b2a1380a92634e353afefc13cf5eb37",
+    "local_input_audit.json": "18f3a478964e5f1ff43a960504553268f527595ae8e921dcabce9f1155246760",
+    "local_input_indices.json": "2b92dfcee132f491401c8a35e8a49d0e15eaf1330453d1fe0bd3bc7804df7dc0",
+    "local_predictions.csv": "bb59e9d169cde0c51349dac00e1a4ed1f60456c74a101408d2d26a185cb96bdf",
+    "position_baselines.csv": "83d6c0bf6f94577c79ee8c895ee53e534fca7d28f38bc6b978a0594a354cf5b4",
+    "position_baselines.json": "e920be80a76ae55013246b70b5f4383cb2fc12abf4c7b9aa18c638c2cc434af1",
+    "position_model_agreement.csv": "3fb3f5039ed22e48e569829243b2952693eb3c448e342ef8cfe22a2aaf80ae1a",
+    "REPORT.md": "0e262f3a711be93dd26cdbc65604c8027f8c1cb53877a5fe577ea46345bf4ddf",
+    "source_integrity.json": "a0171bb42967333c7538a50819b5d6441c1999d87f08c3dfd1a971703136e75a",
+    "source_probes_unchanged.csv": "e8f3527e65b38ef01fd88c93772e3bc7913f4e89a8e2a356e24c1c0fe354f47b",
+    "summary.json": "6b2fe7c47a44b1b00c3f14a1710fd773985084ace633c10ff16a9c4d25e621eb"
+  }
+}

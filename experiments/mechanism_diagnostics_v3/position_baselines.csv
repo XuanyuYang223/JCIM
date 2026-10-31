@@ -1,0 +1,7 @@
+curriculum,split,n,accuracy,balanced_accuracy,true_label_training_supported_fraction,n_classes,uniform_chance
+a,iid_a,462,0.3593073593073593,0.375,1.0,8,0.125
+a,iid_b,472,0.0,0.0,0.0,8,0.125
+a,ood_common,443,0.0,0.0,0.0,8,0.125
+b,iid_a,462,0.0,0.0,0.0,8,0.125
+b,iid_b,472,0.3792372881355932,0.375,1.0,8,0.125
+b,ood_common,443,0.0,0.0,0.0,8,0.125
