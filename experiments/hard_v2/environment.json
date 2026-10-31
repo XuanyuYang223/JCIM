@@ -1,0 +1,35 @@
+{
+  "started_utc": "2026-10-31T05:51:44.966873+00:00",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "device": "cuda",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.5.4",
+    "rdkit": "2026.9.1",
+    "matplotlib": "3.11.2"
+  },
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "cuda_runtime": "12.8",
+  "git_head_at_start": "a29d45f859290a77155b01dfe1626b0b5390e900",
+  "source_sha256": {
+    "jcim\\__init__.py": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+    "jcim\\analysis.py": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+    "jcim\\data.py": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+    "jcim\\hard_data.py": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+    "jcim\\hard_model.py": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+    "jcim\\hard_report.py": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+    "jcim\\hard_run.py": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+    "jcim\\hard_verify.py": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+    "jcim\\model.py": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+    "jcim\\report.py": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+    "jcim\\run.py": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+    "jcim\\verify.py": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+  },
+  "geometry_row_protocol": "Same first sorted test identities in both pooling definitions; cap config.geometry_examples.",
+  "adaptation_protocol": "Full encoder and inherited heads; no replay; fixed steps; same nested support across all conditions.",
+  "checkpoint_selection": "Final predeclared epoch, no OOD selection.",
+  "determinism": "Seeded operations; cross-device bitwise reproducibility not guaranteed.",
+  "parameter_count": 189531,
+  "finished_utc": "2026-10-31T05:56:14.212195+00:00"
+}

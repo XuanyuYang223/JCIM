@@ -72,3 +72,11 @@ Actual few-shot adaptation retains the original task heads and fine-tunes all mo
 ```
 
 The shorter `experiments/smoke_hard_v2` run checks the pipeline with two epochs and two adaptation updates; it is not the primary result. All experiment records retain exact bytes in Git so newline conversion cannot invalidate their archived checksums.
+
+### Completed harder result
+
+Across three seeds, both experiences reached 100% accuracy on all original tasks in their own familiar-combination IID tests. Common unseen-combination motif accuracy was 0.0% for A and 4.2% +/- 7.1% for B, even though position accuracy remained 100%. The final local cross-position motif readout had balanced accuracy 21.0% for A and 20.8% for B, compared with 37.1% for random encoders and 12.5% for raw roots. The specified local probe therefore shows no trained advantage.
+
+With 32 new labeled molecules, full-model adaptation raised common OOD motif accuracy to 91.1% for A and 95.3% for B, versus 79.1% from random initialization. Their own-IID motif accuracies fell from 100% to 70.3% and 52.7%. With 128 new labels, both reached 100% OOD motif accuracy while retaining only 62.3% and 37.9% own-IID motif accuracy. OOD adaptation improves performance but does not preserve the old motif-position mappings.
+
+See the [frozen hard-v2 report](experiments/hard_v2/REPORT.md), [nine-panel result figure](experiments/hard_v2/figures/hard_summary.png), [motif structures](experiments/hard_v2/figures/motif_grid.png), [independent interpretation](maintenance/HARD_V2_INTERPRETATION.md), and [independent archive audit](maintenance/HARD_V2_DATA_AUDIT.json). This deliberately correlated training design reveals a compositional-generalization failure; it does not establish that all small molecular models or more balanced training regimes fail in the same way.

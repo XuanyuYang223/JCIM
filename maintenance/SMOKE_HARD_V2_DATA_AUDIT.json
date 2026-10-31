@@ -1,0 +1,495 @@
+{
+  "audit_name": "Independent hard molecular archive audit",
+  "status": "PASS",
+  "started_utc": "2026-10-31T05:51:17.280661+00:00",
+  "completed_utc": "2026-10-31T05:51:24.291453+00:00",
+  "archive_directory": "F:\\JCIM\\experiments\\smoke_hard_v2",
+  "training_source_commit_at_start": "83ab645463cbac8480dd925ca1353956b9aa8465",
+  "scope": "All archived molecules, graph entries, query and class labels, identity partitions, support selections, source hashes, and frozen manifest entries; no generator or model imported; no training or GPU use.",
+  "method": "Reorder mapped SMILES by atom map, reconstruct chemistry and binary graph arrays, infer rooted topology with an external dummy attachment, and recompute paths and partitions independently.",
+  "audit_implementation_sha256": "f591c6653b8a2da1b0e1189892611dbe8b8aaa610b80f64c8f9dedbc06feb844",
+  "independent_dependencies": {
+    "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "rdkit": "2026.9.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "counts": {
+    "molecules_audited": 6912,
+    "atoms_audited": 143424,
+    "adjacency_entries_audited": 2983680,
+    "ordinary_feature_entries_audited": 1864512,
+    "query_feature_entries_audited": 717120,
+    "unique_canonical_identities": 6912,
+    "maximum_atoms": 23,
+    "maximum_motif_root_radius": 6,
+    "support_files_audited": 9,
+    "check_categories": 52,
+    "individual_checks": 145295,
+    "failed_checks": 0
+  },
+  "checks": {
+    "every_frozen_manifest_file_matches_sha256": {
+      "checked": 61,
+      "passed": 61,
+      "failed": 0
+    },
+    "full_factorial_molecule_count": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "unique_molecular_ids": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "atom_feature_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adjacency_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "padding_mask_shape": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "label_array_shapes": {
+      "checked": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "all_arrays_finite": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "eight_distinct_rooted_topology_references": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "mapped_reference_and_bijection": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "canonical_identity_and_sha256_id": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "all_adjacency_entries_from_mapped_bonds": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "zero_adjacency_and_feature_padding": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "atom_count_padding_mask": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "all_13_ordinary_features_from_chemistry": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "all_five_query_markers_from_recorded_indices": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "local_readout_is_single_attachment_atom": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "ring_indices_match_six_aromatic_ring_atoms": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "scaffold_label_from_ring_nitrogen_positions": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "target_attachment_bond_exists": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "target_membership_equals_cut_component": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "motif_label_from_independent_rooted_topology": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "attached_target_formula_C7H15O2": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "target_motif_fits_radius_six": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "path_endpoint_determined_by_identity_hash": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "distance_label_from_independent_BFS": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "position_label_from_independent_BFS": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "anchor_family_from_rooted_component": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "anchor_spacer_from_query_depth": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "distractor_label_from_rooted_component": {
+      "checked": 6912,
+      "passed": 6912,
+      "failed": 0
+    },
+    "reconstructed_canonical_identities_unique": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "single_raw_local_root_feature_vector": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "identical_target_ordinary_feature_multisets": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "observed_maximum_motif_radius_six": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "observed_distance_range_eight_to_thirteen": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "maximum_atom_count_matches_padding": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "balanced_full_factorial_motif_position_cells": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "split_indices_unique_and_in_bounds": {
+      "checked": 16,
+      "passed": 16,
+      "failed": 0
+    },
+    "global_identity_partitions_match_hash_thresholds": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "experience_and_common_holdout_cells_exact": {
+      "checked": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "validation_is_experience_specific_union": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "exact_per_motif_matched_lowest_ID_training_selection": {
+      "checked": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "training_experiences_have_equal_motif_counts": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "adaptation_support_and_all_evaluation_unseen_during_both_pretrainings": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "support_and_adaptation_test_disjoint": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "probe_membership_uses_disjoint_heldout_positions": {
+      "checked": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "adaptation_support_exact_repeat_permutation_and_size": {
+      "checked": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "adaptation_support_nested_across_shot_counts": {
+      "checked": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "recorded_audit_counts_match_independent_results": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "source_hash_matches_run_start_snapshot": {
+      "checked": 11,
+      "passed": 11,
+      "failed": 0
+    },
+    "all_archive_inputs_unchanged_during_audit": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "auditor_source_unchanged_during_audit": {
+      "checked": 1,
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failures_first_40": [],
+  "archived_input_sha256": {
+    "MANIFEST.json": "4e8409d3571821396d4baff43a89995a463078286fc8e891fa0c0a4baf13c2a5",
+    "REPORT.md": "467c4a8ece861b5e238c824bffd41911304ecb2ac4113ec73a821a259713c10a",
+    "adaptation.csv": "17270999571feef1e886c696882d9a129133166762b0f2e69eda43875526ce71",
+    "adaptation_support\\repeat0_shots128.json": "8a5023da9bbb1eb9c091d0d8e735d52fe9208d059e0d95b39c67fbafb131ba3d",
+    "adaptation_support\\repeat0_shots32.json": "ed96d0474da110cc5c7de00faf7439a586ab324279bbde07ae4699f95b7d3b8a",
+    "adaptation_support\\repeat0_shots8.json": "8c3056dd69489689e5fbffbf8eb18c89b18c3d17221277049af3e9d0651c6865",
+    "adaptation_support\\repeat1_shots128.json": "07fb75b734c5c9a428716ead515e8875bab21757936e798c4087d677e00110d4",
+    "adaptation_support\\repeat1_shots32.json": "6c859fcc7e9385e7753c258ca9c5876aa31cda5881783f4b31386768144080c9",
+    "adaptation_support\\repeat1_shots8.json": "734e6b3df03615cd5cd5424bab04401e00164af115cd726e83dc0eb74810262e",
+    "adaptation_support\\repeat2_shots128.json": "1b0eff3c4b3330acbecc9b4cc8bffb33b90b1e2df7e9aeb88803f71e775bc77d",
+    "adaptation_support\\repeat2_shots32.json": "d6fab18efa5df5e60e9d2ebd93162fb48e384903aa86cb5130d0d3d10a2a6b3f",
+    "adaptation_support\\repeat2_shots8.json": "6234b4b70e09376f652a4475de42d20f502c74db4dae81e75f369c26b6be7e68",
+    "audit.json": "d35dae254f46ee124e0046ad3827c722a31f0b7abbc88c59f0cb573a2834e469",
+    "behavior.csv": "fa7963f28082b412d3b98f198f00bfe28432f3365c0fa6f3b8f9f8e91ecbbf91",
+    "checkpoints\\a_seed0.pt": "78ad69de375f12da9ba11f1422f7a9e7152dd53ae7b0dd12037645da29baa7b5",
+    "checkpoints\\a_seed0_adapt_r0_n128.pt": "7f84be1bb3fd3aee1c20be0c442a661a44297ba5d27fe81850d9c96a627648a4",
+    "checkpoints\\a_seed0_adapt_r0_n32.pt": "8c376cad7dcb280cbcd6a80b34849b90f2a1cefab8cffa3c0438da1ad924523f",
+    "checkpoints\\a_seed0_adapt_r0_n8.pt": "650a2eaba2bcc94468c97e2b773ba00bc6d0f8be64c3f145336bde4da6d64cdf",
+    "checkpoints\\a_seed0_adapt_r1_n128.pt": "ce99a3a2d33ea213d7ce7a73290dc25d4b43e340cfe5128710bbc6c34edcbd33",
+    "checkpoints\\a_seed0_adapt_r1_n32.pt": "36a06bafce4a5f62353ec06e9625c46fcf5aae6b0a851aa6ee33c068e71c4c45",
+    "checkpoints\\a_seed0_adapt_r1_n8.pt": "35d459b0a6b7d916e7ab1e833bb6fff4ab94030be05745a9516aeda577ee04d9",
+    "checkpoints\\a_seed0_adapt_r2_n128.pt": "470498bc0e45cfd625fa2990d47a669d2b0f6b2a333e40a3d8d907d672629b43",
+    "checkpoints\\a_seed0_adapt_r2_n32.pt": "f773e65acbdadb563331b1dc3ea547d495e7bd60234e6ea2b0b6877081d11220",
+    "checkpoints\\a_seed0_adapt_r2_n8.pt": "9e33b0435c27a19c539b0cedd98470caff7748128c54598ace4053fe2c590664",
+    "checkpoints\\b_seed0.pt": "a942f3753212e756d0b39964b1d551d4ab96bcbbc95e8775cb97b2c2581f5a99",
+    "checkpoints\\b_seed0_adapt_r0_n128.pt": "8259a9c800b640381eb9071058ee1a8769826882811cdc4cdc8ad0d7cff233d9",
+    "checkpoints\\b_seed0_adapt_r0_n32.pt": "ab70780fec5d6491e29edf0d9b875e78941e1e8048a37fb66e7f5ef377063463",
+    "checkpoints\\b_seed0_adapt_r0_n8.pt": "ed766bb79c955a772bfd8a2ae8a0df48f9acaef8d821e7758259e2ff004a1aa0",
+    "checkpoints\\b_seed0_adapt_r1_n128.pt": "10e53c177c1676e006a6aa75c00cfe1030ba6feaede8ee2d9c882c9d2e3e3a27",
+    "checkpoints\\b_seed0_adapt_r1_n32.pt": "140129b8e9d11a15b93250379f609d9f18999b8fbfbfa8f34235b49f987fc447",
+    "checkpoints\\b_seed0_adapt_r1_n8.pt": "32ecac5c89c75eed0cf75a41e17edf8a151b081780c8f8c058bb7883cbc9c4ef",
+    "checkpoints\\b_seed0_adapt_r2_n128.pt": "e0e8283b27160a73df02fcb2f3715f8720724915fbf39c9f027469c919107244",
+    "checkpoints\\b_seed0_adapt_r2_n32.pt": "253353493ec36e499963aa0e754da9337f50777e7308c75e96f0eb15daa7dab7",
+    "checkpoints\\b_seed0_adapt_r2_n8.pt": "cb92f6e818bbdd7538f2e4a3b73f02485cdb8024bd32670afe4f75c0368b7186",
+    "checkpoints\\random_seed0.pt": "1d6b87c9ce76f8b7aa2354c060be0fb55b784d04198c8630d811fa69a2013973",
+    "checkpoints\\random_seed0_adapt_r0_n128.pt": "f406de616d9e37e3933bc40fc131724786913f687ecefeb03f9eabaf2dd7e665",
+    "checkpoints\\random_seed0_adapt_r0_n32.pt": "dd755f58f8d06650a36a4ed0788b5d4ef338a1471837218a1b889716c2fabd73",
+    "checkpoints\\random_seed0_adapt_r0_n8.pt": "e57a11d456040a21c09f37680b7e8bcb9d49921a7d0e14241ae24b66850ca6bf",
+    "checkpoints\\random_seed0_adapt_r1_n128.pt": "61f414f4525fe44c0bd0c8b185b6b690654e7ca12b2e3034de906e5aae02e54c",
+    "checkpoints\\random_seed0_adapt_r1_n32.pt": "681e49c599209d91c3a8364772fd81b31889e4b575a7d8e676c3403cfe284a18",
+    "checkpoints\\random_seed0_adapt_r1_n8.pt": "9da0e73cefd36f9e70dee2fca191fe9d4264f9b95d0739351042b23fd6e7567d",
+    "checkpoints\\random_seed0_adapt_r2_n128.pt": "bb020f7897565e63823a1643acc6d9bb18ee4d1d45d591adb0fab7a3f83c2baa",
+    "checkpoints\\random_seed0_adapt_r2_n32.pt": "2602fdd0c7f084d14f12796d3714202074c900d2cf625a1c288dae8938f78d7e",
+    "checkpoints\\random_seed0_adapt_r2_n8.pt": "57a46c5e6eac0eb0296bc3e0b888faf5f110676060a60d5532584c4509ef182a",
+    "config.json": "0c11a1965f6b582184623fb81c375264ac0df5271d010ebdffaf98107ce4e14e",
+    "environment.json": "156c4c1c5b9b69980bb4b5cd7060dfecb62a311017a843a84c9593cd38834d10",
+    "figures\\hard_summary.png": "3bc5c010ac634f36a3ee7f650d9e602438dbcc7f27343a64d4253e50b705bb7c",
+    "figures\\hard_summary.svg": "6be145beeb00b7d51b4abc4677b8a0bee2a2c95022ce02c7c540422eb332cd8b",
+    "figures\\motif_grid.png": "e4d3eec8259131dd53eae7fff65f51c8f6f5d41c95bccabbf8ecdd85e0e73b8d",
+    "geometry_ids.json": "2b7d7604a725b0b32672d372ca79eab873179817f8f39fe15441d08d6d6238e3",
+    "graphs.npz": "49a84c51a29d26637913bc2832cfa398ea4b840af2e23a0e8fc40e2e07a4dd94",
+    "history_a_seed0.json": "22813d8699aa449abe5d1ff3ca7031a30e6db0aa80f38615f3cb679aaf86434c",
+    "history_b_seed0.json": "fad9944360aa5d59436eb8861ccd812f8437689f91b243b2c7cd0a9e2f46185b",
+    "molecules.jsonl": "a3ddb63731fa6f1c6c5d21e69f338477d49d403c31049bf920d40e1a0e5cae93",
+    "predictions.csv": "47d792cab27b9da95b337c98335474c9949c7d5c9290758af15af9cfa1e24f3a",
+    "probes.csv": "5da9cbcecc5b5e38f2cf7cae6b6da46616452eb23bf325d548fd77c155f5d393",
+    "report_summary.json": "0e968ef4d41e132c866fa60083ea8ae0a9be70c42f1f6b07c8313af59ce1613d",
+    "representations\\a_seed0.npz": "beeb36b1dc1761a21d3ef3253b884c05575862837ad5a4097af1b9cb9ecf2b3c",
+    "representations\\b_seed0.npz": "b0711e6976695758bd80ed4587b499acdf2da159e0ea6ba380fafbc409d0f457",
+    "representations\\random_seed0.npz": "c933548a1a472492903aad6c09f9f6ab86e4708fb9b7b263e68edd379dee8f16",
+    "similarities.csv": "6bcc26514dd016085c99ffcf10d6b448c4d030e5ef3eb7a790ceb9b174a51b3c",
+    "splits.json": "d40c49278b5083421d5ba9f623ae052047f0613442d57b941ec2b81718a1629c"
+  },
+  "training_source_sha256_verification": {
+    "jcim\\__init__.py": {
+      "expected_at_run_start": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+      "observed_during_audit": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+    },
+    "jcim\\analysis.py": {
+      "expected_at_run_start": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+      "observed_during_audit": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+    },
+    "jcim\\data.py": {
+      "expected_at_run_start": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+      "observed_during_audit": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+    },
+    "jcim\\hard_data.py": {
+      "expected_at_run_start": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+      "observed_during_audit": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85"
+    },
+    "jcim\\hard_model.py": {
+      "expected_at_run_start": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+      "observed_during_audit": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1"
+    },
+    "jcim\\hard_report.py": {
+      "expected_at_run_start": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+      "observed_during_audit": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a"
+    },
+    "jcim\\hard_run.py": {
+      "expected_at_run_start": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+      "observed_during_audit": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff"
+    },
+    "jcim\\model.py": {
+      "expected_at_run_start": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+      "observed_during_audit": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+    },
+    "jcim\\report.py": {
+      "expected_at_run_start": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+      "observed_during_audit": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+    },
+    "jcim\\run.py": {
+      "expected_at_run_start": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+      "observed_during_audit": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+    },
+    "jcim\\verify.py": {
+      "expected_at_run_start": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+      "observed_during_audit": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+    }
+  },
+  "array_shapes_and_dtypes": {
+    "x": {
+      "shape": [
+        6912,
+        23,
+        18
+      ],
+      "dtype": "float32"
+    },
+    "adj": {
+      "shape": [
+        6912,
+        23,
+        23
+      ],
+      "dtype": "float32"
+    },
+    "mask": {
+      "shape": [
+        6912,
+        23
+      ],
+      "dtype": "float32"
+    },
+    "y_family": {
+      "shape": [
+        6912
+      ],
+      "dtype": "int64"
+    },
+    "y_position": {
+      "shape": [
+        6912
+      ],
+      "dtype": "int64"
+    },
+    "y_distance": {
+      "shape": [
+        6912
+      ],
+      "dtype": "int64"
+    }
+  },
+  "split_counts": {
+    "candidate_train": 4196,
+    "train_a": 1386,
+    "train_b": 1386,
+    "val": 445,
+    "val_a": 237,
+    "val_b": 208,
+    "discarded_val_ood": 238,
+    "adaptation_reserve": 656,
+    "adaptation_pool": 223,
+    "adaptation_test": 443,
+    "analysis": 1377,
+    "iid_a": 462,
+    "iid_b": 472,
+    "ood_common": 443,
+    "probe_source": 456,
+    "probe_target": 455
+  },
+  "training_matching": {
+    "effective_train_counts": {
+      "train_a": 1386,
+      "train_b": 1386
+    },
+    "discarded_train_counts": {
+      "train_a": 2,
+      "train_b": 22
+    }
+  },
+  "target_formula_counts": {
+    "C7H15O2": 6912
+  },
+  "rooted_motif_reference_identities": [
+    "*CCOC(CCC)OC",
+    "*CCOC(CC)OCC",
+    "*CCOC(CC)COC",
+    "*COCC(CCC)OC",
+    "*COCC(CC)OCC",
+    "*COCC(CC)COC",
+    "*CCCC(OC)OCC",
+    "*CCCC(COC)OC"
+  ],
+  "raw_local_root_feature_vectors": 1,
+  "target_ordinary_feature_bags": 1,
+  "distance_range": [
+    8,
+    13
+  ],
+  "frozen_record_modified": false
+}

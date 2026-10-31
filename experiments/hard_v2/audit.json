@@ -1,0 +1,140 @@
+{
+  "n_molecules": 6912,
+  "unique_canonical_identities": 6912,
+  "split_counts": {
+    "candidate_train": 4196,
+    "train_a": 1386,
+    "train_b": 1386,
+    "val": 445,
+    "val_a": 237,
+    "val_b": 208,
+    "discarded_val_ood": 238,
+    "adaptation_reserve": 656,
+    "adaptation_pool": 223,
+    "adaptation_test": 443,
+    "analysis": 1377,
+    "iid_a": 462,
+    "iid_b": 472,
+    "ood_common": 443,
+    "probe_source": 456,
+    "probe_target": 455
+  },
+  "effective_train_counts": {
+    "train_a": 1386,
+    "train_b": 1386
+  },
+  "train_motif_counts": {
+    "train_a": {
+      "motif_0": 176,
+      "motif_1": 169,
+      "motif_2": 177,
+      "motif_3": 170,
+      "motif_4": 169,
+      "motif_5": 178,
+      "motif_6": 167,
+      "motif_7": 180
+    },
+    "train_b": {
+      "motif_0": 176,
+      "motif_1": 169,
+      "motif_2": 177,
+      "motif_3": 170,
+      "motif_4": 169,
+      "motif_5": 178,
+      "motif_6": 167,
+      "motif_7": 180
+    }
+  },
+  "train_position_counts": {
+    "train_a": {
+      "ortho": 513,
+      "para": 518,
+      "meta": 355
+    },
+    "train_b": {
+      "meta": 513,
+      "ortho": 518,
+      "para": 355
+    }
+  },
+  "discarded_train_counts": {
+    "train_a": 2,
+    "train_b": 22
+  },
+  "position_counts": {
+    "ortho": 2304,
+    "para": 2304,
+    "meta": 2304
+  },
+  "target_family_counts": {
+    "motif_5": 864,
+    "motif_2": 864,
+    "motif_3": 864,
+    "motif_0": 864,
+    "motif_4": 864,
+    "motif_1": 864,
+    "motif_6": 864,
+    "motif_7": 864
+  },
+  "scaffold_counts": {
+    "benzene": 2304,
+    "pyridine_n5": 2304,
+    "pyridine_n4": 2304
+  },
+  "motif_position_cell_counts": {
+    "motif_5:ortho": 288,
+    "motif_5:para": 288,
+    "motif_5:meta": 288,
+    "motif_2:ortho": 288,
+    "motif_2:para": 288,
+    "motif_2:meta": 288,
+    "motif_3:ortho": 288,
+    "motif_3:para": 288,
+    "motif_3:meta": 288,
+    "motif_0:ortho": 288,
+    "motif_0:para": 288,
+    "motif_0:meta": 288,
+    "motif_4:ortho": 288,
+    "motif_4:para": 288,
+    "motif_4:meta": 288,
+    "motif_1:ortho": 288,
+    "motif_1:para": 288,
+    "motif_1:meta": 288,
+    "motif_6:ortho": 288,
+    "motif_6:para": 288,
+    "motif_6:meta": 288,
+    "motif_7:ortho": 288,
+    "motif_7:para": 288,
+    "motif_7:meta": 288
+  },
+  "feature_names": [
+    "element_C",
+    "element_N",
+    "element_O",
+    "element_F",
+    "element_S",
+    "element_Cl",
+    "element_Br",
+    "element_other",
+    "aromatic",
+    "formal_charge_div_2",
+    "degree_div_4",
+    "hydrogen_count_div_4",
+    "in_ring",
+    "query_anchor_ring_atom",
+    "query_target_ring_atom",
+    "query_target_attachment_atom",
+    "query_anchor_functional_root",
+    "query_path_endpoint"
+  ],
+  "feature_dimension": 18,
+  "distance_range": [
+    8,
+    13
+  ],
+  "query_endpoints_explicitly_marked": true,
+  "local_readout_atoms": 1,
+  "target_fragment_mask_used_as_input": false,
+  "adaptation_support_unseen_by_both_experiences": true,
+  "split_identity_leakage": false
+}
