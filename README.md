@@ -140,3 +140,14 @@ See the [correlation report](experiments/correlation_v3/REPORT.md), [exposed/pro
 ```
 
 All v3 scientific records executed source commit `499194ec5d43c93e004d9ccc9a168df42b2fbd18`. A later [performance revision](maintenance/MECHANISM_V3_POSTRUN_REVISION.md) avoids repeatedly decompressing archived arrays when extracting local inputs; the reconstructed arrays remain byte-identical and no completed result was rewritten. The mechanism auditor validates the recorded historical Git blobs when current source files differ, retaining explicit source provenance for subsequent audits.
+
+## Matched random controls and molecular pooling scales
+
+The [scale-v4 protocol](configs/SCALE_V4_PROTOCOL.md) pairs each original pretrained encoder with its exact frozen random initialization. Root, entire target, target plus one/two/three bond neighborhoods, and whole-graph mean all have 64 coordinates; the original 448-dimensional graph/query representation remains a separate reference. Every depth 0 through 8 is retained. Pooling over selected contextual nodes does not restrict their input receptive fields, and target membership is oracle measurement metadata.
+
+Direct probes fit balanced labels at one position and test the other positions with zero target-position readout labels. Reserved new-only or new-plus-old refits exactly reuse the earlier three support draws. Feature normalization, fixed ridge regularization, support identities, and evaluation partitions match between trained and random encoders. Support draws and directions are averaged within encoder seed before seed uncertainty is computed. The [pipeline note](maintenance/SMOKE_SCALE_V4_NOTE.md) records a corrected GPU batch-shape artifact and its strict constant-feature controls.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m jcim.scale_run --config configs\scale_v4.json --output experiments\scale_v4
+.\.venv\Scripts\python.exe maintenance\audit_scale_v4.py --record experiments\scale_v4 --output maintenance\SCALE_V4_AUDIT.json
+```
