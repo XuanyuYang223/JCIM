@@ -249,3 +249,59 @@ comparison, with no OOD-selected stopping or variant selection.
 .\.venv\Scripts\python.exe -u -m jcim.skip_run --config configs\skip_v5.json --output experiments\skip_v5
 .\.venv\Scripts\python.exe maintenance\audit_skip_v5.py --record experiments\skip_v5 --output maintenance\SKIP_V5_REAUDIT.json
 ```
+
+### Completed shallow-path result
+
+The fixed experiment completed 36 cases: 12 fresh augmented end-to-end models,
+18 frozen-encoder head refits, and six exact original end-to-end baselines.
+Every new fit received 120 epochs and 1,320 updates using only its original
+training identities. The two augmented arms have exactly 201,819 parameters;
+their heads start from identical values with zero added columns. All 18 frozen
+encoders remain byte-identical to their original trained checkpoints.
+
+The following common-OOD motif scores use **ordinary accuracy**, the predeclared
+primary endpoint. Entries are mean +/- sample SD across three seeds. Paired
+differences are computed within seed before aggregation.
+
+| Regime | Experience | Original deep 448D (%) | Matched deep 512D (%) | Shallow skip 512D (%) | Skip minus matched control (pp) |
+| --- | --- | --- | --- | --- | --- |
+| End-to-end | A | 0.0 +/- 0.0 | 1.1 +/- 1.8 | 2.2 +/- 3.8 | 1.1 +/- 5.0 |
+| End-to-end | B | 4.2 +/- 7.1 | 1.0 +/- 1.7 | 6.6 +/- 6.3 | 5.6 +/- 6.4 |
+| Frozen encoder, reset heads | A | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 | 0.0 +/- 0.0 |
+| Frozen encoder, reset heads | B | 6.9 +/- 6.3 | 7.4 +/- 6.6 | 7.5 +/- 6.6 | 0.08 +/- 0.13 |
+
+Own-IID motif accuracy remains 100% in every intact case. End-to-end paired
+OOD gains are A [6.55, 0.00, -3.16] pp and B [0.00, 12.64, 4.29] pp. The modest,
+seed-sensitive changes do not resolve the original combination failure.
+The frozen-encoder comparison provides essentially no improvement from the
+added shallow route under original source labels.
+
+All shallow models learn nonzero added motif-head weights, but permuting that
+branch leaves OOD motif accuracy unchanged in all 12 cases and changes the
+motif predictions in only one case (one wrong-label swap). Own-IID predictions
+on all three tasks remain identical under both branch interventions. Zeroing
+can alter some OOD decisions, so the branch is not proven completely unused.
+The small end-to-end advantage also persists after zeroing the added branch;
+it cannot be attributed simply to direct use of that branch at prediction time.
+Representation learning and optimization can contribute to the end-to-end
+contrast.
+
+This is a negative result for the tested boundary-free global-mean path and
+source-label training rule. It does not refute shallow motif information under
+oracle pooling, or every possible localization, normalization, classifier,
+or training objective. The
+[architecture note](maintenance/ARCHITECTURE_LOCALITY_NOTE.md) distinguishes
+neighborhood-isomorphism consistency, which also holds for random weights,
+from the empirical linear separability of the eight motifs. The resulting
+evidence separates local readability, labeled graph-level adaptation, and
+prediction of combinations absent from training.
+
+See the [frozen skip report](experiments/skip_v5/REPORT.md),
+[endpoint figure](experiments/skip_v5/figures/skip_primary.png),
+[source training curves](experiments/skip_v5/figures/skip_training.png),
+[independent audit](maintenance/SKIP_V5_AUDIT.json),
+[independent interpretation](maintenance/SKIP_V5_INTERPRETATION.md), and
+[report review](maintenance/SKIP_V5_REPORT_REVIEW.md). The audit verifies
+all 131 record files, 405 prior-record files, initialization and epoch orders,
+every stored head prediction, all 252 metric rows, the six reused baselines,
+and byte identity of all frozen encoders. No completed prior record changed.
