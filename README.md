@@ -305,3 +305,24 @@ See the [frozen skip report](experiments/skip_v5/REPORT.md),
 all 131 record files, 405 prior-record files, initialization and epoch orders,
 every stored head prediction, all 252 metric rows, the six reused baselines,
 and byte identity of all frozen encoders. No completed prior record changed.
+
+## Frozen pooling and readout diagnostics
+
+The [pooling-v6 protocol](configs/POOLING_V6_PROTOCOL.md) adds no encoder
+architecture. It first reconstructs all existing v5 branch logits to measure
+class changes and correct-class margin changes, including accuracy-neutral
+effects. It then compares the exact layer-1 whole-graph branch with a
+nine-atom oracle-target mean on frozen v5 and matched random encoders.
+
+Both pooling scopes receive the same original source labels, standardized
+ridge classifier or matched MLP, and fixed fitting budget. The oracle scope
+supplies additional target membership and is a diagnostic upper bound.
+Separately labeled cross-position probes reuse the exact v4 supports; they
+are reported separately from original-source-label generalization. All prior
+record bytes remain frozen, and every re-extracted v5 branch must match the
+actual archived classifier input exactly.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m jcim.pooling_run --config configs\pooling_v6.json --output experiments\pooling_v6
+.\.venv\Scripts\python.exe maintenance\audit_pooling_v6.py --record experiments\pooling_v6 --output maintenance\POOLING_V6_REAUDIT.json
+```

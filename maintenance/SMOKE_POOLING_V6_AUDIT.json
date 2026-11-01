@@ -1,0 +1,722 @@
+{
+  "status": "PASS",
+  "audited_utc": "2026-11-01T09:39:24.396660+00:00",
+  "auditor_sha256": "f933b33e1b037af968d56e8f92b9d7719205955456e089c288b32cca709177ce",
+  "audit_helper_sha256": "2f5bff2d0a17244ba9b659e95194542bbb305d0bcca17334fe27be841ff0cb02",
+  "record": "F:\\JCIM\\experiments\\smoke_pooling_v6_integrated",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_threads": 4,
+  "method": "Independent CPU head/message-passing reconstruction; exact archived branch logits and v5 predictions; all per-example effects, quantiles, seed means and sample SD; full oracle-mask reconstruction; all fixed ridge fits; every saved MLP head prediction; source/support identity isolation and optimizer-order metadata; all input and output manifests.",
+  "limits": "Stored states and metadata cannot independently observe every historical optimizer step or rule out external selection. CPU feature/logit comparison uses declared numerical tolerance across device kernels; all class predictions are exact. Oracle localization is supplied information. Source-only motif-head fitting differs from original joint-task training. Branch replacements can be off distribution; neither null effects nor readout success imply universal absence or causal localization.",
+  "manifests": {
+    "record": {
+      "manifest_sha256": "0792b6001b7cc4fc3a4f5213992454dc15b06ed30f37027b631b79dec79bdfd6",
+      "files": 258
+    },
+    "pilot_v1": {
+      "manifest_sha256": "1cc95a6ec43c91c379ed5322b7631356fa637ea802db756c26b6802a8a1ff01b",
+      "files": 39
+    },
+    "hard_v2": {
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "mechanism_diagnostics_v3": {
+      "manifest_sha256": "2bea772ce613fcf2fe79f66326847de5cbb8e01ec62aa727a7fec4740fcad76a",
+      "files": 22
+    },
+    "readout_replay_v3": {
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "correlation_v3": {
+      "manifest_sha256": "4d0323dac89048dcc8d5f1c788e78e513412ccd8cb1b5acffd3c5d0c765e1e01",
+      "files": 77
+    },
+    "scale_v4": {
+      "manifest_sha256": "b84a3c9332384457ad6eec3ca6feb6a6531dc54c3b6d89274cd5d6fba5423fac",
+      "files": 30
+    },
+    "skip_v5": {
+      "manifest_sha256": "39ebb1e0833557047709630b2d8c60ec773801267a585efdfaed5401107ed16b",
+      "files": 131
+    }
+  },
+  "executed_source_provenance": {
+    "recorded_full_commit": "751c8cd5ad81f4e39bdb9a26b2ab9e40ca1d702a",
+    "commit_verified": true,
+    "files": {
+      "jcim/__init__.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+        "current_worktree_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+      },
+      "jcim/analysis.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+        "current_worktree_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+      },
+      "jcim/branch_diagnostics.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "ba93e8f84d552e32c7cf0806b08154b22f546dc59514595307be2028ddac7f87",
+        "current_worktree_sha256": "ba93e8f84d552e32c7cf0806b08154b22f546dc59514595307be2028ddac7f87"
+      },
+      "jcim/correlation.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835",
+        "current_worktree_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835"
+      },
+      "jcim/data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+        "current_worktree_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+      },
+      "jcim/hard_data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+        "current_worktree_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85"
+      },
+      "jcim/hard_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+        "current_worktree_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1"
+      },
+      "jcim/hard_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+        "current_worktree_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a"
+      },
+      "jcim/hard_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+        "current_worktree_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff"
+      },
+      "jcim/hard_verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+        "current_worktree_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90"
+      },
+      "jcim/mechanism.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5",
+        "current_worktree_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5"
+      },
+      "jcim/mechanism_diagnostics.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d",
+        "current_worktree_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d"
+      },
+      "jcim/mechanism_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93",
+        "current_worktree_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93"
+      },
+      "jcim/model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+        "current_worktree_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+      },
+      "jcim/pooling_diagnostics.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "1313aee2584c90c9ed43cfec90a6e0693969dbff9f32ef6ad45fcedc039ba112",
+        "current_worktree_sha256": "1313aee2584c90c9ed43cfec90a6e0693969dbff9f32ef6ad45fcedc039ba112"
+      },
+      "jcim/pooling_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "2cd9e8f8447d7c7786385c012646d773412f2a3309b2e7c1527ad4dee6488c4a",
+        "current_worktree_sha256": "2cd9e8f8447d7c7786385c012646d773412f2a3309b2e7c1527ad4dee6488c4a"
+      },
+      "jcim/pooling_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "ed7a676df4186f9347c2a4f9cfcd85e303c35bb61fcf1d109784e841b294c7cf",
+        "current_worktree_sha256": "ed7a676df4186f9347c2a4f9cfcd85e303c35bb61fcf1d109784e841b294c7cf"
+      },
+      "jcim/report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+        "current_worktree_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+      },
+      "jcim/run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+        "current_worktree_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+      },
+      "jcim/scale_features.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03",
+        "current_worktree_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03"
+      },
+      "jcim/scale_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8",
+        "current_worktree_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8"
+      },
+      "jcim/scale_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0",
+        "current_worktree_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0"
+      },
+      "jcim/skip_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5de0ab5f5c52c32a6f88d0f116d61d26b10407da85825ddcbd0f055ea32cc992",
+        "current_worktree_sha256": "5de0ab5f5c52c32a6f88d0f116d61d26b10407da85825ddcbd0f055ea32cc992"
+      },
+      "jcim/skip_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "6862f2566c9eee071fd1c7aee7c436f29334b06795159048be7a52e20029558f",
+        "current_worktree_sha256": "6862f2566c9eee071fd1c7aee7c436f29334b06795159048be7a52e20029558f"
+      },
+      "jcim/skip_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5a80836e82edad766bc5584acbc40457318b9b289430de64507f1d80fe3e84a6",
+        "current_worktree_sha256": "5a80836e82edad766bc5584acbc40457318b9b289430de64507f1d80fe3e84a6"
+      },
+      "jcim/verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+        "current_worktree_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+      }
+    },
+    "policy": "Exact current bytes or exact blob bytes at the full immutable commit recorded at experiment start; no other historical revision is accepted."
+  },
+  "counts": {
+    "branch_model_cases": 8,
+    "branch_logit_arrays": 72,
+    "branch_per_example_comparisons": 66096,
+    "branch_summary_rows": 192,
+    "branch_logit_mismatches": 0,
+    "branch_v5_prediction_mismatches": 0,
+    "pooling_unique_encoders": 5,
+    "pooling_unique_fits": 114,
+    "ridge_fits_independently_resolved": 102,
+    "MLP_readout_states_reconstructed": 12,
+    "MLP_CPU_prediction_mismatches": 0,
+    "feature_sample_positions": [
+      0,
+      1531,
+      2297,
+      4593
+    ],
+    "source_metric_rows": 96,
+    "direct_metric_rows": 648,
+    "source_paired_seed_rows": 48,
+    "direct_within_seed_rows": 32
+  },
+  "checks": {
+    "record_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "record_every_manifest_file_matches": {
+      "passed": 258,
+      "failed": 0,
+      "examples": []
+    },
+    "record_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_seven_completed_source_records_preserved_in_provenance": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_every_manifest_file_matches": {
+      "passed": 39,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "every_prior_record_manifest_hash_and_count_matches_start_reference": {
+      "passed": 7,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_every_manifest_file_matches": {
+      "passed": 22,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_every_manifest_file_matches": {
+      "passed": 106,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_every_manifest_file_matches": {
+      "passed": 77,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_every_manifest_file_matches": {
+      "passed": 30,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_skip_v5_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_skip_v5_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_skip_v5_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all536_prior_manifest_files_unchanged": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_revision_is_full_immutable_commit": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_files_match_recorded_snapshot": {
+      "passed": 26,
+      "failed": 0,
+      "examples": []
+    },
+    "predeclared_protocol_bytes_match_record": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "diagnostic_architecture_optimization_and_regularization_predeclared": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "full_primary_panel_or_explicit_pipeline_only": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "no_encoder_optimization_and_all_old_records_unchanged": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "deterministic_single_thread_BLAS_recorded": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "every_target_oracle_mask_has_exactly_nine_valid_atoms_and_attachment_root": {
+      "passed": 4594,
+      "failed": 0,
+      "examples": []
+    },
+    "archived_oracle_pooling_masks_reconstructed_from_frozen_structural_annotation": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_summary_keys_unique": {
+      "passed": 192,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_logits_exact_analysis_identity_order": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "every_archived_branch_logit_is_independently_recomputed": {
+      "passed": 72,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_summary_all_metrics_from_independent_logit_effects": {
+      "passed": 192,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_logit_array_panel_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_branch_predictions_match_frozen_v5_per_molecule_results": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_summary_panel_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_branch_per_example_values_and_identity_keys_recomputed": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_seed_aggregates_use_three_seed_units_and_sample_SD": {
+      "passed": 192,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_seed_aggregate_panel_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_pre_and_post_input_source_hashes_current": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_source_train_validation_exact_original_order": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_source_train_validation_excludes_heldout_combinations_and_reserve": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_tests_exact_original_order": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_is_exact_archived_scale_v4_labels_and_order": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_support_balanced256_source_position_only": {
+      "passed": 9,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_epoch_order_keys_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_orders_exact_v5_prefix": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_orders_independently_reconstructed_from_original_curriculum": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_exact_unique_encoder_panel": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "oracle_target_membership_has_nine_real_atoms_and_root": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_encoder_checkpoint_path_and_hash_exact_archived_source": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_encoder_tensor_hashes_before_after_equal_exact_source": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_features_hash_and_row_count_match_inventory": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_features_use_exact_train_val_analysis_union_without_reserve": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "both_pooling_feature_matrices_are_finite_float32_width64": {
+      "passed": 5,
+      "failed": 0,
+      "examples": []
+    },
+    "fixed_sample_layer1_pools_independently_reconstructed_on_CPU": {
+      "passed": 10,
+      "failed": 0,
+      "examples": []
+    },
+    "whole_graph_probe_is_bitexact_actual_v5_classification_branch": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_readout_encoder_is_exact_original_pretrained_encoder": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "whole_graph_frozen_source_cache_is_bitexact_actual_v5_cache": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_fit_inventory_and_support_keys_unique_and_equal": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "fit_metadata_identifies_the_exact_encoder_and_fixed_readout_dimensions": {
+      "passed": 114,
+      "failed": 0,
+      "examples": []
+    },
+    "every_fit_support_id_and_label_hash_exact": {
+      "passed": 114,
+      "failed": 0,
+      "examples": []
+    },
+    "every_source_only_fit_uses_exact_original_curriculum_and_no_reserved_labels": {
+      "passed": 24,
+      "failed": 0,
+      "examples": []
+    },
+    "every_readout_state_and_prediction_file_hash_matches_inventory": {
+      "passed": 114,
+      "failed": 0,
+      "examples": []
+    },
+    "readout_predictions_have_exact_expected_identity_order": {
+      "passed": 114,
+      "failed": 0,
+      "examples": []
+    },
+    "every_readout_prediction_is_argmax_of_finite_eight_class_logits": {
+      "passed": 114,
+      "failed": 0,
+      "examples": []
+    },
+    "all_ridge_parameters_independently_refit_from_support_only": {
+      "passed": 102,
+      "failed": 0,
+      "examples": []
+    },
+    "all_ridge_logits_and_argmax_predictions_independently_recomputed": {
+      "passed": 102,
+      "failed": 0,
+      "examples": []
+    },
+    "ridge_has_no_optimizer_updates": {
+      "passed": 102,
+      "failed": 0,
+      "examples": []
+    },
+    "mlp_standardization_uses_only_original_fit_support": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "mlp_initializer_exact_seed_matched_across_scopes_and_conditions": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "mlp_fixed_epoch_order_hash_and_optimizer_budget_match_original": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "mlp_final_head_digest_matches_inventory": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "every_MLP_saved_head_prediction_independently_recomputed_on_CPU": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "MLP_saved_logits_match_independent_CPU_function_with_declared_tolerance": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "every_direct_fit_uses_exact_archived256_support_only": {
+      "passed": 90,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_target_position_tests_have_no_support_identity_overlap": {
+      "passed": 648,
+      "failed": 0,
+      "examples": []
+    },
+    "complete_source_readout_and_unique_direct_fit_panels_without_random_duplicates": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "one_exact_MLP_initializer_per_seed_across_all_conditions": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_pooling_metrics_recomputed_from_per_molecule_predictions": {
+      "passed": 744,
+      "failed": 0,
+      "examples": []
+    },
+    "pooling_metric_panels_complete_without_duplicate_rows": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "source_summary_one_value_per_seed": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_summary_panel_keys_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_summary_retained_seed_values_mean_sample_SD": {
+      "passed": 96,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_source_table_exact_keys_without_duplicates": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_scope_contrasts_are_paired_within_seed": {
+      "passed": 48,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pair_summary_one_value_per_seed": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pair_summary_panel_keys_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_pair_summary_retained_seed_values_mean_sample_SD": {
+      "passed": 48,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_summaries_average_exactly_six_directions_per_support_within_seed": {
+      "passed": 32,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_within_seed_table_exact_keys_without_duplicate_random_encoder": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_within_seed_means_recomputed_from_directions_and_support_draws": {
+      "passed": 32,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_summary_one_value_per_seed": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_summary_panel_keys_exact": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "direct_summary_retained_seed_values_mean_sample_SD": {
+      "passed": 32,
+      "failed": 0,
+      "examples": []
+    },
+    "report_branch_summary_is_exact_verified_seed_aggregate": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    }
+  }
+}

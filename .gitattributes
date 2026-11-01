@@ -7,3 +7,4 @@ maintenance/*_AUDIT.json -text -whitespace
 # Preserve the numerical evidence and provenance of the completed scale study.
 maintenance/SCALE_V4* -text -whitespace
 maintenance/SKIP_V5* -text -whitespace
+maintenance/POOLING_V6* -text -whitespace
