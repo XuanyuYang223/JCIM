@@ -1,0 +1,42 @@
+{
+  "records": {
+    "pilot_v1": {
+      "path": "F:\\JCIM\\experiments\\pilot_v1",
+      "manifest_sha256": "1cc95a6ec43c91c379ed5322b7631356fa637ea802db756c26b6802a8a1ff01b",
+      "files": 39
+    },
+    "hard_v2": {
+      "path": "F:\\JCIM\\experiments\\hard_v2",
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "mechanism_diagnostics_v3": {
+      "path": "F:\\JCIM\\experiments\\mechanism_diagnostics_v3",
+      "manifest_sha256": "2bea772ce613fcf2fe79f66326847de5cbb8e01ec62aa727a7fec4740fcad76a",
+      "files": 22
+    },
+    "readout_replay_v3": {
+      "path": "F:\\JCIM\\experiments\\readout_replay_v3",
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "correlation_v3": {
+      "path": "F:\\JCIM\\experiments\\correlation_v3",
+      "manifest_sha256": "4d0323dac89048dcc8d5f1c788e78e513412ccd8cb1b5acffd3c5d0c765e1e01",
+      "files": 77
+    },
+    "scale_v4": {
+      "path": "F:\\JCIM\\experiments\\scale_v4",
+      "manifest_sha256": "b84a3c9332384457ad6eec3ca6feb6a6531dc54c3b6d89274cd5d6fba5423fac",
+      "files": 30
+    },
+    "skip_v5": {
+      "path": "F:\\JCIM\\experiments\\skip_v5",
+      "manifest_sha256": "39ebb1e0833557047709630b2d8c60ec773801267a585efdfaed5401107ed16b",
+      "files": 131
+    }
+  },
+  "hard_source": "F:\\JCIM\\experiments\\hard_v2",
+  "skip_source": "F:\\JCIM\\experiments\\skip_v5",
+  "scale_source": "F:\\JCIM\\experiments\\scale_v4"
+}

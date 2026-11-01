@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "case_count": 24,
+  "compared_rows": 198288,
+  "prediction_rows_checked": 297432,
+  "argmax_mismatches": 0,
+  "summary_rows": 576,
+  "seed_aggregate_rows": 192,
+  "cpu_threads": 4,
+  "inference_batch_size": 128,
+  "head_dtype": "float32",
+  "diagnostic_arithmetic_dtype": "float64",
+  "margin_definition": "correct-class logit minus maximum other-class logit",
+  "delta_definition": "altered minus intact; positive margin delta favors the correct class",
+  "rate_denominator": "All molecules in each split; no conditioning on initially wrong predictions",
+  "sample_sd": "ddof=1; singleton summaries use 0",
+  "quantiles": "NumPy default linear interpolation at 0.05, 0.25, 0.50, 0.75, 0.95",
+  "relative_centered_l2_denominator": "Maximum of intact centered-logit L2 and 1e-12",
+  "ties": "Argmax selects the first maximal class; zero correct-class margin is reported separately",
+  "target_labels_added_to_training": 0,
+  "previous_inputs_unchanged": true,
+  "selected_cases": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "regimes": [
+      "end_to_end",
+      "frozen_readout"
+    ],
+    "experiences": [
+      "a",
+      "b"
+    ]
+  },
+  "pipeline_only": false
+}

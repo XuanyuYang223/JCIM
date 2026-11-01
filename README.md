@@ -326,3 +326,74 @@ actual archived classifier input exactly.
 .\.venv\Scripts\python.exe -u -m jcim.pooling_run --config configs\pooling_v6.json --output experiments\pooling_v6
 .\.venv\Scripts\python.exe maintenance\audit_pooling_v6.py --record experiments\pooling_v6 --output maintenance\POOLING_V6_REAUDIT.json
 ```
+
+### Completed pooling and output-sensitivity results
+
+The completed diagnostic uses 15 unique frozen encoders and 342 readout fits.
+No encoder parameter changes. Eighteen continuity checks confirm that every
+re-extracted v5 whole-graph branch and available original frozen cache matches
+its archived values exactly. The seven earlier records remain unchanged.
+
+With only the original source training identities and motif labels, both
+oracle-target classifiers reach **100% common-OOD accuracy in every seed and
+encoder condition, including random encoders**. This is conditional on supplied
+target membership and is not a training-derived or boundary-free capability.
+Whole-graph results are lower but retain substantial readable information.
+The following ordinary-accuracy entries are mean +/- sample SD across three
+seeds; ridge and MLP were both fixed before the run.
+
+| Frozen encoder | Experience | Whole-graph ridge (%) | Whole-graph MLP (%) | Oracle target, both readouts (%) |
+| --- | --- | --- | --- | --- |
+| V5 end-to-end | A | 37.4 +/- 19.5 | 17.6 +/- 15.2 | 100.0 +/- 0.0 |
+| V5 end-to-end | B | 64.2 +/- 9.6 | 28.4 +/- 9.4 | 100.0 +/- 0.0 |
+| Original trained | A | 27.4 +/- 8.5 | 18.9 +/- 20.0 | 100.0 +/- 0.0 |
+| Original trained | B | 58.6 +/- 20.3 | 20.5 +/- 17.0 | 100.0 +/- 0.0 |
+| Random | A | 48.9 +/- 24.1 | 52.5 +/- 11.6 | 100.0 +/- 0.0 |
+| Random | B | 65.1 +/- 25.9 | 41.8 +/- 18.3 | 100.0 +/- 0.0 |
+
+All trained-encoder whole-graph ridge fits retain 100% training and own-IID
+accuracy in every seed. Their improved OOD scores therefore do not require an
+own-IID accuracy tradeoff. The original v5 end-to-end shallow-skip heads scored
+only 2.2% and 6.6% OOD in A/B, whereas a new source-only ridge on their actual
+shallow branch scores 37.4% and 64.2%. This comparison changes feature isolation,
+standardization, classifier fitting, and the original three-task objective;
+it does not identify one of these factors as the unique cause.
+
+Under the separate balanced source-position label protocol, the v5 end-to-end
+whole-graph vector gives 48.4 +/- 12.7% and 57.9 +/- 13.0% balanced cross-position
+accuracy in A/B; oracle pooling gives 100%. The random whole-graph reference is
+74.2 +/- 7.9%. These diagnostic probes receive different labels from the
+source-only fits and are not original-head zero-shot predictions. Original
+trained/random depth-1 results are continuity checks of the archived v4 study.
+
+Branch effects are nonzero despite almost unchanged accuracy. Across the twelve
+shallow models and 443 common-OOD identities, permutation changes one motif
+prediction, from one wrong class to another, among 5,316 model-example pairs.
+It changes continuous logits in all pairs. Condition-level mean absolute
+correct-class margin changes range from 0.00484 to 0.00687 logit units, with
+mean relative centered-logit L2 changes of about 0.061% to 0.113%. Zeroing changes
+28 predictions: nine wrong-to-correct, four correct-to-wrong, and fifteen
+wrong-to-wrong. These pooled counts describe repeated model-example pairs,
+not independent statistical replicates. All per-model effects, quantiles,
+other tasks, and IID guards remain archived. The branch participates in the
+calculation, but this particular permutation has weak decision effects.
+
+The controlled result supports two limitations in this setup: supplied
+localization/pooling improves the source-only readout markedly, and the actual
+global vector contains useful information that the original fitted prediction
+rule does not fully exploit. It does not establish universal information loss,
+automatic localization, a unique optimization mechanism, or a training advantage
+over the random local representation.
+
+See the [frozen diagnostic report](experiments/pooling_v6/REPORT.md),
+[pooling figure](experiments/pooling_v6/figures/pooling_source.png),
+[branch-output figure](experiments/pooling_v6/figures/branch_outputs.png),
+[independent audit](maintenance/POOLING_V6_AUDIT.json),
+[interpretation](maintenance/POOLING_V6_INTERPRETATION.md),
+[branch review](maintenance/POOLING_V6_BRANCH_REVIEW.md), and
+[pooling/continuity review](maintenance/POOLING_V6_POOLING_REVIEW.md).
+The audit passes all 724 new manifest-covered files, 536 prior files,
+297,432 reconstructed v5 task predictions, 198,288 paired output comparisons,
+all 306 ridge refits, every saved MLP-head prediction, exact identity/order
+isolation, and unchanged encoder tensors. The implementation check suite passes
+221 tests and 135 subtests.
