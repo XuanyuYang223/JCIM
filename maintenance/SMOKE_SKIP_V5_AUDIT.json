@@ -1,0 +1,606 @@
+{
+  "status": "PASS",
+  "audited_utc": "2026-11-01T02:41:50.010815+00:00",
+  "auditor_sha256": "a520729242b5975ccad791959b1df090eff708419688e23ccb27383c78dc9702",
+  "audit_helper_sha256": "2f5bff2d0a17244ba9b659e95194542bbb305d0bcca17334fe27be841ff0cb02",
+  "record": "F:\\JCIM\\experiments\\smoke_skip_v5",
+  "source": "F:\\JCIM\\experiments\\hard_v2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "method": "Independent CPU-only manifest/provenance checks; exact identity/order and state initialization reconstruction; unchanged frozen tensor bytes; all metrics and seed statistics; fixed-sample functional message passing; every saved head prediction and branch intervention.",
+  "limits": "Final states and metadata do not independently observe every historical optimizer step or exclude unrecorded external selection. CPU inference samples verify the saved feature function, not causal locality or complete absence of alternative decoders. Branch replacements can be outside the fitted feature distribution.",
+  "manifests": {
+    "record": {
+      "manifest_sha256": "0d868e0e1e53f7bc6691a4171087a80cc3dc5345209f77268ee962fa45e980a7",
+      "files": 55
+    },
+    "source": {
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "pilot_v1": {
+      "manifest_sha256": "1cc95a6ec43c91c379ed5322b7631356fa637ea802db756c26b6802a8a1ff01b",
+      "files": 39
+    },
+    "hard_v2": {
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "readout_replay_v3": {
+      "manifest_sha256": "e4f6a3a4abfa0a41f4f13a2ae4573ff7008287d6bc84a1306b97f671f5f37d26",
+      "files": 106
+    },
+    "mechanism_diagnostics_v3": {
+      "manifest_sha256": "2bea772ce613fcf2fe79f66326847de5cbb8e01ec62aa727a7fec4740fcad76a",
+      "files": 22
+    },
+    "correlation_v3": {
+      "manifest_sha256": "4d0323dac89048dcc8d5f1c788e78e513412ccd8cb1b5acffd3c5d0c765e1e01",
+      "files": 77
+    },
+    "scale_v4": {
+      "manifest_sha256": "b84a3c9332384457ad6eec3ca6feb6a6531dc54c3b6d89274cd5d6fba5423fac",
+      "files": 30
+    }
+  },
+  "executed_source_provenance": {
+    "recorded_full_commit": "ff5e2487a6d65837b0b2aea0c4a7b3bd2fa02024",
+    "commit_verified": true,
+    "files": {
+      "jcim/__init__.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b",
+        "current_worktree_sha256": "a745bc6e78940faa4db6a4d85d71164b83be136424085783e60cce70eeab538b"
+      },
+      "jcim/analysis.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629",
+        "current_worktree_sha256": "9a780eb6268bc62f1c49d62ab35554c0d1a33ec8f0cdc734e2ac4e1beb6f3629"
+      },
+      "jcim/correlation.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835",
+        "current_worktree_sha256": "5d64a3c83ad690ec9279100c693ad3ddc9e09974370cd58976155c5ec9371835"
+      },
+      "jcim/data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff",
+        "current_worktree_sha256": "44b43deda5b7547ac49d99411f4ba7b458981a8c51bf6eaddae2ff939af530ff"
+      },
+      "jcim/hard_data.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85",
+        "current_worktree_sha256": "1c93f8a02529102d68a54d070d702ac1d1387786aecb10e69355f2d5daea6e85"
+      },
+      "jcim/hard_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1",
+        "current_worktree_sha256": "fb8190108ffc671b3edbfd7056cafec602af8a81caeba5b60f14fcbd900755b1"
+      },
+      "jcim/hard_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a",
+        "current_worktree_sha256": "db02e8883318f63cb3ca0941fbd75d51e77bde42bf7733810b36788f76e04e9a"
+      },
+      "jcim/hard_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff",
+        "current_worktree_sha256": "b40ea09c2c1bf5c7453a7e6696490cda092eb1d0c45942d98f1ac652e621b0ff"
+      },
+      "jcim/hard_verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90",
+        "current_worktree_sha256": "d2d3a99b32d74165722305a54fdf8d338d12cad47f9659722562b4550feb5f90"
+      },
+      "jcim/mechanism.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5",
+        "current_worktree_sha256": "2284a01e30a04aef1d7a304e0488daf25b9f89446bedf776ecfb896cad3a6cf5"
+      },
+      "jcim/mechanism_diagnostics.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d",
+        "current_worktree_sha256": "16a62586d91628db6902392642e99793b3b9474387e0a270b190d0ba66848d1d"
+      },
+      "jcim/mechanism_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93",
+        "current_worktree_sha256": "8732fba93ee5254d0142fc811795dc62d0724008d145cec9d7c12c06731bde93"
+      },
+      "jcim/model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37",
+        "current_worktree_sha256": "6db52928afafc5d61023e52f169f053378a46c23a43a0e09ab109bfcb8818c37"
+      },
+      "jcim/report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392",
+        "current_worktree_sha256": "490bf068102ab354a80cee764de5479a62c41814e1c6e7f6f803720429037392"
+      },
+      "jcim/run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be",
+        "current_worktree_sha256": "47662edbc68ac68e5f024d64dc12a1276f6951da5d43cb6760de79bb2a18a1be"
+      },
+      "jcim/scale_features.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03",
+        "current_worktree_sha256": "9b6948aa205f27fae26fbd46426ffb2ce087ddcf56c2b5655d1aa8b5c000ef03"
+      },
+      "jcim/scale_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8",
+        "current_worktree_sha256": "c5f057948f5c2d69ef0ec2943cec839cf3b43f726b59f22353a2421c86e428c8"
+      },
+      "jcim/scale_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0",
+        "current_worktree_sha256": "7f11e0deca337d356875147dd87a64fdb418ef4a185815fc15074696211cbcf0"
+      },
+      "jcim/skip_model.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5de0ab5f5c52c32a6f88d0f116d61d26b10407da85825ddcbd0f055ea32cc992",
+        "current_worktree_sha256": "5de0ab5f5c52c32a6f88d0f116d61d26b10407da85825ddcbd0f055ea32cc992"
+      },
+      "jcim/skip_report.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "3291133596549afbbdbece29afc307056cf21a5b9a9971e71f172c3bd05ef79d",
+        "current_worktree_sha256": "3291133596549afbbdbece29afc307056cf21a5b9a9971e71f172c3bd05ef79d"
+      },
+      "jcim/skip_run.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "5a80836e82edad766bc5584acbc40457318b9b289430de64507f1d80fe3e84a6",
+        "current_worktree_sha256": "5a80836e82edad766bc5584acbc40457318b9b289430de64507f1d80fe3e84a6"
+      },
+      "jcim/verify.py": {
+        "verified_from": "current_worktree",
+        "recorded_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c",
+        "current_worktree_sha256": "91f8e36822039a2442b30b393aa5b6d3ff3dc1f30d0f72ef6daa0da025ffc34c"
+      }
+    },
+    "policy": "Exact current bytes or exact blob bytes at the full immutable commit recorded at experiment start; no other historical revision is accepted."
+  },
+  "counts": {
+    "behavior_rows": 84,
+    "prediction_rows": 38556,
+    "prediction_panels": 28,
+    "paired_seed_deltas": 36,
+    "cases": 12,
+    "frozen_cases": 6,
+    "reused_source_cases": 0,
+    "independent_feature_sample_positions": [
+      0,
+      1,
+      688,
+      1376
+    ],
+    "CPU_prediction_mismatches": [],
+    "CPU_prediction_mismatch_count": 0
+  },
+  "checks": {
+    "record_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "record_every_manifest_file_matches": {
+      "passed": 55,
+      "failed": 0,
+      "examples": []
+    },
+    "record_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "source_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "source_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_every_manifest_file_matches": {
+      "passed": 39,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_pilot_v1_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_prior_scientific_input_manifests_match_recorded_references": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_every_manifest_file_matches": {
+      "passed": 131,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_hard_v2_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_every_manifest_file_matches": {
+      "passed": 106,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_readout_replay_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_every_manifest_file_matches": {
+      "passed": 22,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_mechanism_diagnostics_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_every_manifest_file_matches": {
+      "passed": 77,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_correlation_v3_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_manifest_nonempty": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_every_manifest_file_matches": {
+      "passed": 30,
+      "failed": 0,
+      "examples": []
+    },
+    "prior_scale_v4_manifest_covers_all_files": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_revision_is_full_immutable_commit": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "executed_source_files_match_recorded_snapshot": {
+      "passed": 22,
+      "failed": 0,
+      "examples": []
+    },
+    "original_architecture_and_training_hyperparameters_preserved": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "all_three_arms_two_regimes_and_two_experiences_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_record_has_full_predeclared_seed_and_epoch_panel": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "reduced_grid_is_explicitly_labeled_as_pipeline_only": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "no_new_combination_labels_or_target_membership_supplied": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "train_validation_indices_exactly_original": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "train_validation_ids_exactly_original": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "no_common_ood_or_adaptation_labels_in_training_or_validation": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "initial_probe_uses_only_first_128_training_graphs": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "test_identities_and_order_exactly_original": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "branch_permutation_fixed_before_outcomes": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_panels_are_unique": {
+      "passed": 84,
+      "failed": 0,
+      "examples": []
+    },
+    "all_expected_behavior_panels_present": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "prediction_model_intervention_identity_unique": {
+      "passed": 38556,
+      "failed": 0,
+      "examples": []
+    },
+    "all_prediction_molecular_identities_known": {
+      "passed": 38556,
+      "failed": 0,
+      "examples": []
+    },
+    "prediction_index_matches_frozen_molecule": {
+      "passed": 38556,
+      "failed": 0,
+      "examples": []
+    },
+    "prediction_classes_in_original_output_space": {
+      "passed": 38556,
+      "failed": 0,
+      "examples": []
+    },
+    "all_prediction_panels_have_exact_ordered_analysis_identities": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_split_denominators_match_source": {
+      "passed": 84,
+      "failed": 0,
+      "examples": []
+    },
+    "all_behavior_metrics_recomputed_from_prediction_rows": {
+      "passed": 672,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_summary_cells_unique": {
+      "passed": 84,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_summary_cells_complete": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_exactly_one_observation_per_encoder_seed": {
+      "passed": 84,
+      "failed": 0,
+      "examples": []
+    },
+    "behavior_seed_values_mean_sample_SD_independently_recomputed": {
+      "passed": 672,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_summary_cells_unique": {
+      "passed": 36,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_summary_cells_complete": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_exactly_one_observation_per_encoder_seed": {
+      "passed": 36,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_values_mean_sample_SD_independently_recomputed": {
+      "passed": 288,
+      "failed": 0,
+      "examples": []
+    },
+    "gap_summary_cells_unique": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "gap_summary_cells_complete": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "gap_exactly_one_observation_per_encoder_seed": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "gap_seed_values_mean_sample_SD_independently_recomputed": {
+      "passed": 96,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_delta_rows_complete": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "paired_seed_deltas_match_exact_seed_subtraction": {
+      "passed": 36,
+      "failed": 0,
+      "examples": []
+    },
+    "seed_metrics_has_exactly_one_row_per_behavior_endpoint": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "seed_metrics_preserves_endpoints_and_intact_gap": {
+      "passed": 84,
+      "failed": 0,
+      "examples": []
+    },
+    "primary_endpoint_and_chance_match_predeclared_design": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "inventory_contains_exactly_one_row_per_model_case": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "initial_checks_contain_exactly_one_row_per_model_case": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "training_order_archive_has_exact_encoder_panels": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    },
+    "every_archived_epoch_order_exactly_reconstructed": {
+      "passed": 2,
+      "failed": 0,
+      "examples": []
+    },
+    "saved_state_shapes_exactly_match_declared_architecture": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "encoder_and_reset_head_sources_are_exact_same_seed_archives": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "initial_state_digest_reconstructed_from_source_reset_heads_and_zero_columns": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "final_state_and_encoder_digests_match_saved_CPU_tensors": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "actual_tensor_counts_match_parameter_inventory": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "declared_optimizer_budget_and_execution_reuse_are_consistent": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "model_case_references_exact_shared_epoch_orders": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "initial_logits_match_original_function_and_added_columns_start_zero": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "history_ends_at_fixed_epoch_without_OOD_or_test_scores": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "new_checkpoint_metadata_matches_inventory_and_fixed_config": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "model_readouts_have_exact_ordered_analysis_indices_and_ids": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "fixed_sample_readout_features_reconstructed_by_independent_message_passing": {
+      "passed": 12,
+      "failed": 0,
+      "examples": []
+    },
+    "deep_control_is_exact_duplicate_of_existing_mean_without_added_information": {
+      "passed": 4,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_encoder_tensors_are_byte_identical_to_original_trained_encoder": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_feature_cache_contains_only_exact_original_train_val_analysis_union": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "frozen_endpoint_readouts_equal_shared_unchanged_encoder_cache": {
+      "passed": 6,
+      "failed": 0,
+      "examples": []
+    },
+    "all_head_predictions_and_branch_interventions_independently_recomputed_on_CPU": {
+      "passed": 1,
+      "failed": 0,
+      "examples": []
+    }
+  }
+}

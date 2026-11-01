@@ -227,3 +227,25 @@ also confirms byte-identical support records, all 57,106,944 shared archived
 root/legacy feature coordinates, and exact agreement of all 216 matched v3/v4
 readout rows under each identical accuracy definition. The shift from ordinary
 to balanced accuracy in displayed tables is not a revision of earlier results.
+
+## Boundary-free shallow-path intervention
+
+The [skip-v5 protocol](configs/SKIP_V5_PROTOCOL.md) tests whether a first-layer
+whole-graph feature path improves the original unseen-combination predictions.
+It adds no target labels or fragment boundaries. A 512-dimensional shallow-skip
+head is compared with a 512-dimensional deep-only head that duplicates an
+existing mean block, alongside the original 448-dimensional baseline.
+The matched heads have identical initial weights and zero appended columns.
+
+Fresh end-to-end training is the primary regime; a secondary regime freezes
+the original trained encoder and resets the heads to the same-seed original
+random head values. Original training identities, orders, three task losses,
+120 epochs, and 1,320 optimizer steps remain fixed. The six original end-to-end
+deep baselines reuse exact archived checkpoints and histories. Final branch
+zeroing/permutation measures functional reliance separately from the primary
+comparison, with no OOD-selected stopping or variant selection.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m jcim.skip_run --config configs\skip_v5.json --output experiments\skip_v5
+.\.venv\Scripts\python.exe maintenance\audit_skip_v5.py --record experiments\skip_v5 --output maintenance\SKIP_V5_REAUDIT.json
+```
