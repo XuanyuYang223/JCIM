@@ -397,3 +397,33 @@ The audit passes all 724 new manifest-covered files, 536 prior files,
 all 306 ridge refits, every saved MLP-head prediction, exact identity/order
 isolation, and unchanged encoder tensors. The implementation check suite passes
 221 tests and 135 subtests.
+
+## Matched readout-factor controls and working manuscript
+
+The [readout-v7 protocol](configs/READOUT_V7_PROTOCOL.md) crosses original full
+readout versus shallow-only input, raw features versus training-only
+standardization, and family-only versus joint-task fitting. All MLP cells use
+the same 512-coordinate architecture, archived initialization, original labels,
+minibatch orders, and fixed training budget. Every cell has a same-protocol
+random-encoder control. A separate fixed-alpha ridge panel retains the decoder
+comparison without treating its objective as an interchangeable MLP factor.
+
+With frozen encoders, the separate task heads share no trainable parameter.
+Their objective comparison therefore measures coupling through the original
+global gradient clip; it does not identify multitask representation effects.
+Conditional contrasts and interactions are retained rather than interpreted
+as an additive decomposition of the earlier v5-to-v6 difference. Historical
+v5 head fits and v6 standardized shallow ridge fits supply exact continuity
+anchors. No target-fragment mask or new-combination label enters this panel.
+
+```powershell
+.\.venv\Scripts\python.exe -u -m jcim.readout_run --config configs\readout_v7.json --output experiments\readout_v7
+.\.venv\Scripts\python.exe maintenance\audit_readout_v7.py --record experiments\readout_v7 --output maintenance\READOUT_V7_REAUDIT.json
+```
+
+The English [working manuscript](manuscript/MANUSCRIPT.md) separates diagnostic
+readability, adaptation with new labels, and original-source-label combination
+prediction. Its [supplement](manuscript/SUPPLEMENT.md) records protocols and
+label budgets, and its numerical claims link to immutable evidence. The draft
+is confined to this controlled structural task and does not claim validation
+on experimental chemical-property prediction or a completed submission.

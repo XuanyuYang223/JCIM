@@ -8,3 +8,5 @@ maintenance/*_AUDIT.json -text -whitespace
 maintenance/SCALE_V4* -text -whitespace
 maintenance/SKIP_V5* -text -whitespace
 maintenance/POOLING_V6* -text -whitespace
+maintenance/READOUT_V7* -text -whitespace
+maintenance/SMOKE_READOUT_V7* -text -whitespace

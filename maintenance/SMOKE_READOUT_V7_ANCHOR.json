@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "purpose": "Pre-freeze continuity anchor, not a primary factorial result.",
+  "encoder": "frozen_readout_shallow_skip_a_seed0",
+  "factors": {
+    "scope": "full512",
+    "normalization": "raw",
+    "objective": "joint"
+  },
+  "epochs": 120,
+  "optimizer_updates": 1320,
+  "source_checkpoint_sha256": "adcb72df9083946610df7114aec282d7040e7e8fa2fae56a4e7137967219d568",
+  "feature_file_sha256": "f14dbda91da938b222e4bae8e530a5fd0b810dfbec2b1ae51bcb617dcfc132bc",
+  "order_sha256": "98745be631127c3eb358416098622e9d935cbe4912d5b648314b5bb0f3f22960",
+  "runner_sha256": "c52962f9d8beb178996b9cd91cff83de3ae0bbf98bd1c95df3f50d97a3acc660",
+  "initial_head_sha256": "87c5228a389ac67a356e84f3634f4e31ad02c88c6416550a02419b33fecf8949",
+  "final_head_sha256": "ba39c63cd3622a5c0963fabbf0f12108c536c7b053ce575cf194c0acbe17d2b6",
+  "archived_head_sha256": "ba39c63cd3622a5c0963fabbf0f12108c536c7b053ce575cf194c0acbe17d2b6",
+  "parameter_tensor_count": 12,
+  "parameter_element_count": 100251,
+  "all_parameter_tensors_bitwise_equal": true,
+  "maximum_parameter_absolute_delta": 0.0,
+  "analysis_molecules": 1377,
+  "task_prediction_comparisons": 4131,
+  "task_prediction_mismatches": 0,
+  "clip_count": 3,
+  "minimum_clip_coefficient": 0.6329177618026733
+}
