@@ -1,0 +1,18 @@
+{
+  "classification": "Post-run startup environment evidence; no experiment or auditor refit.",
+  "recorded_utc": "2026-11-02T05:31:34.029108+00:00",
+  "python": "3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "startup_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "numpy_show_runtime": "WARNING: `threadpoolctl` not found in system! Install it by `pip install threadpoolctl`. Once installed, try `np.show_runtime` again for more detailed build information\n[{'numpy_version': '2.5.4',\n  'python': '3.13.14 (main, Jun 23 2026, 15:19:27) [MSC v.1944 64 bit (AMD64)]',\n  'uname': uname_result(system='Windows', node='Nailong_King', release='11', version='10.0.26200', machine='AMD64')},\n {'simd_extensions': {'baseline': ['X86_V2'],\n                      'found': ['X86_V3'],\n                      'not_found': []}},\n {'ignore_floating_point_errors_in_matmul': False}]\n",
+  "wrapper_sha256": "2edfc22c0d771762d3065858eff38d7e7211bbdc6a5af43f33e42be357807fe0",
+  "base_auditor_sha256": "da89e3f863d65eb82b3e1c6e9c3105cafefb41b598a93084b7fcbb659dbddeff",
+  "unchanged_wrapper_between_initial_and_single_thread_audits": true,
+  "initial_wrapper_status": "FAIL",
+  "single_thread_wrapper_status": "PASS",
+  "launch_environment_must_be_set_before_python_and_numpy_initialization": true,
+  "threadpool_info": "threadpoolctl is not installed; NumPy reports available runtime details above."
+}

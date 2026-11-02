@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="1152pt" height="648pt" viewBox="0 0 1152 648" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 648  L 1152 648  L 1152 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g clip-path="url(#p2997d4b3cc)">
+    <g id="motif-vector-0"><svg x="31.67999999999997" y="97.20000000000002" width="230.40000000000003" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="596.7" cy="251.6" rx="18.4" ry="18.4" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 596.7,251.6 L 515.0,209.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 515.0,209.7 L 483.9,229.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 483.9,229.7 L 452.7,249.8" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 422.8,251.8 L 389.4,234.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 389.4,234.6 L 356.1,217.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 356.1,217.5 L 278.9,267.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 278.9,267.3 L 197.2,225.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 197.2,225.4 L 120.0,275.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 356.1,217.5 L 354.2,179.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 354.2,179.9 L 352.4,142.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 336.6,118.1 L 303.2,101.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 303.2,101.0 L 269.8,83.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 596.7,251.6 L 633.9,227.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 633.9,227.6 L 671.2,203.5" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 592.6,249.5 L 596.7,251.6 L 598.5,250.4" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 519.0,211.8 L 515.0,209.7 L 513.4,210.7" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 282.7,264.8 L 278.9,267.3 L 274.8,265.2" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 201.3,227.5 L 197.2,225.4 L 193.3,227.9" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-2" d="M 425.8 259.5 Q 425.8 253.3, 428.9 249.8 Q 432.0 246.3, 437.8 246.3 Q 443.5 246.3, 446.6 249.8 Q 449.7 253.3, 449.7 259.5 Q 449.7 265.9, 446.6 269.5 Q 443.5 273.0, 437.8 273.0 Q 432.0 273.0, 428.9 269.5 Q 425.8 265.9, 425.8 259.5 M 437.8 270.1 Q 441.7 270.1, 443.9 267.4 Q 446.0 264.7, 446.0 259.5 Q 446.0 254.4, 443.9 251.9 Q 441.7 249.2, 437.8 249.2 Q 433.8 249.2, 431.6 251.8 Q 429.5 254.4, 429.5 259.5 Q 429.5 264.8, 431.6 267.4 Q 433.8 270.1, 437.8 270.1 " fill="#FF0000" />
+<path class="atom-7" d="M 339.6 125.9 Q 339.6 119.6, 342.7 116.1 Q 345.8 112.6, 351.5 112.6 Q 357.3 112.6, 360.4 116.1 Q 363.5 119.6, 363.5 125.9 Q 363.5 132.2, 360.4 135.8 Q 357.2 139.3, 351.5 139.3 Q 345.8 139.3, 342.7 135.8 Q 339.6 132.2, 339.6 125.9 M 351.5 136.4 Q 355.5 136.4, 357.6 133.8 Q 359.8 131.1, 359.8 125.9 Q 359.8 120.7, 357.6 118.2 Q 355.5 115.6, 351.5 115.6 Q 347.6 115.6, 345.4 118.1 Q 343.3 120.7, 343.3 125.9 Q 343.3 131.1, 345.4 133.8 Q 347.6 136.4, 351.5 136.4 " fill="#FF0000" />
+<path class="atom-9" d="M 668.9 198.9 L 672.8 195.0 L 667.7 194.0 L 668.5 191.4 L 673.1 193.7 L 672.5 188.6 L 675.2 188.6 L 674.5 193.7 L 679.2 191.5 L 680.0 194.0 L 674.9 194.9 L 678.5 198.9 L 676.3 200.5 L 673.8 195.6 L 671.2 200.5 L 668.9 198.9 " fill="#191919" />
+</svg></g></g>
+   <g id="text_1">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="146.88" y="208.960388" transform="rotate(-0 146.88 208.960388)">M0</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g clip-path="url(#p642131e9fc)">
+    <g id="motif-vector-1"><svg x="267.8399999999999" y="97.20000000000002" width="230.4000000000001" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="555.8" cy="208.9" rx="17.6" ry="17.6" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 555.8,208.9 L 469.5,191.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 469.5,191.1 L 447.1,216.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 447.1,216.2 L 424.7,241.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 396.6,254.0 L 360.6,246.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 360.6,246.6 L 324.6,239.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 324.6,239.1 L 266.0,305.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 266.0,305.0 L 179.7,287.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 324.6,239.1 L 313.4,205.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 313.4,205.3 L 302.1,171.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 282.5,152.5 L 246.5,145.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 246.5,145.1 L 210.5,137.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 210.5,137.7 L 182.8,54.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 555.8,208.9 L 584.4,176.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 584.4,176.8 L 613.0,144.7" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 551.5,208.0 L 555.8,208.9 L 557.3,207.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 473.8,192.0 L 469.5,191.1 L 468.4,192.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.9,301.7 L 266.0,305.0 L 261.7,304.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 212.3,138.0 L 210.5,137.7 L 209.1,133.5" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-2" d="M 399.5 257.0 Q 399.5 251.0, 402.4 247.7 Q 405.4 244.3, 410.9 244.3 Q 416.5 244.3, 419.4 247.7 Q 422.4 251.0, 422.4 257.0 Q 422.4 263.1, 419.4 266.5 Q 416.4 270.0, 410.9 270.0 Q 405.4 270.0, 402.4 266.5 Q 399.5 263.1, 399.5 257.0 M 410.9 267.1 Q 414.7 267.1, 416.8 264.6 Q 418.9 262.0, 418.9 257.0 Q 418.9 252.1, 416.8 249.6 Q 414.7 247.1, 410.9 247.1 Q 407.1 247.1, 405.0 249.6 Q 403.0 252.1, 403.0 257.0 Q 403.0 262.1, 405.0 264.6 Q 407.1 267.1, 410.9 267.1 " fill="#FF0000" />
+<path class="atom-6" d="M 285.4 155.5 Q 285.4 149.5, 288.3 146.2 Q 291.3 142.8, 296.8 142.8 Q 302.4 142.8, 305.3 146.2 Q 308.3 149.5, 308.3 155.5 Q 308.3 161.6, 305.3 165.1 Q 302.3 168.5, 296.8 168.5 Q 291.3 168.5, 288.3 165.1 Q 285.4 161.6, 285.4 155.5 M 296.8 165.7 Q 300.7 165.7, 302.7 163.1 Q 304.8 160.5, 304.8 155.5 Q 304.8 150.6, 302.7 148.2 Q 300.7 145.7, 296.8 145.7 Q 293.0 145.7, 291.0 148.1 Q 288.9 150.6, 288.9 155.5 Q 288.9 160.6, 291.0 163.1 Q 293.0 165.7, 296.8 165.7 " fill="#FF0000" />
+<path class="atom-9" d="M 609.7 140.2 L 613.4 136.5 L 608.5 135.5 L 609.3 133.0 L 613.7 135.3 L 613.1 130.4 L 615.7 130.3 L 615.0 135.2 L 619.5 133.1 L 620.3 135.5 L 615.4 136.4 L 618.9 140.2 L 616.8 141.7 L 614.3 137.1 L 611.9 141.7 L 609.7 140.2 " fill="#191919" />
+</svg></g></g>
+   <g id="text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="383.04" y="208.960388" transform="rotate(-0 383.04 208.960388)">M1</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g clip-path="url(#pa88910bf88)">
+    <g id="motif-vector-2"><svg x="31.67999999999997" y="213.83999999999997" width="230.40000000000003" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="555.8" cy="208.9" rx="17.6" ry="17.6" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 555.8,208.9 L 469.5,191.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 469.5,191.1 L 447.1,216.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 447.1,216.2 L 424.7,241.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 396.6,254.0 L 360.6,246.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 360.6,246.6 L 324.6,239.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 324.6,239.1 L 266.0,305.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 266.0,305.0 L 179.7,287.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 324.6,239.1 L 296.8,155.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 296.8,155.5 L 260.9,148.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 260.9,148.0 L 224.9,140.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 205.4,122.1 L 194.1,88.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 194.1,88.1 L 182.8,54.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 555.8,208.9 L 584.4,176.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 584.4,176.8 L 613.0,144.7" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 551.5,208.0 L 555.8,208.9 L 557.3,207.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 473.8,192.0 L 469.5,191.1 L 468.4,192.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.9,301.7 L 266.0,305.0 L 261.7,304.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 298.2,159.7 L 296.8,155.5 L 295.0,155.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-2" d="M 399.5 257.0 Q 399.5 251.0, 402.4 247.7 Q 405.4 244.3, 410.9 244.3 Q 416.5 244.3, 419.4 247.7 Q 422.4 251.0, 422.4 257.0 Q 422.4 263.1, 419.4 266.5 Q 416.4 270.0, 410.9 270.0 Q 405.4 270.0, 402.4 266.5 Q 399.5 263.1, 399.5 257.0 M 410.9 267.1 Q 414.7 267.1, 416.8 264.6 Q 418.9 262.0, 418.9 257.0 Q 418.9 252.1, 416.8 249.6 Q 414.7 247.1, 410.9 247.1 Q 407.1 247.1, 405.0 249.6 Q 403.0 252.1, 403.0 257.0 Q 403.0 262.1, 405.0 264.6 Q 407.1 267.1, 410.9 267.1 " fill="#FF0000" />
+<path class="atom-7" d="M 199.1 137.7 Q 199.1 131.7, 202.0 128.4 Q 205.0 125.0, 210.5 125.0 Q 216.0 125.0, 219.0 128.4 Q 222.0 131.7, 222.0 137.7 Q 222.0 143.8, 219.0 147.3 Q 216.0 150.7, 210.5 150.7 Q 205.0 150.7, 202.0 147.3 Q 199.1 143.8, 199.1 137.7 M 210.5 147.9 Q 214.3 147.9, 216.4 145.3 Q 218.4 142.7, 218.4 137.7 Q 218.4 132.8, 216.4 130.4 Q 214.3 127.9, 210.5 127.9 Q 206.7 127.9, 204.6 130.3 Q 202.6 132.8, 202.6 137.7 Q 202.6 142.8, 204.6 145.3 Q 206.7 147.9, 210.5 147.9 " fill="#FF0000" />
+<path class="atom-9" d="M 609.7 140.2 L 613.4 136.5 L 608.5 135.5 L 609.3 133.0 L 613.7 135.3 L 613.1 130.4 L 615.7 130.3 L 615.0 135.2 L 619.5 133.1 L 620.3 135.5 L 615.4 136.4 L 618.9 140.2 L 616.8 141.7 L 614.3 137.1 L 611.9 141.7 L 609.7 140.2 " fill="#191919" />
+</svg></g></g>
+   <g id="text_3">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="146.88" y="325.600387" transform="rotate(-0 146.88 325.600387)">M2</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g clip-path="url(#p9d5960f107)">
+    <g id="motif-vector-3"><svg x="267.8399999999999" y="213.83999999999997" width="230.4000000000001" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="596.7" cy="251.6" rx="18.4" ry="18.4" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 596.7,251.6 L 563.3,234.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 563.3,234.5 L 529.9,217.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 500.0,219.3 L 468.9,239.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 468.9,239.4 L 437.8,259.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 437.8,259.5 L 356.1,217.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 356.1,217.5 L 278.9,267.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 278.9,267.3 L 197.2,225.4" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 197.2,225.4 L 120.0,275.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 356.1,217.5 L 354.2,179.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 354.2,179.9 L 352.4,142.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 336.6,118.1 L 303.2,101.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 303.2,101.0 L 269.8,83.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 596.7,251.6 L 633.9,227.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 633.9,227.6 L 671.2,203.5" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 595.0,250.8 L 596.7,251.6 L 598.5,250.4" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 439.3,258.5 L 437.8,259.5 L 433.7,257.4" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 282.7,264.8 L 278.9,267.3 L 274.8,265.2" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 201.3,227.5 L 197.2,225.4 L 193.3,227.9" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 503.0 209.7 Q 503.0 203.5, 506.1 200.0 Q 509.2 196.5, 515.0 196.5 Q 520.7 196.5, 523.8 200.0 Q 526.9 203.5, 526.9 209.7 Q 526.9 216.1, 523.8 219.7 Q 520.7 223.2, 515.0 223.2 Q 509.2 223.2, 506.1 219.7 Q 503.0 216.1, 503.0 209.7 M 515.0 220.3 Q 518.9 220.3, 521.1 217.6 Q 523.2 215.0, 523.2 209.7 Q 523.2 204.6, 521.1 202.1 Q 518.9 199.5, 515.0 199.5 Q 511.0 199.5, 508.8 202.0 Q 506.7 204.6, 506.7 209.7 Q 506.7 215.0, 508.8 217.6 Q 511.0 220.3, 515.0 220.3 " fill="#FF0000" />
+<path class="atom-7" d="M 339.6 125.9 Q 339.6 119.6, 342.7 116.1 Q 345.8 112.6, 351.5 112.6 Q 357.3 112.6, 360.4 116.1 Q 363.5 119.6, 363.5 125.9 Q 363.5 132.2, 360.4 135.8 Q 357.2 139.3, 351.5 139.3 Q 345.8 139.3, 342.7 135.8 Q 339.6 132.2, 339.6 125.9 M 351.5 136.4 Q 355.5 136.4, 357.6 133.8 Q 359.8 131.1, 359.8 125.9 Q 359.8 120.7, 357.6 118.2 Q 355.5 115.6, 351.5 115.6 Q 347.6 115.6, 345.4 118.1 Q 343.3 120.7, 343.3 125.9 Q 343.3 131.1, 345.4 133.8 Q 347.6 136.4, 351.5 136.4 " fill="#FF0000" />
+<path class="atom-9" d="M 668.9 198.9 L 672.8 195.0 L 667.7 194.0 L 668.5 191.4 L 673.1 193.7 L 672.5 188.6 L 675.2 188.6 L 674.5 193.7 L 679.2 191.5 L 680.0 194.0 L 674.9 194.9 L 678.5 198.9 L 676.3 200.5 L 673.8 195.6 L 671.2 200.5 L 668.9 198.9 " fill="#191919" />
+</svg></g></g>
+   <g id="text_4">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="383.04" y="325.600387" transform="rotate(-0 383.04 325.600387)">M3</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g clip-path="url(#pb9066afcbb)">
+    <g id="motif-vector-4"><svg x="31.67999999999997" y="330.48" width="230.40000000000003" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="555.8" cy="208.9" rx="17.6" ry="17.6" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 555.8,208.9 L 519.9,201.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 519.9,201.5 L 483.9,194.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 455.3,207.0 L 433.1,232.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 433.1,232.0 L 410.9,256.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 410.9,256.9 L 324.6,239.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 324.6,239.1 L 266.0,305.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 266.0,305.0 L 179.7,287.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 324.6,239.1 L 313.4,205.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 313.4,205.3 L 302.1,171.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 282.5,152.5 L 246.5,145.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 246.5,145.1 L 210.5,137.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 210.5,137.7 L 182.8,54.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 555.8,208.9 L 584.4,176.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 584.4,176.8 L 613.0,144.7" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 554.0,208.5 L 555.8,208.9 L 557.3,207.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 412.0,255.7 L 410.9,256.9 L 406.6,256.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.9,301.7 L 266.0,305.0 L 261.7,304.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 212.3,138.0 L 210.5,137.7 L 209.1,133.5" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 458.0 191.1 Q 458.0 185.2, 461.0 181.8 Q 464.0 178.5, 469.5 178.5 Q 475.0 178.5, 478.0 181.8 Q 481.0 185.2, 481.0 191.1 Q 481.0 197.2, 478.0 200.7 Q 475.0 204.1, 469.5 204.1 Q 464.0 204.1, 461.0 200.7 Q 458.0 197.2, 458.0 191.1 M 469.5 201.3 Q 473.3 201.3, 475.4 198.7 Q 477.4 196.2, 477.4 191.1 Q 477.4 186.2, 475.4 183.8 Q 473.3 181.3, 469.5 181.3 Q 465.7 181.3, 463.6 183.7 Q 461.6 186.2, 461.6 191.1 Q 461.6 196.2, 463.6 198.7 Q 465.7 201.3, 469.5 201.3 " fill="#FF0000" />
+<path class="atom-6" d="M 285.4 155.5 Q 285.4 149.5, 288.3 146.2 Q 291.3 142.8, 296.8 142.8 Q 302.4 142.8, 305.3 146.2 Q 308.3 149.5, 308.3 155.5 Q 308.3 161.6, 305.3 165.1 Q 302.3 168.5, 296.8 168.5 Q 291.3 168.5, 288.3 165.1 Q 285.4 161.6, 285.4 155.5 M 296.8 165.7 Q 300.7 165.7, 302.7 163.1 Q 304.8 160.5, 304.8 155.5 Q 304.8 150.6, 302.7 148.2 Q 300.7 145.7, 296.8 145.7 Q 293.0 145.7, 291.0 148.1 Q 288.9 150.6, 288.9 155.5 Q 288.9 160.6, 291.0 163.1 Q 293.0 165.7, 296.8 165.7 " fill="#FF0000" />
+<path class="atom-9" d="M 609.7 140.2 L 613.4 136.5 L 608.5 135.5 L 609.3 133.0 L 613.7 135.3 L 613.1 130.4 L 615.7 130.3 L 615.0 135.2 L 619.5 133.1 L 620.3 135.5 L 615.4 136.4 L 618.9 140.2 L 616.8 141.7 L 614.3 137.1 L 611.9 141.7 L 609.7 140.2 " fill="#191919" />
+</svg></g></g>
+   <g id="text_5">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="146.88" y="442.240387" transform="rotate(-0 146.88 442.240387)">M4</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g clip-path="url(#p7879dab1d5)">
+    <g id="motif-vector-5"><svg x="267.8399999999999" y="330.48" width="230.4000000000001" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="555.8" cy="208.9" rx="17.6" ry="17.6" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 555.8,208.9 L 519.9,201.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 519.9,201.5 L 483.9,194.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 455.3,207.0 L 433.1,232.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 433.1,232.0 L 410.9,256.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 410.9,256.9 L 324.6,239.1" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 324.6,239.1 L 266.0,305.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 266.0,305.0 L 179.7,287.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 324.6,239.1 L 296.8,155.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 296.8,155.5 L 260.9,148.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 260.9,148.0 L 224.9,140.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 205.4,122.1 L 194.1,88.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 194.1,88.1 L 182.8,54.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 555.8,208.9 L 584.4,176.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 584.4,176.8 L 613.0,144.7" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 554.0,208.5 L 555.8,208.9 L 557.3,207.3" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 412.0,255.7 L 410.9,256.9 L 406.6,256.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 268.9,301.7 L 266.0,305.0 L 261.7,304.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 298.2,159.7 L 296.8,155.5 L 295.0,155.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-1" d="M 458.0 191.1 Q 458.0 185.2, 461.0 181.8 Q 464.0 178.5, 469.5 178.5 Q 475.0 178.5, 478.0 181.8 Q 481.0 185.2, 481.0 191.1 Q 481.0 197.2, 478.0 200.7 Q 475.0 204.1, 469.5 204.1 Q 464.0 204.1, 461.0 200.7 Q 458.0 197.2, 458.0 191.1 M 469.5 201.3 Q 473.3 201.3, 475.4 198.7 Q 477.4 196.2, 477.4 191.1 Q 477.4 186.2, 475.4 183.8 Q 473.3 181.3, 469.5 181.3 Q 465.7 181.3, 463.6 183.7 Q 461.6 186.2, 461.6 191.1 Q 461.6 196.2, 463.6 198.7 Q 465.7 201.3, 469.5 201.3 " fill="#FF0000" />
+<path class="atom-7" d="M 199.1 137.7 Q 199.1 131.7, 202.0 128.4 Q 205.0 125.0, 210.5 125.0 Q 216.0 125.0, 219.0 128.4 Q 222.0 131.7, 222.0 137.7 Q 222.0 143.8, 219.0 147.3 Q 216.0 150.7, 210.5 150.7 Q 205.0 150.7, 202.0 147.3 Q 199.1 143.8, 199.1 137.7 M 210.5 147.9 Q 214.3 147.9, 216.4 145.3 Q 218.4 142.7, 218.4 137.7 Q 218.4 132.8, 216.4 130.4 Q 214.3 127.9, 210.5 127.9 Q 206.7 127.9, 204.6 130.3 Q 202.6 132.8, 202.6 137.7 Q 202.6 142.8, 204.6 145.3 Q 206.7 147.9, 210.5 147.9 " fill="#FF0000" />
+<path class="atom-9" d="M 609.7 140.2 L 613.4 136.5 L 608.5 135.5 L 609.3 133.0 L 613.7 135.3 L 613.1 130.4 L 615.7 130.3 L 615.0 135.2 L 619.5 133.1 L 620.3 135.5 L 615.4 136.4 L 618.9 140.2 L 616.8 141.7 L 614.3 137.1 L 611.9 141.7 L 609.7 140.2 " fill="#191919" />
+</svg></g></g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="383.04" y="442.240387" transform="rotate(-0 383.04 442.240387)">M5</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g clip-path="url(#pda6510a423)">
+    <g id="motif-vector-6"><svg x="31.67999999999997" y="447.12000000000006" width="230.40000000000003" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="548.2" cy="201.2" rx="16.8" ry="16.8" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 548.2,201.2 L 466.1,184.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 466.1,184.3 L 410.4,246.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 410.4,246.9 L 328.3,230.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 328.3,230.0 L 307.0,253.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 307.0,253.9 L 285.7,277.9" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 258.9,289.8 L 224.7,282.8" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 224.7,282.8 L 190.5,275.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 328.3,230.0 L 317.6,197.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-3 atom-6" d="M 317.6,197.8 L 306.9,165.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 288.3,147.7 L 254.1,140.6" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-6 atom-7" d="M 254.1,140.6 L 219.8,133.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 219.8,133.5 L 193.5,54.0" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 548.2,201.2 L 575.3,170.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 575.3,170.7 L 602.5,140.2" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 544.1,200.4 L 548.2,201.2 L 549.5,199.7" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 470.2,185.2 L 466.1,184.3 L 463.3,187.5" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 413.2,243.8 L 410.4,246.9 L 406.3,246.1" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 221.6,133.9 L 219.8,133.5 L 218.5,129.6" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-4" d="M 261.7 292.7 Q 261.7 287.0, 264.5 283.8 Q 267.3 280.6, 272.6 280.6 Q 277.9 280.6, 280.7 283.8 Q 283.5 287.0, 283.5 292.7 Q 283.5 298.5, 280.7 301.7 Q 277.8 305.0, 272.6 305.0 Q 267.4 305.0, 264.5 301.7 Q 261.7 298.5, 261.7 292.7 M 272.6 302.3 Q 276.2 302.3, 278.2 299.9 Q 280.2 297.5, 280.2 292.7 Q 280.2 288.0, 278.2 285.7 Q 276.2 283.3, 272.6 283.3 Q 269.0 283.3, 267.0 285.7 Q 265.1 288.0, 265.1 292.7 Q 265.1 297.5, 267.0 299.9 Q 269.0 302.3, 272.6 302.3 " fill="#FF0000" />
+<path class="atom-6" d="M 291.0 150.5 Q 291.0 144.8, 293.8 141.7 Q 296.7 138.5, 301.9 138.5 Q 307.2 138.5, 310.0 141.7 Q 312.8 144.8, 312.8 150.5 Q 312.8 156.3, 310.0 159.6 Q 307.1 162.8, 301.9 162.8 Q 296.7 162.8, 293.8 159.6 Q 291.0 156.3, 291.0 150.5 M 301.9 160.2 Q 305.5 160.2, 307.5 157.7 Q 309.5 155.3, 309.5 150.5 Q 309.5 145.9, 307.5 143.5 Q 305.5 141.2, 301.9 141.2 Q 298.3 141.2, 296.3 143.5 Q 294.4 145.8, 294.4 150.5 Q 294.4 155.3, 296.3 157.7 Q 298.3 160.2, 301.9 160.2 " fill="#FF0000" />
+<path class="atom-9" d="M 599.4 136.0 L 602.9 132.4 L 598.2 131.5 L 598.9 129.1 L 603.2 131.3 L 602.6 126.6 L 605.1 126.6 L 604.4 131.2 L 608.7 129.2 L 609.5 131.5 L 604.8 132.4 L 608.1 135.9 L 606.1 137.4 L 603.8 133.0 L 601.4 137.4 L 599.4 136.0 " fill="#191919" />
+</svg></g></g>
+   <g id="text_7">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="146.88" y="558.880388" transform="rotate(-0 146.88 558.880388)">M6</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g clip-path="url(#p06b74c5dfd)">
+    <g id="motif-vector-7"><svg x="267.8399999999999" y="447.12000000000006" width="230.4000000000001" height="103.68000000000002" viewBox="0 0 800 360"><ellipse cx="596.7" cy="251.6" rx="18.4" ry="18.4" class="atom-0" style="fill:#93C6E8;fill-rule:evenodd;stroke:#93C6E8;stroke-width:1.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-0 atom-0 atom-1" d="M 596.7,251.6 L 515.0,209.7" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-1 atom-1 atom-2" d="M 515.0,209.7 L 437.8,259.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-2 atom-2 atom-3" d="M 437.8,259.5 L 356.1,217.5" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-3 atom-3 atom-4" d="M 356.1,217.5 L 278.9,267.3" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 278.9,267.3 L 245.5,250.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-4 atom-4 atom-5" d="M 245.5,250.2 L 212.1,233.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 182.2,235.0 L 151.1,255.1" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-5 atom-5 atom-6" d="M 151.1,255.1 L 120.0,275.2" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 356.1,217.5 L 354.2,179.9" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-6 atom-3 atom-7" d="M 354.2,179.9 L 352.4,142.4" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 336.6,118.1 L 303.2,101.0" style="fill:none;fill-rule:evenodd;stroke:#FF0000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-7 atom-7 atom-8" d="M 303.2,101.0 L 269.8,83.8" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 596.7,251.6 L 633.9,227.6" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path class="bond-8 atom-0 atom-9" d="M 633.9,227.6 L 671.2,203.5" style="fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<path d="M 592.6,249.5 L 596.7,251.6 L 598.5,250.4" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 519.0,211.8 L 515.0,209.7 L 511.1,212.2" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 441.6,257.0 L 437.8,259.5 L 433.7,257.4" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path d="M 282.7,264.8 L 278.9,267.3 L 277.2,266.5" style="fill:none;stroke:#000000;stroke-width:2.0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;" />
+<path class="atom-5" d="M 185.2 225.4 Q 185.2 219.2, 188.3 215.7 Q 191.4 212.2, 197.2 212.2 Q 202.9 212.2, 206.0 215.7 Q 209.1 219.2, 209.1 225.4 Q 209.1 231.8, 206.0 235.4 Q 202.9 238.9, 197.2 238.9 Q 191.4 238.9, 188.3 235.4 Q 185.2 231.8, 185.2 225.4 M 197.2 236.0 Q 201.1 236.0, 203.3 233.3 Q 205.4 230.7, 205.4 225.4 Q 205.4 220.3, 203.3 217.8 Q 201.1 215.2, 197.2 215.2 Q 193.2 215.2, 191.0 217.7 Q 188.9 220.3, 188.9 225.4 Q 188.9 230.7, 191.0 233.3 Q 193.2 236.0, 197.2 236.0 " fill="#FF0000" />
+<path class="atom-7" d="M 339.6 125.9 Q 339.6 119.6, 342.7 116.1 Q 345.8 112.6, 351.5 112.6 Q 357.3 112.6, 360.4 116.1 Q 363.5 119.6, 363.5 125.9 Q 363.5 132.2, 360.4 135.8 Q 357.2 139.3, 351.5 139.3 Q 345.8 139.3, 342.7 135.8 Q 339.6 132.2, 339.6 125.9 M 351.5 136.4 Q 355.5 136.4, 357.6 133.8 Q 359.8 131.1, 359.8 125.9 Q 359.8 120.7, 357.6 118.2 Q 355.5 115.6, 351.5 115.6 Q 347.6 115.6, 345.4 118.1 Q 343.3 120.7, 343.3 125.9 Q 343.3 131.1, 345.4 133.8 Q 347.6 136.4, 351.5 136.4 " fill="#FF0000" />
+<path class="atom-9" d="M 668.9 198.9 L 672.8 195.0 L 667.7 194.0 L 668.5 191.4 L 673.1 193.7 L 672.5 188.6 L 675.2 188.6 L 674.5 193.7 L 679.2 191.5 L 680.0 194.0 L 674.9 194.9 L 678.5 198.9 L 676.3 200.5 L 673.8 195.6 L 671.2 200.5 L 668.9 198.9 " fill="#191919" />
+</svg></g></g>
+   <g id="text_8">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="383.04" y="558.880388" transform="rotate(-0 383.04 558.880388)">M7</text>
+   </g>
+  </g>
+  <g id="axes_9">
+   <g id="patch_2">
+    <path d="M 535.68 486  L 817.92 486  L 817.92 103.68  L 535.68 103.68  z " style="fill: #ffffff" />
+   </g>
+   <g id="patch_3">
+    <path d="M 535.68 103.68  L 629.76 103.68  L 629.76 151.47  L 535.68 151.47  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 629.76 103.68  L 723.84 103.68  L 723.84 151.47  L 629.76 151.47  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 723.84 103.68  L 817.92 103.68  L 817.92 151.47  L 723.84 151.47  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 535.68 151.47  L 629.76 151.47  L 629.76 199.26  L 535.68 199.26  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 629.76 151.47  L 723.84 151.47  L 723.84 199.26  L 629.76 199.26  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_8">
+    <path d="M 723.84 151.47  L 817.92 151.47  L 817.92 199.26  L 723.84 199.26  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_9">
+    <path d="M 535.68 199.26  L 629.76 199.26  L 629.76 247.05  L 535.68 247.05  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_10">
+    <path d="M 629.76 199.26  L 723.84 199.26  L 723.84 247.05  L 629.76 247.05  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_11">
+    <path d="M 723.84 199.26  L 817.92 199.26  L 817.92 247.05  L 723.84 247.05  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_12">
+    <path d="M 535.68 247.05  L 629.76 247.05  L 629.76 294.84  L 535.68 294.84  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_13">
+    <path d="M 629.76 247.05  L 723.84 247.05  L 723.84 294.84  L 629.76 294.84  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_14">
+    <path d="M 723.84 247.05  L 817.92 247.05  L 817.92 294.84  L 723.84 294.84  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_15">
+    <path d="M 535.68 294.84  L 629.76 294.84  L 629.76 342.63  L 535.68 342.63  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_16">
+    <path d="M 629.76 294.84  L 723.84 294.84  L 723.84 342.63  L 629.76 342.63  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_17">
+    <path d="M 723.84 294.84  L 817.92 294.84  L 817.92 342.63  L 723.84 342.63  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_18">
+    <path d="M 535.68 342.63  L 629.76 342.63  L 629.76 390.42  L 535.68 390.42  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_19">
+    <path d="M 629.76 342.63  L 723.84 342.63  L 723.84 390.42  L 629.76 390.42  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_20">
+    <path d="M 723.84 342.63  L 817.92 342.63  L 817.92 390.42  L 723.84 390.42  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_21">
+    <path d="M 535.68 390.42  L 629.76 390.42  L 629.76 438.21  L 535.68 438.21  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_22">
+    <path d="M 629.76 390.42  L 723.84 390.42  L 723.84 438.21  L 629.76 438.21  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_23">
+    <path d="M 723.84 390.42  L 817.92 390.42  L 817.92 438.21  L 723.84 438.21  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_24">
+    <path d="M 535.68 438.21  L 629.76 438.21  L 629.76 486  L 535.68 486  z " clip-path="url(#pfffae32b8d)" style="fill: #f2ddc4; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_25">
+    <path d="M 629.76 438.21  L 723.84 438.21  L 723.84 486  L 629.76 486  z " clip-path="url(#pfffae32b8d)" style="fill: #ddd5eb; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_26">
+    <path d="M 723.84 438.21  L 817.92 438.21  L 817.92 486  L 723.84 486  z " clip-path="url(#pfffae32b8d)" style="fill: #c7dfea; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1" />
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="502.358281" transform="rotate(-0 582.72 502.358281)">ortho</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2" />
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="502.357422" transform="rotate(-0 676.8 502.357422)">meta</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3" />
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="502.357422" transform="rotate(-0 770.88 502.357422)">para</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4" />
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="131.753711" transform="rotate(-0 527.68 131.753711)">M0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5" />
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="179.543711" transform="rotate(-0 527.68 179.543711)">M1</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6" />
+     <g id="text_14">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="227.333711" transform="rotate(-0 527.68 227.333711)">M2</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_7" />
+     <g id="text_15">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="275.123711" transform="rotate(-0 527.68 275.123711)">M3</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_8" />
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="322.913711" transform="rotate(-0 527.68 322.913711)">M4</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_9" />
+     <g id="text_17">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="370.703711" transform="rotate(-0 527.68 370.703711)">M5</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_10" />
+     <g id="text_18">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="418.493711" transform="rotate(-0 527.68 418.493711)">M6</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_11" />
+     <g id="text_19">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="527.68" y="466.283711" transform="rotate(-0 527.68 466.283711)">M7</text>
+     </g>
+    </g>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="131.471484" transform="rotate(-0 582.72 131.471484)">A</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="131.471484" transform="rotate(-0 676.8 131.471484)">B</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="131.471484" transform="rotate(-0 770.88 131.471484)">T</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="179.261484" transform="rotate(-0 582.72 179.261484)">B</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="179.261484" transform="rotate(-0 676.8 179.261484)">T</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="179.261484" transform="rotate(-0 770.88 179.261484)">A</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="227.051484" transform="rotate(-0 582.72 227.051484)">T</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="227.051484" transform="rotate(-0 676.8 227.051484)">A</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="227.051484" transform="rotate(-0 770.88 227.051484)">B</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="274.841484" transform="rotate(-0 582.72 274.841484)">A</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="274.841484" transform="rotate(-0 676.8 274.841484)">B</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="274.841484" transform="rotate(-0 770.88 274.841484)">T</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="322.631484" transform="rotate(-0 582.72 322.631484)">B</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="322.631484" transform="rotate(-0 676.8 322.631484)">T</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="322.631484" transform="rotate(-0 770.88 322.631484)">A</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="370.421484" transform="rotate(-0 582.72 370.421484)">T</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="370.421484" transform="rotate(-0 676.8 370.421484)">A</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="370.421484" transform="rotate(-0 770.88 370.421484)">B</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="418.211484" transform="rotate(-0 582.72 418.211484)">A</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="418.211484" transform="rotate(-0 676.8 418.211484)">B</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="418.211484" transform="rotate(-0 770.88 418.211484)">T</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="582.72" y="466.001484" transform="rotate(-0 582.72 466.001484)">B</text>
+   </g>
+   <g id="text_42">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="676.8" y="466.001484" transform="rotate(-0 676.8 466.001484)">T</text>
+   </g>
+   <g id="text_43">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.88" y="466.001484" transform="rotate(-0 770.88 466.001484)">A</text>
+   </g>
+  </g>
+  <g id="patch_27">
+   <path d="M 864 215.136  L 1123.2 215.136  Q 1137.024 215.136 1137.024 207.36  L 1137.024 84.24  Q 1137.024 76.464 1123.2 76.464  L 864 76.464  Q 850.176 76.464 850.176 84.24  L 850.176 207.36  Q 850.176 215.136 864 215.136  z " style="fill: #f5f7f8; stroke: #a6afb5; stroke-width: 1.1; stroke-linejoin: miter" />
+  </g>
+  <g id="patch_28">
+   <path d="M 864 377.136  L 1123.2 377.136  Q 1137.024 377.136 1137.024 369.36  L 1137.024 246.24  Q 1137.024 238.464 1123.2 238.464  L 864 238.464  Q 850.176 238.464 850.176 246.24  L 850.176 369.36  Q 850.176 377.136 864 377.136  z " style="fill: #f5f7f8; stroke: #a6afb5; stroke-width: 1.1; stroke-linejoin: miter" />
+  </g>
+  <g id="patch_29">
+   <path d="M 864 539.136  L 1123.2 539.136  Q 1137.024 539.136 1137.024 531.36  L 1137.024 408.24  Q 1137.024 400.464 1123.2 400.464  L 864 400.464  Q 850.176 400.464 850.176 408.24  L 850.176 531.36  Q 850.176 539.136 864 539.136  z " style="fill: #f5f7f8; stroke: #a6afb5; stroke-width: 1.1; stroke-linejoin: miter" />
+  </g>
+  <g id="text_44">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="40.32" y="29.16" transform="rotate(-0 40.32 29.16)">A   Eight known connectivity motifs</text>
+  </g>
+  <g id="text_45">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(40.32 41.876992)">Each: 7 carbon + 2 oxygen atoms</text>
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(40.32 55.08)">Blue atom: attachment root; *: ring-side connection</text>
+  </g>
+  <g id="text_46">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="529.92" y="29.16" transform="rotate(-0 529.92 29.16)">B   Combination classes</text>
+  </g>
+  <g id="text_47">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(529.92 41.876992)">c = (motif + position) mod 3</text>
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(529.92 55.08)">Each motif has one source position per experience</text>
+  </g>
+  <g id="text_48">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(529.92 536.715312)">A: source experience A</text>
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(529.92 554.315313)">B: source experience B</text>
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(529.92 572.980937)">T: common unseen-combination class</text>
+  </g>
+  <g id="text_49">
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #444444" transform="translate(529.92 590.637266)">Canonical molecular identity is split separately.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #444444" transform="translate(529.92 602.64)">Cells describe combinations, not repeated molecules.</text>
+  </g>
+  <g id="text_50">
+   <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="869.76" y="29.16" transform="rotate(-0 869.76 29.16)">C   Distinct supervision</text>
+  </g>
+  <g id="text_51">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="881.28" y="113.4" transform="rotate(-0 881.28 113.4)">Original-source prediction</text>
+  </g>
+  <g id="text_52">
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 153.642156)">1,386 original training identities</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 171.119969)">No new-combination labels</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 186.602156)">Oracle boundaries only when specified</text>
+  </g>
+  <g id="text_53">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="881.28" y="275.4" transform="rotate(-0 881.28 275.4)">Directed structural probe</text>
+  </g>
+  <g id="text_54">
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 315.642156)">256 balanced labels at one position</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 332.122156)">Test the other positions</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 348.602156)">Extra diagnostic supervision</text>
+  </g>
+  <g id="text_55">
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="881.28" y="437.4" transform="rotate(-0 881.28 437.4)">Labeled graph adaptation</text>
+  </g>
+  <g id="text_56">
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 477.642156)">32 new + 32 original identities</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 494.715211)">Matched trained / random features</text>
+   <text style="font-size: 10.3px; font-family: 'DejaVu Sans'" transform="translate(881.28 510.602156)">New-combination labels are supplied</text>
+  </g>
+  <g id="text_57">
+   <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(869.76 592.676992)">Readability, adaptation, and source-only</text>
+   <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'" transform="translate(869.76 605.88)">prediction answer different questions.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p2997d4b3cc">
+   <rect x="31.68" y="97.2" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="p642131e9fc">
+   <rect x="267.84" y="97.2" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="pa88910bf88">
+   <rect x="31.68" y="213.84" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="p9d5960f107">
+   <rect x="267.84" y="213.84" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="pb9066afcbb">
+   <rect x="31.68" y="330.48" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="p7879dab1d5">
+   <rect x="267.84" y="330.48" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="pda6510a423">
+   <rect x="31.68" y="447.12" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="p06b74c5dfd">
+   <rect x="267.84" y="447.12" width="230.4" height="103.68" />
+  </clipPath>
+  <clipPath id="pfffae32b8d">
+   <rect x="535.68" y="103.68" width="282.24" height="382.32" />
+  </clipPath>
+ </defs>
+</svg>

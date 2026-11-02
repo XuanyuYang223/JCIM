@@ -418,8 +418,71 @@ anchors. No target-fragment mask or new-combination label enters this panel.
 
 ```powershell
 .\.venv\Scripts\python.exe -u -m jcim.readout_run --config configs\readout_v7.json --output experiments\readout_v7
-.\.venv\Scripts\python.exe maintenance\audit_readout_v7.py --record experiments\readout_v7 --output maintenance\READOUT_V7_REAUDIT.json
+$env:OPENBLAS_NUM_THREADS = '1'
+$env:MKL_NUM_THREADS = '1'
+.\.venv\Scripts\python.exe maintenance\audit_readout_v7_runtime.py --record experiments\readout_v7 --output maintenance\READOUT_V7_RUNTIME_REAUDIT.json
 ```
+
+### Completed matched-factor results
+
+The completed panel has 144 MLP fits and 72 ridge fits on 15 unique frozen
+encoders. It uses only the original source labels, supplies no fragment
+membership, and changes no encoder parameter. All 614 new manifest-covered
+files and 1,260 earlier record files pass integrity checks. The implementation
+suite passes 257 tests and 166 subtests.
+
+The cleanest conditional comparison fixes training-only standardization, ridge
+regularization, labels, and the fitting method, then changes only the input
+scope. Full512 includes the original deep/query vector and the exact shallow
+whole-graph mean; shallow-only retains that mean. Ordinary common-OOD accuracy
+is mean +/- sample SD across three seeds:
+
+| Frozen encoder | Experience | Full512 ridge (%) | Shallow-only ridge (%) | Paired scope effect (pp) |
+| --- | --- | --- | --- | --- |
+| V5 end-to-end | A | 0.0 +/- 0.0 | 37.4 +/- 19.5 | +37.4 +/- 19.5 |
+| V5 end-to-end | B | 8.4 +/- 6.9 | 64.2 +/- 9.6 | +55.8 +/- 14.4 |
+| Original trained | A | 0.0 +/- 0.0 | 27.4 +/- 8.5 | +27.4 +/- 8.5 |
+| Original trained | B | 7.4 +/- 4.4 | 58.6 +/- 20.3 | +51.2 +/- 24.6 |
+| Random | A | 60.0 +/- 10.7 | 48.9 +/- 24.1 | -11.1 +/- 25.8 |
+| Random | B | 53.6 +/- 16.9 | 65.1 +/- 25.9 | +11.4 +/- 28.4 |
+
+Every trained-encoder fit in this table retains 100% training and own-IID
+accuracy. The matched random results do not establish a task-training advantage
+for the source-only shallow readout. The three random initializations are
+shared across A/B fits and trained-source comparisons.
+
+A separate post-run [containment check](maintenance/READOUT_V7_CONTAINMENT.json)
+embeds each shallow ridge rule into full512 with zero deep coefficients. All 36
+raw/standardized matched pairs preserve candidate logits and predictions exactly,
+and retain the same penalty. The fitted full ridge has a strictly lower source
+objective in every pair. Thus the full feature space can express the shallow
+rule, while the declared source fitting objective selects a different mapping.
+This identifies a conditional fitting limitation; it does not uniquely explain
+the original neural head or decompose all historical v5-to-v6 changes.
+
+The MLP panel retains the conditional effects and interactions of scope,
+standardization, and objective. Raw shallow MLP fits substantially underfit
+source data, so their scaling effects include source-fitting recovery. Masking
+also removes all initially nonzero input weights under the archived
+zero-appended initialization. The near-zero objective effect concerns separate
+frozen heads coupled through global gradient clipping; it does not test
+multitask encoder learning. All cells and source-fit guards appear in the
+[completed report](experiments/readout_v7/REPORT.md),
+[factorial figure](experiments/readout_v7/figures/readout_factorial.png), and
+[independent interpretation](maintenance/READOUT_V7_INTERPRETATION.md).
+
+The full [matched-runtime audit](maintenance/READOUT_V7_RUNTIME_SINGLE_THREAD_AUDIT.json)
+passes all frozen checks, including every ridge refit, all 24 historical anchors,
+metrics, clipping logs, and paired contrasts. The original
+[CPU audit](maintenance/READOUT_V7_AUDIT.json) remains FAIL on one unused
+auxiliary distance-head/source-training decision at an approximately 1.8e-7
+logit tie; all motif and trained-task CPU decisions agree. The first
+[runtime-wrapper audit](maintenance/READOUT_V7_RUNTIME_AUDIT.json) also remains
+FAIL because NumPy initialized before BLAS configuration. The same wrapper
+passes with the startup environment shown above. The
+[numerical note](maintenance/READOUT_V7_NUMERICAL_NOTE.md) preserves both failures,
+exact reproduction commands, hashes, and bit-exact CUDA head replay. No frozen
+source, record, audit threshold, or failed log was changed.
 
 The English [working manuscript](manuscript/MANUSCRIPT.md) separates diagnostic
 readability, adaptation with new labels, and original-source-label combination

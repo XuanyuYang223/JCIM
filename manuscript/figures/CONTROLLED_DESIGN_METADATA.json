@@ -1,0 +1,68 @@
+{
+  "source": "experiments/hard_v2/molecules.jsonl",
+  "source_sha256": "a3ddb63731fa6f1c6c5d21e69f338477d49d403c31049bf920d40e1a0e5cae93",
+  "motifs": {
+    "5": "COCC(CC)COC",
+    "2": "CCOC(CC)COC",
+    "3": "COCC(CCC)OC",
+    "0": "CCOC(CCC)OC",
+    "4": "COCC(CC)OCC",
+    "1": "CCOC(CC)OCC",
+    "6": "CCCC(OC)OCC",
+    "7": "CCCC(COC)OC"
+  },
+  "combination_classes": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ],
+    [
+      2,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      0
+    ]
+  ],
+  "class_cell_counts": {
+    "0": 8,
+    "1": 8,
+    "2": 8
+  },
+  "root_annotation": "First motif atom highlighted; dummy star denotes ring attachment and is not a heavy atom.",
+  "svg_chemical_structure_format": "Native RDKit vector paths, not embedded raster images.",
+  "generator_sha256": "986c8cefcadd35f7a6f69bc3297b400b8b8c56e056015c5761ecd3fc0ea2387d",
+  "outputs": {
+    "controlled_design.png": "74d713863ac79492a9a830c19a23d2051232653ca3e6d0af215bf0d534b33bf3",
+    "controlled_design.svg": "8c175a0eeaf35f9d9908af349ab17fe10a18e1e3abb89cb41db33ee9c464ca0f"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "records": {
+    "hard_v2": {
+      "path": "F:\\JCIM\\experiments\\hard_v2",
+      "manifest_sha256": "4b69cd0335cd21ccb5e2a419c1301bfc8042e3bb5e9864322d6ad4ca1f398996",
+      "files": 131
+    },
+    "skip_v5": {
+      "path": "F:\\JCIM\\experiments\\skip_v5",
+      "manifest_sha256": "39ebb1e0833557047709630b2d8c60ec773801267a585efdfaed5401107ed16b",
+      "files": 131
+    },
+    "pooling_v6": {
+      "path": "F:\\JCIM\\experiments\\pooling_v6",
+      "manifest_sha256": "b71e789d09077cdcf3e25b829cb0979f383f8044d8f3b64334745330a464c233",
+      "files": 724
+    }
+  }
+}

@@ -10,3 +10,5 @@ maintenance/SKIP_V5* -text -whitespace
 maintenance/POOLING_V6* -text -whitespace
 maintenance/READOUT_V7* -text -whitespace
 maintenance/SMOKE_READOUT_V7* -text -whitespace
+# Generated manuscript figures retain the bytes recorded in their metadata.
+manuscript/figures/** -text -whitespace
